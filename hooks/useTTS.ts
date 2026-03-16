@@ -48,5 +48,10 @@ export function useTTS() {
     window.speechSynthesis.speak(utt)
   }, [])
 
-  return { speak }
+  const cancel = useCallback(() => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return
+    window.speechSynthesis.cancel()
+  }, [])
+
+  return { speak, cancel }
 }

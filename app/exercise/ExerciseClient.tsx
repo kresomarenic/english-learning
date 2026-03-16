@@ -39,7 +39,13 @@ export default function ExerciseClient() {
   const displayLang = direction === 'en-hr' ? 'en-GB' : 'hr'
 
   const { status, transcript, start, stop, reset, getAlternatives } = useSpeechRecognition(speechLang)
-  const { speak } = useTTS()
+  const { speak, cancel: cancelTTS } = useTTS()
+
+  // Cancel TTS then start recognition — avoids Chrome aborting mic due to audio conflict
+  const handleMicStart = useCallback(() => {
+    cancelTTS()
+    start()
+  }, [cancelTTS, start])
 
   // Load words
   useEffect(() => {
@@ -214,7 +220,7 @@ export default function ExerciseClient() {
         {/* Mic / Next button */}
         {!feedback ? (
           <button
-            onPointerDown={start}
+            onPointerDown={handleMicStart}
             onPointerUp={stop}
             onPointerLeave={stop}
             disabled={status === 'unsupported'}
