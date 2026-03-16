@@ -125,15 +125,18 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <div className="flex items-center gap-2 mb-0.5">
+                  <div className="flex items-center gap-2 mb-1">
                     <span
                       className={`text-xs font-semibold px-2 py-0.5 rounded-full border ${GRADE_COLORS[unit.grade - 1]}`}
                     >
                       {GRADE_LABELS[unit.grade - 1]}
                     </span>
+                    <span className="text-xs font-semibold text-slate-500">
+                      Unit {unit.unit}
+                    </span>
                   </div>
                   <p className="font-semibold text-slate-800">{unit.title}</p>
-                  <p className="text-sm text-slate-500">{unit.titleHr}</p>
+                  <p className="text-sm text-slate-400">{unit.titleHr}</p>
                 </div>
                 <div className="text-right ml-3">
                   <p className="text-2xl font-bold text-indigo-600">
