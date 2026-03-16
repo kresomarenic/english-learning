@@ -13,10 +13,13 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: "Učimo Engleski",
   },
+  icons: {
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#6366f1",
+  themeColor: "#ec4899",
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
