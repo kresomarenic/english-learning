@@ -1,0 +1,18 @@
+{
+  "grade": 4,
+  "unit": 1,
+  "title": "School",
+  "titleHr": "Škola",
+  "words": [
+    { "en": "book", "hr": "knjiga" },
+    { "en": "pencil", "hr": "olovka" },
+    { "en": "ruler", "hr": "ravnalo" },
+    { "en": "bag", "hr": "torba" },
+    { "en": "desk", "hr": "klupa" },
+    { "en": "teacher", "hr": "učiteljica" },
+    { "en": "classroom", "hr": "učionica" },
+    { "en": "homework", "hr": "domaća zadaća" },
+    { "en": "lesson", "hr": "lekcija" },
+    { "en": "test", "hr": "ispit" }
+  ]
+}

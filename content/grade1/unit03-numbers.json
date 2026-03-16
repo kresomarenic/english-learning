@@ -1,0 +1,18 @@
+{
+  "grade": 1,
+  "unit": 3,
+  "title": "Numbers",
+  "titleHr": "Brojevi",
+  "words": [
+    { "en": "one", "hr": "jedan" },
+    { "en": "two", "hr": "dva" },
+    { "en": "three", "hr": "tri" },
+    { "en": "four", "hr": "četiri" },
+    { "en": "five", "hr": "pet" },
+    { "en": "six", "hr": "šest" },
+    { "en": "seven", "hr": "sedam" },
+    { "en": "eight", "hr": "osam" },
+    { "en": "nine", "hr": "devet" },
+    { "en": "ten", "hr": "deset" }
+  ]
+}

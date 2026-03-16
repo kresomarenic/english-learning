@@ -1,0 +1,18 @@
+{
+  "grade": 3,
+  "unit": 1,
+  "title": "Food",
+  "titleHr": "Hrana",
+  "words": [
+    { "en": "apple", "hr": "jabuka" },
+    { "en": "banana", "hr": "banana" },
+    { "en": "bread", "hr": "kruh" },
+    { "en": "milk", "hr": "mlijeko" },
+    { "en": "water", "hr": "voda" },
+    { "en": "egg", "hr": "jaje" },
+    { "en": "cheese", "hr": "sir" },
+    { "en": "chicken", "hr": "piletina" },
+    { "en": "rice", "hr": "riža" },
+    { "en": "soup", "hr": "juha" }
+  ]
+}

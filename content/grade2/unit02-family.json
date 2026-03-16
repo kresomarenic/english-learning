@@ -1,0 +1,18 @@
+{
+  "grade": 2,
+  "unit": 2,
+  "title": "Family",
+  "titleHr": "Obitelj",
+  "words": [
+    { "en": "mother", "hr": "mama" },
+    { "en": "father", "hr": "tata" },
+    { "en": "sister", "hr": "sestra" },
+    { "en": "brother", "hr": "brat" },
+    { "en": "grandmother", "hr": "baka" },
+    { "en": "grandfather", "hr": "djed" },
+    { "en": "aunt", "hr": "teta" },
+    { "en": "uncle", "hr": "ujak" },
+    { "en": "baby", "hr": "beba" },
+    { "en": "family", "hr": "obitelj" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "grade": 2,
+  "unit": 1,
+  "title": "Animals",
+  "titleHr": "Životinje",
+  "words": [
+    { "en": "cat", "hr": "mačka" },
+    { "en": "dog", "hr": "pas" },
+    { "en": "bird", "hr": "ptica" },
+    { "en": "fish", "hr": "riba" },
+    { "en": "horse", "hr": "konj" },
+    { "en": "cow", "hr": "krava" },
+    { "en": "pig", "hr": "svinja" },
+    { "en": "rabbit", "hr": "zec" },
+    { "en": "frog", "hr": "žaba" },
+    { "en": "duck", "hr": "patka" }
+  ]
+}

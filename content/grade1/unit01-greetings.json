@@ -1,0 +1,17 @@
+{
+  "grade": 1,
+  "unit": 1,
+  "title": "Greetings",
+  "titleHr": "Pozdravi",
+  "words": [
+    { "en": "hello", "hr": "bok" },
+    { "en": "goodbye", "hr": "doviđenja" },
+    { "en": "good morning", "hr": "dobro jutro" },
+    { "en": "good afternoon", "hr": "dobar dan" },
+    { "en": "good night", "hr": "laku noć" },
+    { "en": "please", "hr": "molim" },
+    { "en": "thank you", "hr": "hvala" },
+    { "en": "yes", "hr": "da" },
+    { "en": "no", "hr": "ne" }
+  ]
+}
