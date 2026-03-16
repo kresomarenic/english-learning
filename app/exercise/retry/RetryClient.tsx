@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Word, Direction, SessionResult } from '@/types/content'
 import { useSpeechRecognition } from '@/hooks/useSpeechRecognition'
@@ -22,21 +22,23 @@ function isCorrect(heard: string, expected: string, alternatives: string[]): boo
 }
 
 export default function RetryClient() {
-  const router = useRouter()
-  const params = useSearchParams()
+  const router    = useRouter()
+  const params    = useSearchParams()
   const direction = (params.get('direction') ?? 'en-hr') as Direction
 
-  const [words, setWords] = useState<Word[]>([])
-  const [index, setIndex] = useState(0)
-  const [results, setResults] = useState<SessionResult[]>([])
-  const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null)
+  const [words,     setWords]    = useState<Word[]>([])
+  const [index,     setIndex]    = useState(0)
+  const [results,   setResults]  = useState<SessionResult[]>([])
+  const [feedback,  setFeedback] = useState<'correct' | 'wrong' | null>(null)
   const [heardText, setHeardText] = useState('')
 
   const speechLang = direction === 'en-hr' ? 'hr' : 'en-GB'
   const displayLang = direction === 'en-hr' ? 'en-GB' : 'hr'
 
-  const { status, transcript, start, stop, getAlternatives } = useSpeechRecognition(speechLang)
-  const { speak } = useTTS()
+  const { status, transcript, start, stop, reset, getAlternatives } = useSpeechRecognition(speechLang)
+  const { speak, isSpeaking } = useTTS()
+
+  const [speakScheduled, setSpeakScheduled] = useState(false)
 
   useEffect(() => {
     const raw = sessionStorage.getItem('retryWords')
@@ -50,11 +52,23 @@ export default function RetryClient() {
   const prompt = currentWord ? (direction === 'en-hr' ? currentWord.en : currentWord.hr) : ''
   const answer = currentWord ? (direction === 'en-hr' ? currentWord.hr : currentWord.en) : ''
 
+  // Clear speakScheduled once TTS actually starts
   useEffect(() => {
-    if (currentWord) setTimeout(() => speak(prompt, displayLang), 300)
+    if (isSpeaking) setSpeakScheduled(false)
+  }, [isSpeaking])
+
+  // Auto-speak when word changes — block mic immediately, 5 s safety fallback
+  useEffect(() => {
+    if (currentWord) {
+      setSpeakScheduled(true)
+      speak(prompt, displayLang)
+      const safety = setTimeout(() => setSpeakScheduled(false), 5000)
+      return () => { clearTimeout(safety); setSpeakScheduled(false) }
+    }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, words.length])
 
+  // Handle recognition result
   useEffect(() => {
     if (status !== 'done' || !currentWord) return
     const alternatives = getAlternatives()
@@ -65,7 +79,8 @@ export default function RetryClient() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status])
 
-  function handleNext() {
+  const handleNext = useCallback(() => {
+    reset()
     setFeedback(null)
     setHeardText('')
     if (index + 1 >= words.length) {
@@ -74,19 +89,19 @@ export default function RetryClient() {
     } else {
       setIndex((i) => i + 1)
     }
-  }
+  }, [index, words.length, results, reset, router])
 
   useEffect(() => {
     if (feedback === 'correct') {
       const t = setTimeout(handleNext, 1200)
       return () => clearTimeout(t)
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [feedback])
+  }, [feedback, handleNext])
 
   if (!words.length) return null
 
-  const progress = (index / words.length) * 100
+  const micBlocked = speakScheduled || isSpeaking
+  const progress   = (index / words.length) * 100
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-red-50 to-slate-50">
@@ -130,14 +145,28 @@ export default function RetryClient() {
           </div>
         )}
 
+        {/* Tap to start, Chrome auto-stops on result. Tap again to cancel. */}
         {!feedback ? (
           <button
-            onPointerDown={start}
-            onPointerUp={stop}
-            onPointerLeave={stop}
-            className={`w-24 h-24 rounded-full text-4xl shadow-lg transition-all active:scale-95 select-none ${status === 'listening' ? 'bg-red-500 text-white scale-110 animate-pulse' : 'bg-indigo-600 text-white hover:bg-indigo-700'}`}
+            onClick={
+              micBlocked || status === 'unsupported'
+                ? undefined
+                : status === 'listening'
+                  ? stop
+                  : start
+            }
+            disabled={micBlocked || status === 'unsupported'}
+            className={`w-24 h-24 rounded-full text-4xl shadow-lg transition-all select-none
+              ${micBlocked
+                ? 'bg-amber-100 text-amber-400 cursor-not-allowed animate-pulse'
+                : status === 'listening'
+                  ? 'bg-red-500 text-white scale-110 animate-pulse'
+                  : status === 'unsupported'
+                    ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                    : 'bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95'
+              }`}
           >
-            {status === 'listening' ? '🎙' : '🎤'}
+            {micBlocked ? '🔊' : status === 'listening' ? '🎙' : '🎤'}
           </button>
         ) : feedback === 'wrong' ? (
           <button onClick={handleNext} className="w-full bg-indigo-600 text-white font-bold py-4 rounded-2xl text-lg shadow active:scale-95 transition-transform">
@@ -147,7 +176,11 @@ export default function RetryClient() {
 
         {status !== 'listening' && !feedback && (
           <p className="text-slate-400 text-sm mt-4 text-center">
-            {direction === 'en-hr' ? 'Drži gumb i govori na hrvatskom' : 'Drži gumb i govori na engleskom'}
+            {micBlocked
+              ? 'Pričekaj da završi izgovor...'
+              : direction === 'en-hr'
+                ? 'Pritisni i govori na hrvatskom'
+                : 'Pritisni i govori na engleskom'}
           </p>
         )}
       </div>

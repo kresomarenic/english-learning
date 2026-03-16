@@ -41,6 +41,12 @@ export default function ExerciseClient() {
   const { status, transcript, start, stop, reset, getAlternatives } = useSpeechRecognition(speechLang)
   const { speak, isSpeaking } = useTTS()
 
+  // Blocks the mic button from the moment we KNOW TTS is coming until it
+  // actually starts playing (the 50 ms speak() delay + polling latency gap).
+  // Without this, the button is briefly pressable between words, which lets
+  // the mic start just before TTS fires, causing an audio conflict.
+  const [speakScheduled, setSpeakScheduled] = useState(false)
+
   // Load words
   useEffect(() => {
     async function load() {
@@ -71,10 +77,23 @@ export default function ExerciseClient() {
       : currentWord.en
     : ''
 
+  // Clear speakScheduled the moment TTS actually starts playing
+  useEffect(() => {
+    if (isSpeaking) setSpeakScheduled(false)
+  }, [isSpeaking])
+
   // Auto-speak prompt when word changes
   useEffect(() => {
     if (currentWord && !loading) {
-      setTimeout(() => speak(prompt, displayLang), 300)
+      // Block the mic button immediately — before TTS even starts
+      setSpeakScheduled(true)
+      speak(prompt, displayLang)
+      // Safety: release the block after 5 s in case TTS never fires
+      const safety = setTimeout(() => setSpeakScheduled(false), 5000)
+      return () => {
+        clearTimeout(safety)
+        setSpeakScheduled(false)
+      }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [index, loading])
@@ -125,6 +144,9 @@ export default function ExerciseClient() {
   }
 
   if (!currentWord) return null
+
+  // Mic is blocked while TTS is scheduled OR actively playing
+  const micBlocked = speakScheduled || isSpeaking
 
   const progress = ((index) / words.length) * 100
 
@@ -211,15 +233,19 @@ export default function ExerciseClient() {
           </div>
         )}
 
-        {/* Mic / Next button */}
+        {/* Tap to start, Chrome auto-stops on result. Tap again to cancel. */}
         {!feedback ? (
           <button
-            onPointerDown={isSpeaking || status === 'unsupported' ? undefined : start}
-            onPointerUp={stop}
-            onPointerLeave={stop}
-            disabled={isSpeaking || status === 'unsupported'}
+            onClick={
+              micBlocked || status === 'unsupported'
+                ? undefined
+                : status === 'listening'
+                  ? stop
+                  : start
+            }
+            disabled={micBlocked || status === 'unsupported'}
             className={`w-24 h-24 rounded-full text-4xl shadow-lg transition-all select-none
-              ${isSpeaking
+              ${micBlocked
                 ? 'bg-amber-100 text-amber-400 cursor-not-allowed animate-pulse'
                 : status === 'listening'
                   ? 'bg-red-500 text-white scale-110 animate-pulse'
@@ -228,7 +254,7 @@ export default function ExerciseClient() {
                     : 'bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95'
               }`}
           >
-            {isSpeaking ? '🔊' : status === 'listening' ? '🎙' : '🎤'}
+            {micBlocked ? '🔊' : status === 'listening' ? '🎙' : '🎤'}
           </button>
         ) : feedback === 'wrong' ? (
           <button
@@ -247,13 +273,18 @@ export default function ExerciseClient() {
 
         {status !== 'listening' && !feedback && (
           <p className="text-slate-400 text-sm mt-4 text-center">
-            {isSpeaking
+            {micBlocked
               ? 'Pričekaj da završi izgovor...'
               : direction === 'en-hr'
-                ? 'Drži gumb i govori na hrvatskom'
-                : 'Drži gumb i govori na engleskom'}
+                ? 'Pritisni i govori na hrvatskom'
+                : 'Pritisni i govori na engleskom'}
           </p>
         )}
+
+        {/* DEBUG — remove before release */}
+        <p className="text-xs text-slate-300 mt-2 text-center font-mono">
+          status={status} speaking={String(isSpeaking)} scheduled={String(speakScheduled)}
+        </p>
       </div>
     </div>
   )
