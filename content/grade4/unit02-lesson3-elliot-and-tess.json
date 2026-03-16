@@ -1,0 +1,20 @@
+{
+  "grade": 4,
+  "unit": 2,
+  "title": "Unit 2 – Elliot and Tess",
+  "titleHr": "Jedinica 2 – Elliot i Tess",
+  "words": [
+    { "en": "brush your teeth", "hr": "prati zube" },
+    { "en": "documentary film", "hr": "dokumentarni film" },
+    { "en": "early", "hr": "rano" },
+    { "en": "everything", "hr": "sve" },
+    { "en": "have breakfast", "hr": "doručkovati" },
+    { "en": "know", "hr": "znati" },
+    { "en": "late", "hr": "kasno" },
+    { "en": "learn", "hr": "učiti" },
+    { "en": "practise", "hr": "uvježbavati" },
+    { "en": "think about", "hr": "razmišljati o nekome" },
+    { "en": "watch", "hr": "gledati" },
+    { "en": "work out", "hr": "trenirati" }
+  ]
+}

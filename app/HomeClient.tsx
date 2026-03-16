@@ -131,9 +131,6 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
                     >
                       {GRADE_LABELS[unit.grade - 1]}
                     </span>
-                    <span className="text-xs text-slate-400">
-                      Lekcija {unit.unit}
-                    </span>
                   </div>
                   <p className="font-semibold text-slate-800">{unit.title}</p>
                   <p className="text-sm text-slate-500">{unit.titleHr}</p>

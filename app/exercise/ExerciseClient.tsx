@@ -35,8 +35,8 @@ export default function ExerciseClient() {
   const [heardText, setHeardText] = useState('')
   const [loading, setLoading] = useState(true)
 
-  const speechLang = direction === 'en-hr' ? 'hr' : 'en-US'
-  const displayLang = direction === 'en-hr' ? 'en-US' : 'hr'
+  const speechLang = direction === 'en-hr' ? 'hr' : 'en-GB'
+  const displayLang = direction === 'en-hr' ? 'en-GB' : 'hr'
 
   const { status, transcript, start, stop, getAlternatives } = useSpeechRecognition(speechLang)
   const { speak } = useTTS()
@@ -149,7 +149,7 @@ export default function ExerciseClient() {
           </span>
         </div>
         <p className="text-xs text-center text-slate-400">
-          {direction === 'en-hr' ? 'Reci na hrvatskom' : 'Say it in English'}
+          {direction === 'en-hr' ? 'Reci na hrvatskom' : 'Reci na engleskom'}
         </p>
       </div>
 
@@ -246,7 +246,7 @@ export default function ExerciseClient() {
           <p className="text-slate-400 text-sm mt-4 text-center">
             {direction === 'en-hr'
               ? 'Drži gumb i govori na hrvatskom'
-              : 'Hold the button and speak in English'}
+              : 'Drži gumb i govori na engleskom'}
           </p>
         )}
       </div>

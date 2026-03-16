@@ -1,0 +1,17 @@
+{
+  "grade": 4,
+  "unit": 1,
+  "title": "Unit 1 – A Happy Family",
+  "titleHr": "Jedinica 1 – Sretna obitelj",
+  "words": [
+    { "en": "aunt", "hr": "ujna, strina, tetka" },
+    { "en": "cousin", "hr": "bratić, sestrična" },
+    { "en": "daughter", "hr": "kći" },
+    { "en": "grandma", "hr": "baka" },
+    { "en": "grandpa", "hr": "djed" },
+    { "en": "grandparents", "hr": "baka i djed" },
+    { "en": "parents", "hr": "roditelji" },
+    { "en": "son", "hr": "sin" },
+    { "en": "uncle", "hr": "ujak, stric, tetak" }
+  ]
+}

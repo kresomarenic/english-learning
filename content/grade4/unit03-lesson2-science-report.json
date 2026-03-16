@@ -1,0 +1,25 @@
+{
+  "grade": 4,
+  "unit": 3,
+  "title": "Unit 3 – Science Report",
+  "titleHr": "Jedinica 3 – Znanstveni izvještaj",
+  "words": [
+    { "en": "close", "hr": "blizu" },
+    { "en": "dark", "hr": "tamno" },
+    { "en": "degree", "hr": "stupanj" },
+    { "en": "equator", "hr": "ekvator, polutnik" },
+    { "en": "hour", "hr": "sat" },
+    { "en": "ice", "hr": "led" },
+    { "en": "near", "hr": "blizu" },
+    { "en": "North Pole", "hr": "Sjeverni pol" },
+    { "en": "part", "hr": "dio" },
+    { "en": "presentation", "hr": "prezentacija" },
+    { "en": "rainforest", "hr": "tropska kišna šuma" },
+    { "en": "shiny", "hr": "sjajan" },
+    { "en": "South Pole", "hr": "južni pol" },
+    { "en": "star", "hr": "zvijezda" },
+    { "en": "sun", "hr": "sunce" },
+    { "en": "sunshine", "hr": "sunčeva svjetlost" },
+    { "en": "travel", "hr": "putovati" }
+  ]
+}

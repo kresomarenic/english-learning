@@ -1,0 +1,33 @@
+{
+  "grade": 4,
+  "unit": 3,
+  "title": "Unit 3 – Uncle Phil's Relatives",
+  "titleHr": "Jedinica 3 – Stric Philovi rođaci",
+  "words": [
+    { "en": "around", "hr": "oko" },
+    { "en": "autumn", "hr": "jesen" },
+    { "en": "beach", "hr": "plaža" },
+    { "en": "camera", "hr": "kamera" },
+    { "en": "city", "hr": "grad" },
+    { "en": "collect eggs", "hr": "skupljati jaja" },
+    { "en": "e-mail", "hr": "elektronička pošta" },
+    { "en": "feed the animals", "hr": "hraniti životinje" },
+    { "en": "holidays", "hr": "praznici" },
+    { "en": "keep animals", "hr": "držati životinje" },
+    { "en": "laptop", "hr": "prijenosno računalo" },
+    { "en": "milk the cows", "hr": "masti krave" },
+    { "en": "online lessons", "hr": "online nastava" },
+    { "en": "outdoors", "hr": "izvan kuće, na otvorenom" },
+    { "en": "project", "hr": "projekt" },
+    { "en": "relatives", "hr": "rodaci" },
+    { "en": "sailing", "hr": "jedrenje" },
+    { "en": "season", "hr": "godišnje doba" },
+    { "en": "sports camp", "hr": "sportski kamp" },
+    { "en": "spring", "hr": "proljeće" },
+    { "en": "study room", "hr": "radna soba" },
+    { "en": "surfing", "hr": "surfanje" },
+    { "en": "vegetable garden", "hr": "povrtnjak" },
+    { "en": "weather", "hr": "vrijeme" },
+    { "en": "week", "hr": "tjedan" }
+  ]
+}

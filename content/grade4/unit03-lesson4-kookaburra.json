@@ -1,0 +1,25 @@
+{
+  "grade": 4,
+  "unit": 3,
+  "title": "Unit 3 – Kookaburra",
+  "titleHr": "Jedinica 3 – Kukabara",
+  "words": [
+    { "en": "bush", "hr": "grmlje, tlo prekriveno travom u Australiji" },
+    { "en": "forest", "hr": "šuma" },
+    { "en": "gay", "hr": "veseo" },
+    { "en": "gum drop", "hr": "gumeni ušećereni bombon" },
+    { "en": "gum tree", "hr": "eukaliptus" },
+    { "en": "insect", "hr": "kukac, insekt" },
+    { "en": "laugh", "hr": "smijati se" },
+    { "en": "boomerang", "hr": "bumerang" },
+    { "en": "capital", "hr": "glavni grad" },
+    { "en": "continent", "hr": "kontinent" },
+    { "en": "country", "hr": "zemlja" },
+    { "en": "dingo", "hr": "dingo, vrsta australskog divljeg psa" },
+    { "en": "hunting", "hr": "lov" },
+    { "en": "kangaroo", "hr": "klokan" },
+    { "en": "koala", "hr": "koala" },
+    { "en": "live", "hr": "živjeti" },
+    { "en": "species", "hr": "vrsta" }
+  ]
+}

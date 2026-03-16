@@ -1,0 +1,22 @@
+{
+  "grade": 4,
+  "unit": 2,
+  "title": "Unit 2 – School Can Be Fun",
+  "titleHr": "Jedinica 2 – Škola može biti zabavna",
+  "words": [
+    { "en": "art", "hr": "likovni odgoj" },
+    { "en": "Croatian", "hr": "hrvatski jezik" },
+    { "en": "drawing", "hr": "crtanje" },
+    { "en": "English", "hr": "engleski jezik" },
+    { "en": "French", "hr": "francuski jezik" },
+    { "en": "German", "hr": "njemački jezik" },
+    { "en": "IT", "hr": "informatika" },
+    { "en": "Italian", "hr": "talijanski jezik" },
+    { "en": "maths", "hr": "matematika" },
+    { "en": "music", "hr": "glazbeni odgoj" },
+    { "en": "P.E.", "hr": "tjelesni odgoj" },
+    { "en": "R.E.", "hr": "vjeronauk" },
+    { "en": "science", "hr": "priroda" },
+    { "en": "subject", "hr": "školski predmet" }
+  ]
+}

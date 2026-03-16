@@ -1,0 +1,20 @@
+{
+  "grade": 4,
+  "unit": 2,
+  "title": "Unit 2 – My Favourite Part of the Day",
+  "titleHr": "Jedinica 2 – Moj omiljeni dio dana",
+  "words": [
+    { "en": "always", "hr": "uvijek" },
+    { "en": "do homework", "hr": "napisati domaću zadaću" },
+    { "en": "have breakfast", "hr": "doručkovati" },
+    { "en": "forget", "hr": "zaboraviti" },
+    { "en": "make dinner", "hr": "raditi večeru" },
+    { "en": "never", "hr": "nikada" },
+    { "en": "often", "hr": "često" },
+    { "en": "roller-skate", "hr": "voziti se na kotuljkama" },
+    { "en": "sometimes", "hr": "ponekad" },
+    { "en": "stay at home", "hr": "ostati kod kuće" },
+    { "en": "usually", "hr": "obično" },
+    { "en": "wake up", "hr": "probuditi se" }
+  ]
+}

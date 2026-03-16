@@ -32,8 +32,8 @@ export default function RetryClient() {
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null)
   const [heardText, setHeardText] = useState('')
 
-  const speechLang = direction === 'en-hr' ? 'hr' : 'en-US'
-  const displayLang = direction === 'en-hr' ? 'en-US' : 'hr'
+  const speechLang = direction === 'en-hr' ? 'hr' : 'en-GB'
+  const displayLang = direction === 'en-hr' ? 'en-GB' : 'hr'
 
   const { status, transcript, start, stop, getAlternatives } = useSpeechRecognition(speechLang)
   const { speak } = useTTS()
@@ -147,7 +147,7 @@ export default function RetryClient() {
 
         {status !== 'listening' && !feedback && (
           <p className="text-slate-400 text-sm mt-4 text-center">
-            {direction === 'en-hr' ? 'Drži gumb i govori na hrvatskom' : 'Hold the button and speak in English'}
+            {direction === 'en-hr' ? 'Drži gumb i govori na hrvatskom' : 'Drži gumb i govori na engleskom'}
           </p>
         )}
       </div>

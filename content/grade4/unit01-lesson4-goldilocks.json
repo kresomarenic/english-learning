@@ -1,0 +1,16 @@
+{
+  "grade": 4,
+  "unit": 1,
+  "title": "Unit 1 – Goldilocks and the Three Bears",
+  "titleHr": "Jedinica 1 – Zlatokosa i tri medvjeda",
+  "words": [
+    { "en": "curious", "hr": "znatižaljan" },
+    { "en": "porridge", "hr": "kaša" },
+    { "en": "tiny", "hr": "sićušan" },
+    { "en": "famous", "hr": "slavan" },
+    { "en": "flag", "hr": "zastava" },
+    { "en": "palace", "hr": "palača" },
+    { "en": "Royal family", "hr": "kraljevska obitelj" },
+    { "en": "Union Jack", "hr": "naziv za britansku zastavu" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "grade": 4,
+  "unit": 3,
+  "title": "Unit 3 – Keep Moving",
+  "titleHr": "Jedinica 3 – Krećimo se",
+  "words": [
+    { "en": "backpack", "hr": "naprtnjača, ruksak" },
+    { "en": "countryside", "hr": "priroda, izvan grada" },
+    { "en": "cricket", "hr": "kriket" },
+    { "en": "cycling", "hr": "bicikliranje" },
+    { "en": "fan", "hr": "navijač, obožavatelj" },
+    { "en": "golf", "hr": "golf" },
+    { "en": "grab", "hr": "zgrabiti" },
+    { "en": "helmet", "hr": "kaciga" },
+    { "en": "hiking", "hr": "planinarenje" },
+    { "en": "hiking boots", "hr": "planinarske cipele" },
+    { "en": "racket", "hr": "reket" },
+    { "en": "school team", "hr": "školska momčad" },
+    { "en": "shorts", "hr": "kratke hlače" },
+    { "en": "shower", "hr": "tuš" },
+    { "en": "swimsuit", "hr": "kupaći kostim" },
+    { "en": "team sports", "hr": "momčadski sport" },
+    { "en": "tennis", "hr": "tenis" },
+    { "en": "trainers", "hr": "tenisice za trčanje" },
+    { "en": "volleyball", "hr": "odbojka" }
+  ]
+}

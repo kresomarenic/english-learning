@@ -1,0 +1,24 @@
+{
+  "grade": 4,
+  "unit": 1,
+  "title": "Unit 1 – The Zenex Family",
+  "titleHr": "Jedinica 1 – Obitelj Zenex",
+  "words": [
+    { "en": "arm", "hr": "ruka" },
+    { "en": "antenna", "hr": "antena" },
+    { "en": "beard", "hr": "brada" },
+    { "en": "creature", "hr": "stvorenje" },
+    { "en": "different", "hr": "drukčiji" },
+    { "en": "ear", "hr": "uho" },
+    { "en": "Earth", "hr": "Zemlja" },
+    { "en": "eye", "hr": "oko" },
+    { "en": "head", "hr": "glava" },
+    { "en": "leg", "hr": "noga" },
+    { "en": "mouth", "hr": "usta" },
+    { "en": "moustache", "hr": "brkovi" },
+    { "en": "nose", "hr": "nos" },
+    { "en": "planet", "hr": "planet" },
+    { "en": "plump", "hr": "debeljuškast" },
+    { "en": "spaceship", "hr": "svemirski brod" }
+  ]
+}

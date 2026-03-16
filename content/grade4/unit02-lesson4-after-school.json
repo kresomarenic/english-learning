@@ -1,0 +1,28 @@
+{
+  "grade": 4,
+  "unit": 2,
+  "title": "Unit 2 – After School",
+  "titleHr": "Jedinica 2 – Nakon škole",
+  "words": [
+    { "en": "call", "hr": "zvati" },
+    { "en": "comic", "hr": "strip" },
+    { "en": "feed", "hr": "nahraniti" },
+    { "en": "pick up", "hr": "podignuti" },
+    { "en": "animation", "hr": "animacija" },
+    { "en": "coding", "hr": "kodiranje" },
+    { "en": "dark", "hr": "tamno" },
+    { "en": "environment", "hr": "okoliš" },
+    { "en": "geography", "hr": "geografija" },
+    { "en": "history", "hr": "povijest" },
+    { "en": "light", "hr": "svijetlo" },
+    { "en": "programming", "hr": "programiranje" },
+    { "en": "shirt", "hr": "košulja" },
+    { "en": "skirt", "hr": "suknja" },
+    { "en": "socks", "hr": "čarape" },
+    { "en": "Stone Age", "hr": "kameno doba" },
+    { "en": "sweater", "hr": "džemper" },
+    { "en": "sweater vest", "hr": "pleteni prsluk" },
+    { "en": "trousers", "hr": "hlače" },
+    { "en": "Vikings", "hr": "vikinzi" }
+  ]
+}

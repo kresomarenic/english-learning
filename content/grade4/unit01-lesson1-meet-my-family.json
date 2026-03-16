@@ -1,0 +1,23 @@
+{
+  "grade": 4,
+  "unit": 1,
+  "title": "Unit 1 – Meet My Family",
+  "titleHr": "Jedinica 1 – Upoznaj moju obitelj",
+  "words": [
+    { "en": "aliens", "hr": "vanzemaljci" },
+    { "en": "astronomer", "hr": "astronom" },
+    { "en": "blonde hair", "hr": "plava kosa" },
+    { "en": "capital", "hr": "glavni grad" },
+    { "en": "clever", "hr": "pametan" },
+    { "en": "grey hair", "hr": "sijeda kosa" },
+    { "en": "old", "hr": "star" },
+    { "en": "pretty", "hr": "lijep" },
+    { "en": "scientist", "hr": "znanstvenik" },
+    { "en": "slim", "hr": "mršav" },
+    { "en": "species", "hr": "vrste" },
+    { "en": "strange", "hr": "čudan" },
+    { "en": "strong", "hr": "jak" },
+    { "en": "tall", "hr": "visok" },
+    { "en": "telescope", "hr": "teleskop" }
+  ]
+}
