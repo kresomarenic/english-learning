@@ -1,0 +1,23 @@
+{
+  "grade": 3,
+  "unit": 1,
+  "title": "Pixy's New Coat",
+  "titleHr": "Pixyn novi kaput",
+  "words": [
+    { "en": "again", "hr": "ponovo" },
+    { "en": "Arctic", "hr": "Arktik" },
+    { "en": "beautiful", "hr": "lijep" },
+    { "en": "happy", "hr": "sretan" },
+    { "en": "laugh", "hr": "smijati se" },
+    { "en": "new coat", "hr": "nov kaput" },
+    { "en": "parasol", "hr": "suncobran" },
+    { "en": "perfect", "hr": "savršen" },
+    { "en": "slide", "hr": "klizati se" },
+    { "en": "summer coat", "hr": "ljetni kaput" },
+    { "en": "today", "hr": "danas" },
+    { "en": "too big", "hr": "prevelik" },
+    { "en": "too small", "hr": "premalen" },
+    { "en": "sad", "hr": "tužan" },
+    { "en": "waddle", "hr": "gegati se" }
+  ]
+}

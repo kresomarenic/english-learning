@@ -1,0 +1,12 @@
+{
+  "grade": 3,
+  "unit": 1,
+  "title": "The Summer Rap",
+  "titleHr": "Ljetni rap",
+  "words": [
+    { "en": "a cup of tea", "hr": "šalica čaja" },
+    { "en": "now", "hr": "sada" },
+    { "en": "play football", "hr": "igrati nogomet" },
+    { "en": "write postcards", "hr": "pisati razglednice" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "grade": 3,
+  "unit": 7,
+  "title": "Robbie's Friend",
+  "titleHr": "Robbiejev prijatelj",
+  "words": [
+    { "en": "clever", "hr": "pametan" },
+    { "en": "fix", "hr": "popraviti" },
+    { "en": "Moon", "hr": "Mjesec" },
+    { "en": "only", "hr": "samo" },
+    { "en": "planet", "hr": "planet" },
+    { "en": "postcard", "hr": "razglednica" },
+    { "en": "pretty", "hr": "lijep, dražestan" },
+    { "en": "solve", "hr": "riješiti" },
+    { "en": "space", "hr": "svemir" },
+    { "en": "space jacket", "hr": "svemirska jakna" },
+    { "en": "spaceship", "hr": "svemirski brod" },
+    { "en": "travelling", "hr": "putovanje" },
+    { "en": "young", "hr": "mlad" }
+  ]
+}

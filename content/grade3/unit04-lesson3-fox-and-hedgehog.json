@@ -1,0 +1,30 @@
+{
+  "grade": 3,
+  "unit": 4,
+  "title": "The Fox and the Hedgehog",
+  "titleHr": "Lisac i jež",
+  "words": [
+    { "en": "armchair", "hr": "naslonjač" },
+    { "en": "blanket", "hr": "prekrivač" },
+    { "en": "breakfast", "hr": "doručak" },
+    { "en": "carry a basket", "hr": "nositi košaru" },
+    { "en": "clean a house", "hr": "čistiti kuću" },
+    { "en": "cosy", "hr": "udoban" },
+    { "en": "delicious", "hr": "ukusan" },
+    { "en": "dinner", "hr": "večera" },
+    { "en": "drink", "hr": "piti" },
+    { "en": "forest", "hr": "šuma" },
+    { "en": "fox", "hr": "lisac" },
+    { "en": "hard-working", "hr": "marljiv" },
+    { "en": "hedgehog", "hr": "jež" },
+    { "en": "lazy", "hr": "lijen" },
+    { "en": "lunch", "hr": "ručak" },
+    { "en": "lemonade", "hr": "limunade" },
+    { "en": "mirror", "hr": "ogledalo" },
+    { "en": "never", "hr": "nikad" },
+    { "en": "outside", "hr": "vani" },
+    { "en": "promise", "hr": "obećati" },
+    { "en": "snore", "hr": "hrkati" },
+    { "en": "twig", "hr": "grančica" }
+  ]
+}

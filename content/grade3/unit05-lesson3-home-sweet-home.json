@@ -1,0 +1,16 @@
+{
+  "grade": 3,
+  "unit": 5,
+  "title": "Home Sweet Home",
+  "titleHr": "Mili dom",
+  "words": [
+    { "en": "bright", "hr": "sjajan" },
+    { "en": "dirty", "hr": "prljav" },
+    { "en": "fireplace", "hr": "kamin" },
+    { "en": "flat", "hr": "stan" },
+    { "en": "let in fresh air", "hr": "pustiti svježi zrak unutra" },
+    { "en": "outside", "hr": "vani" },
+    { "en": "smoke", "hr": "dim" },
+    { "en": "sneeze", "hr": "kihati" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "grade": 3,
+  "unit": 3,
+  "title": "Super Suzy Is Back!",
+  "titleHr": "Super Suzy se vratila!",
+  "words": [
+    { "en": "afternoon", "hr": "popodne" },
+    { "en": "bring milk", "hr": "donijeti mlijeko" },
+    { "en": "brush teeth", "hr": "prati zube" },
+    { "en": "call", "hr": "poziv" },
+    { "en": "camel", "hr": "deva" },
+    { "en": "careful", "hr": "pažljiv" },
+    { "en": "cry", "hr": "plakati" },
+    { "en": "desert", "hr": "pustinja" },
+    { "en": "drive a car", "hr": "voziti auto" },
+    { "en": "eat spinach", "hr": "jesti špinat" },
+    { "en": "evening", "hr": "večer" },
+    { "en": "have breakfast", "hr": "doručkovati" },
+    { "en": "have lunch", "hr": "ručati" },
+    { "en": "have dinner", "hr": "večerati" },
+    { "en": "fly a helicopter", "hr": "voziti helikopter" },
+    { "en": "flippers", "hr": "peraje" },
+    { "en": "glass of milk", "hr": "šalica mlijeka" },
+    { "en": "morning", "hr": "jutro" },
+    { "en": "ride a motorbike", "hr": "voziti motor" },
+    { "en": "roller-skate", "hr": "voziti se na koturljakama" },
+    { "en": "sleep", "hr": "spavati" },
+    { "en": "tired", "hr": "umoran" },
+    { "en": "trouble", "hr": "nevolja" },
+    { "en": "watch TV", "hr": "gledati televiziju" }
+  ]
+}

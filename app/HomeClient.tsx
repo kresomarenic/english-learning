@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { UnitMeta, Direction } from '@/types/content'
+import PWAInstallButton from '@/app/components/PWAInstallButton'
 
 const GRADE_LABELS = ['1. razred', '2. razred', '3. razred', '4. razred']
 const GRADE_COLORS = [
@@ -12,12 +13,14 @@ const GRADE_COLORS = [
   'bg-yellow-100 border-yellow-300 text-yellow-800',
 ]
 
+const ACTIVE_GRADES = [3, 4]
+
 export default function HomeClient({ units }: { units: UnitMeta[] }) {
   const router = useRouter()
   const [selectedGrade, setSelectedGrade] = useState<number | null>(null)
   const [direction, setDirection] = useState<Direction>('en-hr')
 
-  const grades = [1, 2, 3, 4]
+  const grades = ACTIVE_GRADES
   const filteredUnits = selectedGrade
     ? units.filter((u) => u.grade === selectedGrade)
     : units
@@ -32,7 +35,10 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-50 to-slate-50">
       {/* Header */}
-      <header className="px-4 pt-10 pb-4 text-center">
+      <header className="px-4 pt-10 pb-4 text-center relative">
+        <div className="absolute top-4 right-4">
+          <PWAInstallButton />
+        </div>
         <div className="text-4xl mb-2">🌟</div>
         <h1 className="text-2xl font-bold text-indigo-700">Učimo Engleski!</h1>
         <p className="text-slate-500 text-sm mt-1">Odaberi lekciju i vježbaj</p>

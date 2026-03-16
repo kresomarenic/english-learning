@@ -1,0 +1,32 @@
+{
+  "grade": 3,
+  "unit": 2,
+  "title": "A New Classroom",
+  "titleHr": "Nova učionica",
+  "words": [
+    { "en": "amazing", "hr": "izvanredan" },
+    { "en": "book", "hr": "knjiga" },
+    { "en": "bookcase", "hr": "polica za knjige" },
+    { "en": "blackboard", "hr": "ploča" },
+    { "en": "chair", "hr": "stolica" },
+    { "en": "chalk", "hr": "kreda" },
+    { "en": "classroom", "hr": "učionica" },
+    { "en": "computer", "hr": "računalo" },
+    { "en": "desk", "hr": "stol" },
+    { "en": "eraser", "hr": "gumica" },
+    { "en": "floor", "hr": "pod" },
+    { "en": "globe", "hr": "globus" },
+    { "en": "notebook", "hr": "bilježnica" },
+    { "en": "pencil case", "hr": "pernica" },
+    { "en": "pinboard", "hr": "pano" },
+    { "en": "poster", "hr": "poster" },
+    { "en": "projector", "hr": "projektor" },
+    { "en": "ruler", "hr": "ravnalo" },
+    { "en": "schoolbag", "hr": "školska torba" },
+    { "en": "sharpener", "hr": "šiljilo" },
+    { "en": "sponge", "hr": "spužva" },
+    { "en": "TV set", "hr": "televizor" },
+    { "en": "wall", "hr": "zid" },
+    { "en": "world map", "hr": "karta svijeta" }
+  ]
+}

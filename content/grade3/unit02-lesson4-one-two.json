@@ -1,0 +1,14 @@
+{
+  "grade": 3,
+  "unit": 2,
+  "title": "One, Two...",
+  "titleHr": "Jedan, dva...",
+  "words": [
+    { "en": "hen", "hr": "kokoš" },
+    { "en": "shoe", "hr": "cipela" },
+    { "en": "door", "hr": "vrata" },
+    { "en": "straight", "hr": "ravno" },
+    { "en": "sticks", "hr": "štapići" },
+    { "en": "plate", "hr": "tanjur" }
+  ]
+}

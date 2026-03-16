@@ -1,0 +1,14 @@
+{
+  "grade": 3,
+  "unit": 5,
+  "title": "A Magic Mess",
+  "titleHr": "Čarobna zbrka",
+  "words": [
+    { "en": "broom", "hr": "metla" },
+    { "en": "magic mess", "hr": "čarobna zbrka" },
+    { "en": "mix", "hr": "miješati" },
+    { "en": "shake", "hr": "tresti" },
+    { "en": "water", "hr": "voda" },
+    { "en": "without", "hr": "bez" }
+  ]
+}

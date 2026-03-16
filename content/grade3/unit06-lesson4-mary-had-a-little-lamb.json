@@ -1,0 +1,16 @@
+{
+  "grade": 3,
+  "unit": 6,
+  "title": "Mary Had a Little Lamb",
+  "titleHr": "Mary je imala malo janje",
+  "words": [
+    { "en": "against the rules", "hr": "protiv pravila" },
+    { "en": "children", "hr": "djeca" },
+    { "en": "everywhere", "hr": "svugdje" },
+    { "en": "fleece", "hr": "runo" },
+    { "en": "follow", "hr": "slijediti" },
+    { "en": "lamb", "hr": "janje" },
+    { "en": "laugh", "hr": "smijati se" },
+    { "en": "rule", "hr": "pravilo" }
+  ]
+}

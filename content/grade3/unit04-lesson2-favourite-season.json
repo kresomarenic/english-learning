@@ -1,0 +1,22 @@
+{
+  "grade": 3,
+  "unit": 4,
+  "title": "What's Your Favourite Season?",
+  "titleHr": "Koje je tvoje najdraže godišnje doba?",
+  "words": [
+    { "en": "bowery", "hr": "lisnat" },
+    { "en": "chocolate cake", "hr": "torta od čokolade" },
+    { "en": "drippy", "hr": "onaj koji curi" },
+    { "en": "flowery", "hr": "cvjetan" },
+    { "en": "freezy", "hr": "smrznut" },
+    { "en": "mix up", "hr": "pomiješati" },
+    { "en": "nippy", "hr": "hladan" },
+    { "en": "present", "hr": "poklon" },
+    { "en": "shark", "hr": "morski pas" },
+    { "en": "showery", "hr": "kišovit" },
+    { "en": "slippy", "hr": "sklizak" },
+    { "en": "sneezy", "hr": "prehlađen" },
+    { "en": "snowman", "hr": "snjegović" },
+    { "en": "winter sports", "hr": "zimski sportovi" }
+  ]
+}

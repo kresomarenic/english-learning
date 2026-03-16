@@ -1,0 +1,13 @@
+{
+  "grade": 3,
+  "unit": 6,
+  "title": "Old McDonald's Zoo",
+  "titleHr": "Stari McDonaldov zoološki vrt",
+  "words": [
+    { "en": "cheese", "hr": "sir" },
+    { "en": "dangerous", "hr": "opasan" },
+    { "en": "ears", "hr": "uši" },
+    { "en": "legs", "hr": "noge" },
+    { "en": "tail", "hr": "rep" }
+  ]
+}

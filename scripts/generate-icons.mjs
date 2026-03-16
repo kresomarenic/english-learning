@@ -3,9 +3,9 @@ import sharp from 'sharp'
 const SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#f97316"/>
-      <stop offset="50%"  stop-color="#ec4899"/>
-      <stop offset="100%" stop-color="#a855f7"/>
+      <stop offset="0%"   stop-color="#1d4ed8"/>
+      <stop offset="50%"  stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e40af"/>
     </linearGradient>
     <linearGradient id="pill" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#ffffff" stop-opacity="0.35"/>
@@ -16,47 +16,46 @@ const SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width
   <!-- Background rounded square -->
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
 
-  <!-- Gold star top-left -->
-  <polygon points="72,30 83,62 118,62 90,82 101,114 72,94 43,114 54,82 26,62 61,62"
-    fill="#fbbf24" stroke="#f59e0b" stroke-width="2"/>
+  <!-- School building / house shape (roof triangle + body) -->
+  <polygon points="256,68 340,138 172,138" fill="#fbbf24"/>
+  <rect x="186" y="138" width="140" height="90" fill="#fde68a"/>
+  <!-- Door -->
+  <rect x="236" y="178" width="40" height="50" rx="4" fill="#1d4ed8"/>
+  <!-- Windows -->
+  <rect x="196" y="150" width="28" height="22" rx="3" fill="white" opacity="0.8"/>
+  <rect x="288" y="150" width="28" height="22" rx="3" fill="white" opacity="0.8"/>
 
-  <!-- Small gold star top-right -->
-  <polygon points="410,44 418,66 442,66 423,80 431,102 410,88 389,102 397,80 378,66 402,66"
-    fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
-
-  <!-- Tiny star bottom-right -->
-  <polygon points="434,390 440,408 460,408 444,419 450,437 434,426 418,437 424,419 408,408 428,408"
-    fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
-
-  <!-- Small star bottom-left -->
-  <polygon points="68,390 74,408 94,408 78,419 84,437 68,426 52,437 58,419 42,408 62,408"
-    fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
-
-  <!-- Main name — shadow then white -->
-  <text x="258" y="296"
+  <!-- School name: VK -->
+  <text x="256" y="318"
     text-anchor="middle"
     fill="rgba(0,0,0,0.2)"
-    font-size="168"
+    font-size="112"
     font-family="Arial Black, Impact, sans-serif"
     font-weight="900"
-    letter-spacing="2">KLEA</text>
-  <text x="256" y="292"
+    letter-spacing="4">VK</text>
+  <text x="256" y="314"
     text-anchor="middle"
     fill="white"
-    font-size="168"
+    font-size="112"
     font-family="Arial Black, Impact, sans-serif"
     font-weight="900"
-    letter-spacing="2">KLEA</text>
+    letter-spacing="4">VK</text>
 
   <!-- English pill badge -->
-  <rect x="126" y="326" width="260" height="62" rx="31" fill="url(#pill)"/>
-  <text x="256" y="370"
+  <rect x="100" y="338" width="312" height="60" rx="30" fill="url(#pill)"/>
+  <text x="256" y="380"
     text-anchor="middle"
     fill="white"
-    font-size="38"
+    font-size="32"
     font-family="Arial, sans-serif"
     font-weight="700"
-    letter-spacing="3">English</text>
+    letter-spacing="2">English</text>
+
+  <!-- Gold stars -->
+  <polygon points="52,44 60,68 86,68 65,83 73,107 52,92 31,107 39,83 18,68 44,68"
+    fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
+  <polygon points="460,44 468,68 494,68 473,83 481,107 460,92 439,107 447,83 426,68 452,68"
+    fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
 </svg>`
 
 const buf = Buffer.from(SVG)
