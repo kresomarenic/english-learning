@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useCallback, useState } from 'react'
 
 // Preferred British English voices, in priority order
 const EN_GB_VOICE_NAMES = [
@@ -22,26 +22,29 @@ function pickVoice(lang: string): SpeechSynthesisVoice | null {
       const v = voices.find((v) => v.name === name)
       if (v) return v
     }
-    // Fallback: any en-GB voice
     return voices.find((v) => v.lang === 'en-GB') ?? null
   }
 
-  // For Croatian just use the first hr voice available
   return voices.find((v) => v.lang.startsWith('hr')) ?? null
 }
 
 export function useTTS() {
+  const [isSpeaking, setIsSpeaking] = useState(false)
+
   const speak = useCallback((text: string, lang: string) => {
     if (typeof window === 'undefined' || !window.speechSynthesis) return
     window.speechSynthesis.cancel()
 
     const utt = new SpeechSynthesisUtterance(text)
-    utt.lang = lang === 'en-US' ? 'en-GB' : lang  // always use British English
-    utt.rate = 0.78   // clear and deliberate
+    utt.lang = lang === 'en-US' ? 'en-GB' : lang
+    utt.rate = 0.78
     utt.pitch = 1.0
     utt.volume = 1.0
 
-    // Try to pick a good voice; voices may not be loaded yet on first call
+    utt.onstart = () => setIsSpeaking(true)
+    utt.onend   = () => setIsSpeaking(false)
+    utt.onerror = () => setIsSpeaking(false)
+
     const voice = pickVoice(utt.lang)
     if (voice) utt.voice = voice
 
@@ -51,7 +54,8 @@ export function useTTS() {
   const cancel = useCallback(() => {
     if (typeof window === 'undefined' || !window.speechSynthesis) return
     window.speechSynthesis.cancel()
+    setIsSpeaking(false)
   }, [])
 
-  return { speak, cancel }
+  return { speak, cancel, isSpeaking }
 }

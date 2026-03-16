@@ -39,13 +39,7 @@ export default function ExerciseClient() {
   const displayLang = direction === 'en-hr' ? 'en-GB' : 'hr'
 
   const { status, transcript, start, stop, reset, getAlternatives } = useSpeechRecognition(speechLang)
-  const { speak, cancel: cancelTTS } = useTTS()
-
-  // Cancel TTS then start recognition — avoids Chrome aborting mic due to audio conflict
-  const handleMicStart = useCallback(() => {
-    cancelTTS()
-    start()
-  }, [cancelTTS, start])
+  const { speak, isSpeaking } = useTTS()
 
   // Load words
   useEffect(() => {
@@ -220,19 +214,21 @@ export default function ExerciseClient() {
         {/* Mic / Next button */}
         {!feedback ? (
           <button
-            onPointerDown={handleMicStart}
+            onPointerDown={isSpeaking || status === 'unsupported' ? undefined : start}
             onPointerUp={stop}
             onPointerLeave={stop}
-            disabled={status === 'unsupported'}
-            className={`w-24 h-24 rounded-full text-4xl shadow-lg transition-all active:scale-95 select-none
-              ${status === 'listening'
-                ? 'bg-red-500 text-white scale-110 animate-pulse'
-                : status === 'unsupported'
-                  ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
-                  : 'bg-indigo-600 text-white hover:bg-indigo-700'
+            disabled={isSpeaking || status === 'unsupported'}
+            className={`w-24 h-24 rounded-full text-4xl shadow-lg transition-all select-none
+              ${isSpeaking
+                ? 'bg-amber-100 text-amber-400 cursor-not-allowed animate-pulse'
+                : status === 'listening'
+                  ? 'bg-red-500 text-white scale-110 animate-pulse'
+                  : status === 'unsupported'
+                    ? 'bg-slate-200 text-slate-400 cursor-not-allowed'
+                    : 'bg-indigo-600 text-white hover:bg-indigo-700 active:scale-95'
               }`}
           >
-            {status === 'listening' ? '🎙' : '🎤'}
+            {isSpeaking ? '🔊' : status === 'listening' ? '🎙' : '🎤'}
           </button>
         ) : feedback === 'wrong' ? (
           <button
@@ -251,9 +247,11 @@ export default function ExerciseClient() {
 
         {status !== 'listening' && !feedback && (
           <p className="text-slate-400 text-sm mt-4 text-center">
-            {direction === 'en-hr'
-              ? 'Drži gumb i govori na hrvatskom'
-              : 'Drži gumb i govori na engleskom'}
+            {isSpeaking
+              ? 'Pričekaj da završi izgovor...'
+              : direction === 'en-hr'
+                ? 'Drži gumb i govori na hrvatskom'
+                : 'Drži gumb i govori na engleskom'}
           </p>
         )}
       </div>
