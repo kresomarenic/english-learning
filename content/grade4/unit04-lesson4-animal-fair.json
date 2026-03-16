@@ -1,0 +1,26 @@
+{
+  "grade": 4,
+  "unit": 4,
+  "title": "Unit 4 – The Animal Fair",
+  "titleHr": "Jedinica 4 – Sajam životinja",
+  "words": [
+    { "en": "baboon", "hr": "pavijan" },
+    { "en": "beast", "hr": "zvijer" },
+    { "en": "bunk", "hr": "krevet na kat" },
+    { "en": "fair", "hr": "sajam" },
+    { "en": "slide down", "hr": "odsklizati se prema dolje" },
+    { "en": "snooze", "hr": "kihnuti" },
+    { "en": "trunk", "hr": "surla" },
+    { "en": "bog", "hr": "močvara" },
+    { "en": "colourful", "hr": "šaren" },
+    { "en": "endangered", "hr": "ugrožen" },
+    { "en": "fur", "hr": "krzno" },
+    { "en": "gentle", "hr": "nježan" },
+    { "en": "giant", "hr": "div" },
+    { "en": "peaceful", "hr": "miroljubiv" },
+    { "en": "snail", "hr": "puž" },
+    { "en": "spot", "hr": "točka" },
+    { "en": "whale", "hr": "kit" },
+    { "en": "in the wild", "hr": "u divljini" }
+  ]
+}

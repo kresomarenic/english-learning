@@ -1,0 +1,19 @@
+{
+  "grade": 4,
+  "unit": 4,
+  "title": "Unit 4 – Wildlife Watching",
+  "titleHr": "Jedinica 4 – Promatranje divljih životinja",
+  "words": [
+    { "en": "bald eagle", "hr": "bjeloglavi orao" },
+    { "en": "beaver", "hr": "dabar" },
+    { "en": "bison", "hr": "bizon" },
+    { "en": "herd", "hr": "krdo" },
+    { "en": "horns", "hr": "rogovi" },
+    { "en": "pond", "hr": "jezerce" },
+    { "en": "report", "hr": "izvještaj" },
+    { "en": "symbol", "hr": "simbol" },
+    { "en": "tall", "hr": "visok" },
+    { "en": "wide", "hr": "širok" },
+    { "en": "wings", "hr": "krila" }
+  ]
+}

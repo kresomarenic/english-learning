@@ -1,0 +1,27 @@
+{
+  "grade": 4,
+  "unit": 4,
+  "title": "Unit 4 – Wild Things",
+  "titleHr": "Jedinica 4 – Divlje stvari",
+  "words": [
+    { "en": "dolphin", "hr": "dupin" },
+    { "en": "elephant", "hr": "slon" },
+    { "en": "Finland", "hr": "Finska" },
+    { "en": "hippo", "hr": "nilski konj" },
+    { "en": "jaguar", "hr": "jaguar" },
+    { "en": "Lapland", "hr": "Laponija" },
+    { "en": "lion", "hr": "lav" },
+    { "en": "llama", "hr": "ljama" },
+    { "en": "owl", "hr": "sova" },
+    { "en": "photo safari", "hr": "foto safari" },
+    { "en": "rainforest", "hr": "tropska kišna šuma" },
+    { "en": "reindeer", "hr": "sob" },
+    { "en": "River Amazon", "hr": "rijeka Amazona" },
+    { "en": "rhino", "hr": "nosorog" },
+    { "en": "Santa Claus", "hr": "Djed Božićnjak" },
+    { "en": "seal", "hr": "tuljan" },
+    { "en": "snake", "hr": "zmija" },
+    { "en": "South Africa", "hr": "Južnoafrička Republika" },
+    { "en": "South America", "hr": "Južna Amerika" }
+  ]
+}

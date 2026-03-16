@@ -1,0 +1,30 @@
+{
+  "grade": 4,
+  "unit": 4,
+  "title": "Unit 4 – What a Day!",
+  "titleHr": "Jedinica 4 – Kakav dan!",
+  "words": [
+    { "en": "animal watching", "hr": "promatranje životinja" },
+    { "en": "berries", "hr": "šumsko voće, bobice" },
+    { "en": "binoculars", "hr": "dalekozor" },
+    { "en": "change", "hr": "mijenjati" },
+    { "en": "dangerous", "hr": "opasan" },
+    { "en": "early", "hr": "rano" },
+    { "en": "fight", "hr": "boriti se" },
+    { "en": "fishing vest", "hr": "ribički prsluk" },
+    { "en": "frozen", "hr": "smrznut" },
+    { "en": "fur", "hr": "krzno" },
+    { "en": "grizzly bear", "hr": "grizli" },
+    { "en": "lake", "hr": "jezero" },
+    { "en": "map", "hr": "zemljovid, karta" },
+    { "en": "mountain", "hr": "planina" },
+    { "en": "national park", "hr": "nacionalni park" },
+    { "en": "riddle", "hr": "zagonetka" },
+    { "en": "scare", "hr": "prestrašiti" },
+    { "en": "sunrise", "hr": "izlazak sunca" },
+    { "en": "top", "hr": "vrh" },
+    { "en": "valley", "hr": "dolina" },
+    { "en": "wintertime", "hr": "zimsko doba" },
+    { "en": "wolf", "hr": "vuk" }
+  ]
+}
