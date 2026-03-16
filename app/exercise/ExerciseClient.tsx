@@ -38,7 +38,7 @@ export default function ExerciseClient() {
   const speechLang = direction === 'en-hr' ? 'hr' : 'en-GB'
   const displayLang = direction === 'en-hr' ? 'en-GB' : 'hr'
 
-  const { status, transcript, start, stop, getAlternatives } = useSpeechRecognition(speechLang)
+  const { status, transcript, start, stop, reset, getAlternatives } = useSpeechRecognition(speechLang)
   const { speak } = useTTS()
 
   // Load words
@@ -96,6 +96,7 @@ export default function ExerciseClient() {
   }, [status])
 
   const handleNext = useCallback(() => {
+    reset()
     setFeedback(null)
     setHeardText('')
     if (index + 1 >= words.length) {

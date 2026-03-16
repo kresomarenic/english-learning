@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useRef, useState } from 'react'
 
 type Status = 'idle' | 'listening' | 'done' | 'error' | 'unsupported'
 
@@ -28,8 +28,12 @@ export function useSpeechRecognition(lang: string) {
   const [transcript, setTranscript] = useState('')
   const recognitionRef = useRef<RecognitionInstance | null>(null)
   const statusRef = useRef<Status>('idle')
+  const langRef = useRef(lang)
+  langRef.current = lang
 
-  useEffect(() => {
+  // Create a fresh instance every time start() is called —
+  // the Web Speech API instance cannot be restarted after onresult fires.
+  const start = useCallback(() => {
     const Ctor = window.SpeechRecognition ?? window.webkitSpeechRecognition
     if (!Ctor) {
       setStatus('unsupported')
@@ -37,8 +41,17 @@ export function useSpeechRecognition(lang: string) {
       return
     }
 
+    // Abort any previous instance cleanly
+    if (recognitionRef.current) {
+      try { recognitionRef.current.stop() } catch { /* ignore */ }
+      recognitionRef.current.onresult = null
+      recognitionRef.current.onerror = null
+      recognitionRef.current.onend = null
+      recognitionRef.current = null
+    }
+
     const rec = new Ctor()
-    rec.lang = lang
+    rec.lang = langRef.current
     rec.interimResults = false
     rec.maxAlternatives = 5
 
@@ -54,7 +67,7 @@ export function useSpeechRecognition(lang: string) {
     }
 
     rec.onerror = (e) => {
-      if (e.error === 'no-speech') {
+      if (e.error === 'no-speech' || e.error === 'aborted') {
         setStatus('idle')
         statusRef.current = 'idle'
       } else {
@@ -71,23 +84,32 @@ export function useSpeechRecognition(lang: string) {
     }
 
     recognitionRef.current = rec
-  }, [lang])
-
-  const start = useCallback(() => {
-    if (!recognitionRef.current) return
     setTranscript('')
     setStatus('listening')
     statusRef.current = 'listening'
-    recognitionRef.current.start()
+
+    try {
+      rec.start()
+    } catch {
+      setStatus('idle')
+      statusRef.current = 'idle'
+    }
   }, [])
 
   const stop = useCallback(() => {
-    recognitionRef.current?.stop()
+    try { recognitionRef.current?.stop() } catch { /* ignore */ }
+  }, [])
+
+  const reset = useCallback(() => {
+    try { recognitionRef.current?.stop() } catch { /* ignore */ }
+    setStatus('idle')
+    setTranscript('')
+    statusRef.current = 'idle'
   }, [])
 
   const getAlternatives = useCallback((): string[] => {
     return recognitionRef.current?._alternatives ?? []
   }, [])
 
-  return { status, transcript, start, stop, getAlternatives }
+  return { status, transcript, start, stop, reset, getAlternatives }
 }
