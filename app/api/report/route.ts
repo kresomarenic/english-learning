@@ -1,11 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
-const TO_EMAIL = process.env.REPORT_TO_EMAIL ?? 'kresimir.marenic@gmail.com'
-const FROM_EMAIL = process.env.REPORT_FROM_EMAIL ?? 'onboarding@resend.dev'
-
 interface WrongItem {
   en: string
   hr: string[]       // all accepted Croatian translations
@@ -23,7 +18,11 @@ interface ReportPayload {
 }
 
 export async function POST(req: NextRequest) {
-  if (!process.env.RESEND_API_KEY) {
+  const apiKey = process.env.RESEND_API_KEY
+  const TO_EMAIL = process.env.REPORT_TO_EMAIL ?? 'kresimir.marenic@gmail.com'
+  const FROM_EMAIL = process.env.REPORT_FROM_EMAIL ?? 'onboarding@resend.dev'
+
+  if (!apiKey) {
     // Silently succeed when key not configured (dev environment)
     return NextResponse.json({ ok: true, skipped: true })
   }
@@ -89,6 +88,7 @@ export async function POST(req: NextRequest) {
     </div>
   `
 
+  const resend = new Resend(apiKey)
   const { error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: TO_EMAIL,
