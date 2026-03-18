@@ -24,6 +24,7 @@ export function getAllUnits(): UnitMeta[] {
         title: unit.title,
         titleHr: unit.titleHr,
         wordCount: unit.words.length,
+        fillInBlankCount: unit.fillInBlanks?.length ?? 0,
         slug: `${gradeDir}/${file.replace('.json', '')}`,
       })
     }

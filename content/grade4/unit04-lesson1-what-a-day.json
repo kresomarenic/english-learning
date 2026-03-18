@@ -26,5 +26,90 @@
     { "en": "valley", "hr": "dolina" },
     { "en": "wintertime", "hr": "zimsko doba" },
     { "en": "wolf", "hr": "vuk" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "The grizzly bear is eating berries.",
+      "blanks": [
+        { "word": "grizzly bear", "emoji": "🐻", "distractors": ["bear", "grizzly", "grizzly bears"] },
+        { "word": "eating",       "emoji": "🍽️", "distractors": ["eat", "eats", "ate"] },
+        { "word": "berries",      "emoji": "🫐", "distractors": ["berry", "berrys", "berryes"] }
+      ]
+    },
+    {
+      "sentence": "Uncle Phil is looking through his binoculars.",
+      "blanks": [
+        { "word": "looking",    "emoji": "👀", "distractors": ["look", "looks", "looked"] },
+        { "word": "binoculars", "emoji": "🔭", "distractors": ["binocular", "binoculers", "binoculors"] }
+      ]
+    },
+    {
+      "sentence": "He is wearing a fishing vest on the lake.",
+      "blanks": [
+        { "word": "wearing",      "emoji": "👕", "distractors": ["wear", "wears", "wore"] },
+        { "word": "fishing vest", "emoji": "🎣", "distractors": ["fish vest", "fishing vests", "fishing west"] },
+        { "word": "lake",         "emoji": "🏞️", "distractors": ["lakes", "laek", "valley"] }
+      ]
+    },
+    {
+      "sentence": "The lake is frozen in wintertime.",
+      "blanks": [
+        { "word": "frozen",     "emoji": "🧊", "distractors": ["freeze", "froze", "frozed"] },
+        { "word": "wintertime", "emoji": "❄️", "distractors": ["winter", "winters", "winter time"] }
+      ]
+    },
+    {
+      "sentence": "Uncle Phil is climbing the mountain.",
+      "blanks": [
+        { "word": "climbing", "emoji": "🧗", "distractors": ["climb", "climbs", "climbed"] },
+        { "word": "mountain", "emoji": "⛰️", "distractors": ["mountains", "mountaine", "valley"] }
+      ]
+    },
+    {
+      "sentence": "Uncle Phil is watching the sunrise over the valley.",
+      "blanks": [
+        { "word": "sunrise", "emoji": "🌅", "distractors": ["sunrize", "sun rise", "sunsets"] },
+        { "word": "valley",  "emoji": "🏔️", "distractors": ["vally", "valey", "mountain"] }
+      ]
+    },
+    {
+      "sentence": "A grizzly bear is very big and dangerous.",
+      "blanks": [
+        { "word": "grizzly bear", "emoji": "🐻", "distractors": ["grizzly bears", "grizzley bear", "bear"] },
+        { "word": "dangerous",    "emoji": "⚠️", "distractors": ["danger", "dangereous", "dangerus"] }
+      ]
+    },
+    {
+      "sentence": "The wolf is changing its fur in wintertime.",
+      "blanks": [
+        { "word": "wolf",       "emoji": "🐺", "distractors": ["wolfs", "wolph", "wolves"] },
+        { "word": "changing",   "emoji": "🔄", "distractors": ["change", "changes", "changed"] },
+        { "word": "fur",        "emoji": "🐾", "distractors": ["furs", "furr", "fure"] },
+        { "word": "wintertime", "emoji": "❄️", "distractors": ["winter", "winters", "winter time"] }
+      ]
+    },
+    {
+      "sentence": "Uncle Phil is driving his jeep through the valley.",
+      "blanks": [
+        { "word": "driving", "emoji": "🚗", "distractors": ["drive", "drives", "drove"] },
+        { "word": "valley",  "emoji": "🏔️", "distractors": ["vally", "valey", "mountain"] }
+      ]
+    },
+    {
+      "sentence": "The grizzly bear is sitting under a tree and eating berries.",
+      "blanks": [
+        { "word": "grizzly bear", "emoji": "🐻", "distractors": ["grizzly bears", "grizzley bear", "bear"] },
+        { "word": "sitting",      "emoji": "🌳", "distractors": ["sit", "sits", "sat"] },
+        { "word": "berries",      "emoji": "🫐", "distractors": ["berry", "berrys", "berryes"] }
+      ]
+    },
+    {
+      "sentence": "The two wolves are running in the valley.",
+      "blanks": [
+        { "word": "wolves",  "emoji": "🐺", "distractors": ["wolfs", "wolfes", "wolvs"] },
+        { "word": "running", "emoji": "🏃", "distractors": ["run", "runs", "ran"] },
+        { "word": "valley",  "emoji": "🏔️", "distractors": ["vally", "valey", "mountain"] }
+      ]
+    }
   ]
 }

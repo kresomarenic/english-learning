@@ -281,10 +281,6 @@ export default function ExerciseClient() {
           </p>
         )}
 
-        {/* DEBUG — remove before release */}
-        <p className="text-xs text-slate-300 mt-2 text-center font-mono">
-          status={status} speaking={String(isSpeaking)} scheduled={String(speakScheduled)}
-        </p>
       </div>
     </div>
   )

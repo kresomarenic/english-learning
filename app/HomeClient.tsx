@@ -63,6 +63,10 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
     router.push(`/exercise?${params.toString()}`)
   }
 
+  function startFillInBlank(slug: string) {
+    router.push(`/exercise/fill-in-blank?slug=${encodeURIComponent(slug)}`)
+  }
+
   function toggleUnit(key: string) {
     setOpenUnits((prev) => {
       const next = new Set(prev)
@@ -208,20 +212,33 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
                 {isOpen && (
                   <div className="border-t border-slate-200 bg-white divide-y divide-slate-100">
                     {group.lessons.map((lesson) => (
-                      <button
+                      <div
                         key={lesson.slug}
-                        onClick={() => startSession([lesson.slug])}
-                        className="w-full px-4 py-3 flex items-center justify-between text-left hover:bg-indigo-50 active:bg-indigo-100 transition-colors"
+                        className="px-4 py-3 flex items-center justify-between"
                       >
-                        <div>
+                        <div className="flex-1 min-w-0">
                           <p className="font-medium text-slate-800 text-sm">{lesson.title}</p>
                           <p className="text-xs text-slate-400">{lesson.titleHr}</p>
                         </div>
-                        <div className="text-right ml-3 flex-shrink-0">
-                          <p className="text-lg font-bold text-indigo-600">{lesson.wordCount}</p>
-                          <p className="text-xs text-slate-400">riječi</p>
+                        <div className="flex items-center gap-2 ml-3 flex-shrink-0">
+                          <button
+                            onClick={() => startSession([lesson.slug])}
+                            className="flex flex-col items-center px-3 py-1.5 bg-indigo-600 text-white rounded-xl active:scale-95 transition-transform"
+                          >
+                            <span className="text-xs font-bold">🔤 {lesson.wordCount}</span>
+                            <span className="text-[10px] opacity-80">prijevod</span>
+                          </button>
+                          {lesson.fillInBlankCount > 0 && (
+                            <button
+                              onClick={() => startFillInBlank(lesson.slug)}
+                              className="flex flex-col items-center px-3 py-1.5 bg-emerald-600 text-white rounded-xl active:scale-95 transition-transform"
+                            >
+                              <span className="text-xs font-bold">✏️ {lesson.fillInBlankCount}</span>
+                              <span className="text-[10px] opacity-80">rečenice</span>
+                            </button>
+                          )}
                         </div>
-                      </button>
+                      </div>
                     ))}
                   </div>
                 )}
