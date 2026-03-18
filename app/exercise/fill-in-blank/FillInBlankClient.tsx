@@ -32,7 +32,7 @@ function prepareExercises(fillInBlanks: FillInBlank[]): PreparedExercise[] {
     const choices = [blank.word, ...blank.distractors].sort(() => Math.random() - 0.5)
     return {
       displayed: item.sentence.replace(blank.word, '___'),
-      ttsText:   item.sentence.replace(blank.word, 'blank'),
+      ttsText:   item.sentence.replace(blank.word, '...'),
       answer:    blank.word,
       emoji:     blank.emoji,
       choices,
