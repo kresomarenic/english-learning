@@ -221,13 +221,15 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
                           <p className="text-xs text-slate-400">{lesson.titleHr}</p>
                         </div>
                         <div className="flex items-center gap-2 ml-3 flex-shrink-0">
-                          <button
-                            onClick={() => startSession([lesson.slug])}
-                            className="flex flex-col items-center px-3 py-1.5 bg-indigo-600 text-white rounded-xl active:scale-95 transition-transform"
-                          >
-                            <span className="text-xs font-bold">🔤 {lesson.wordCount}</span>
-                            <span className="text-[10px] opacity-80">prijevod</span>
-                          </button>
+                          {lesson.wordCount > 0 && (
+                            <button
+                              onClick={() => startSession([lesson.slug])}
+                              className="flex flex-col items-center px-3 py-1.5 bg-indigo-600 text-white rounded-xl active:scale-95 transition-transform"
+                            >
+                              <span className="text-xs font-bold">🔤 {lesson.wordCount}</span>
+                              <span className="text-[10px] opacity-80">prijevod</span>
+                            </button>
+                          )}
                           {lesson.fillInBlankCount > 0 && (
                             <button
                               onClick={() => startFillInBlank(lesson.slug)}

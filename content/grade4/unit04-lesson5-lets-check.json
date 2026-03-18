@@ -1,0 +1,86 @@
+{
+  "grade": 4,
+  "unit": 4,
+  "title": "Let's Check!",
+  "titleHr": "Provjeri znanje!",
+  "words": [],
+  "fillInBlanks": [
+    {
+      "sentence": "The wolf is sitting near the pond.",
+      "blanks": [
+        { "word": "wolf", "emoji": "🐺", "distractors": ["wolfs", "wolph", "wolves"] },
+        { "word": "pond", "emoji": "💧", "distractors": ["ponds", "pand", "lake"] }
+      ]
+    },
+    {
+      "sentence": "The bald eagle is flying over the valley.",
+      "blanks": [
+        { "word": "bald eagle", "emoji": "🦅", "distractors": ["bald eagles", "bold eagle", "bald egale"] },
+        { "word": "valley",     "emoji": "🏔️", "distractors": ["vally", "valey", "mountain"] }
+      ]
+    },
+    {
+      "sentence": "The elephant is drinking at the pond.",
+      "blanks": [
+        { "word": "elephant", "emoji": "🐘", "distractors": ["elephants", "elefant", "elephent"] },
+        { "word": "pond",     "emoji": "💧", "distractors": ["ponds", "pand", "lake"] }
+      ]
+    },
+    {
+      "sentence": "The jaguar is sleeping in the rainforest.",
+      "blanks": [
+        { "word": "jaguar",     "emoji": "🐆", "distractors": ["jaguars", "jagure", "jaguor"] },
+        { "word": "rainforest", "emoji": "🌿", "distractors": ["rainforests", "rain forest", "rainforrest"] }
+      ]
+    },
+    {
+      "sentence": "The bison is eating grass near the mountain.",
+      "blanks": [
+        { "word": "bison",    "emoji": "🦬", "distractors": ["bisons", "byson", "bisone"] },
+        { "word": "mountain", "emoji": "⛰️", "distractors": ["mountains", "mountaine", "valley"] }
+      ]
+    },
+    {
+      "sentence": "The beavers are building a pond.",
+      "blanks": [
+        { "word": "are", "emoji": "🦫", "distractors": ["is", "was", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "The grizzly bear is eating berries.",
+      "blanks": [
+        { "word": "is", "emoji": "🐻", "distractors": ["are", "were", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "The wolves are playing in the valley.",
+      "blanks": [
+        { "word": "are", "emoji": "🐺", "distractors": ["is", "was", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "The bald eagle is flying in the sky.",
+      "blanks": [
+        { "word": "is", "emoji": "🦅", "distractors": ["are", "were", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "The baboon is combing his golden hair.",
+      "blanks": [
+        { "word": "is", "emoji": "🦍", "distractors": ["are", "were", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "The hippos are swimming in the lake.",
+      "blanks": [
+        { "word": "are", "emoji": "🦛", "distractors": ["is", "was", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "The whale is sleeping in the ocean.",
+      "blanks": [
+        { "word": "is", "emoji": "🐋", "distractors": ["are", "were", "aren't"] }
+      ]
+    }
+  ]
+}
