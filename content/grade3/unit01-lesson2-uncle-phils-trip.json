@@ -4,16 +4,71 @@
   "title": "Uncle Phil's Trip",
   "titleHr": "Ujak Philov put",
   "words": [
-    { "en": "build an igloo", "hr": "graditi iglu (eskimsku kuću)" },
-    { "en": "down the stream", "hr": "niz potok" },
-    { "en": "dream", "hr": "sanjati" },
-    { "en": "drink tea", "hr": "piti čaj" },
-    { "en": "fish", "hr": "pecati" },
-    { "en": "gently", "hr": "nježno" },
-    { "en": "life", "hr": "život" },
-    { "en": "merrily", "hr": "veselo" },
-    { "en": "ride a camel", "hr": "jahati devu" },
-    { "en": "palm tree", "hr": "palma" },
-    { "en": "swing", "hr": "ljuljati se" }
+    {
+      "en": "build an igloo",
+      "hr": [
+        "graditi iglu (eskimsku kuću)"
+      ]
+    },
+    {
+      "en": "down the stream",
+      "hr": [
+        "niz potok"
+      ]
+    },
+    {
+      "en": "dream",
+      "hr": [
+        "sanjati"
+      ]
+    },
+    {
+      "en": "drink tea",
+      "hr": [
+        "piti čaj"
+      ]
+    },
+    {
+      "en": "fish",
+      "hr": [
+        "pecati"
+      ]
+    },
+    {
+      "en": "gently",
+      "hr": [
+        "nježno"
+      ]
+    },
+    {
+      "en": "life",
+      "hr": [
+        "život"
+      ]
+    },
+    {
+      "en": "merrily",
+      "hr": [
+        "veselo"
+      ]
+    },
+    {
+      "en": "ride a camel",
+      "hr": [
+        "jahati devu"
+      ]
+    },
+    {
+      "en": "palm tree",
+      "hr": [
+        "palma"
+      ]
+    },
+    {
+      "en": "swing",
+      "hr": [
+        "ljuljati se"
+      ]
+    }
   ]
 }

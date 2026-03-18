@@ -4,39 +4,211 @@
   "title": "What Can Robbie Do?",
   "titleHr": "Što Robbie zna raditi?",
   "words": [
-    { "en": "brand new", "hr": "potpuno nov" },
-    { "en": "can", "hr": "moći, znati" },
-    { "en": "clean the room", "hr": "pospremiti sobu" },
-    { "en": "climb a tree", "hr": "penjati se na drvo" },
-    { "en": "fast", "hr": "brz" },
-    { "en": "find out", "hr": "saznati" },
-    { "en": "help", "hr": "pomoći" },
-    { "en": "just arrived", "hr": "upravo stigao" },
-    { "en": "make the beds", "hr": "pospremiti krevete" },
-    { "en": "make a mess", "hr": "napraviti nered" },
-    { "en": "make pancakes", "hr": "peći palačinke" },
-    { "en": "make a pizza", "hr": "napraviti pizzu" },
-    { "en": "make a sandwich", "hr": "napraviti sendvič" },
-    { "en": "make tea", "hr": "skuhati čaj" },
-    { "en": "meet", "hr": "upoznati" },
-    { "en": "news", "hr": "novosti" },
-    { "en": "play basketball", "hr": "igrati košarku" },
-    { "en": "play chess", "hr": "igrati šah" },
-    { "en": "play the drums", "hr": "svirati bubnjeve" },
-    { "en": "play football", "hr": "igrati nogomet" },
-    { "en": "play ice hockey", "hr": "igrati hokej na ledu" },
-    { "en": "play tennis", "hr": "igrati tenis" },
-    { "en": "play the violin", "hr": "svirati violinu" },
-    { "en": "play volleyball", "hr": "igrati odbojku" },
-    { "en": "read a book", "hr": "čitati knjigu" },
-    { "en": "reminder", "hr": "podsjetnik" },
-    { "en": "ride a bike", "hr": "voziti bicikl" },
-    { "en": "ride a horse", "hr": "jahati konja" },
-    { "en": "sing", "hr": "pjevati" },
-    { "en": "swimming class", "hr": "sat plivanja" },
-    { "en": "talk", "hr": "pričati" },
-    { "en": "toy world", "hr": "svijet igračaka" },
-    { "en": "want", "hr": "htjeti, željeti" },
-    { "en": "wash the dishes", "hr": "prati sude" }
+    {
+      "en": "brand new",
+      "hr": [
+        "potpuno nov"
+      ]
+    },
+    {
+      "en": "can",
+      "hr": [
+        "moći",
+        "znati"
+      ]
+    },
+    {
+      "en": "clean the room",
+      "hr": [
+        "pospremiti sobu"
+      ]
+    },
+    {
+      "en": "climb a tree",
+      "hr": [
+        "penjati se na drvo"
+      ]
+    },
+    {
+      "en": "fast",
+      "hr": [
+        "brz"
+      ]
+    },
+    {
+      "en": "find out",
+      "hr": [
+        "saznati"
+      ]
+    },
+    {
+      "en": "help",
+      "hr": [
+        "pomoći"
+      ]
+    },
+    {
+      "en": "just arrived",
+      "hr": [
+        "upravo stigao"
+      ]
+    },
+    {
+      "en": "make the beds",
+      "hr": [
+        "pospremiti krevete"
+      ]
+    },
+    {
+      "en": "make a mess",
+      "hr": [
+        "napraviti nered"
+      ]
+    },
+    {
+      "en": "make pancakes",
+      "hr": [
+        "peći palačinke"
+      ]
+    },
+    {
+      "en": "make a pizza",
+      "hr": [
+        "napraviti pizzu"
+      ]
+    },
+    {
+      "en": "make a sandwich",
+      "hr": [
+        "napraviti sendvič"
+      ]
+    },
+    {
+      "en": "make tea",
+      "hr": [
+        "skuhati čaj"
+      ]
+    },
+    {
+      "en": "meet",
+      "hr": [
+        "upoznati"
+      ]
+    },
+    {
+      "en": "news",
+      "hr": [
+        "novosti"
+      ]
+    },
+    {
+      "en": "play basketball",
+      "hr": [
+        "igrati košarku"
+      ]
+    },
+    {
+      "en": "play chess",
+      "hr": [
+        "igrati šah"
+      ]
+    },
+    {
+      "en": "play the drums",
+      "hr": [
+        "svirati bubnjeve"
+      ]
+    },
+    {
+      "en": "play football",
+      "hr": [
+        "igrati nogomet"
+      ]
+    },
+    {
+      "en": "play ice hockey",
+      "hr": [
+        "igrati hokej na ledu"
+      ]
+    },
+    {
+      "en": "play tennis",
+      "hr": [
+        "igrati tenis"
+      ]
+    },
+    {
+      "en": "play the violin",
+      "hr": [
+        "svirati violinu"
+      ]
+    },
+    {
+      "en": "play volleyball",
+      "hr": [
+        "igrati odbojku"
+      ]
+    },
+    {
+      "en": "read a book",
+      "hr": [
+        "čitati knjigu"
+      ]
+    },
+    {
+      "en": "reminder",
+      "hr": [
+        "podsjetnik"
+      ]
+    },
+    {
+      "en": "ride a bike",
+      "hr": [
+        "voziti bicikl"
+      ]
+    },
+    {
+      "en": "ride a horse",
+      "hr": [
+        "jahati konja"
+      ]
+    },
+    {
+      "en": "sing",
+      "hr": [
+        "pjevati"
+      ]
+    },
+    {
+      "en": "swimming class",
+      "hr": [
+        "sat plivanja"
+      ]
+    },
+    {
+      "en": "talk",
+      "hr": [
+        "pričati"
+      ]
+    },
+    {
+      "en": "toy world",
+      "hr": [
+        "svijet igračaka"
+      ]
+    },
+    {
+      "en": "want",
+      "hr": [
+        "htjeti",
+        "željeti"
+      ]
+    },
+    {
+      "en": "wash the dishes",
+      "hr": [
+        "prati sude"
+      ]
+    }
   ]
 }

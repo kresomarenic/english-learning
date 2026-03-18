@@ -4,108 +4,317 @@
   "title": "Kookaburra",
   "titleHr": "Kukabara",
   "words": [
-    { "en": "bush", "hr": "grmlje, tlo prekriveno travom u Australiji" },
-    { "en": "forest", "hr": "šuma" },
-    { "en": "gay", "hr": "veseo" },
-    { "en": "gum drop", "hr": "gumeni ušećereni bombon" },
-    { "en": "gum tree", "hr": "eukaliptus" },
-    { "en": "insect", "hr": "kukac, insekt" },
-    { "en": "laugh", "hr": "smijati se" },
-    { "en": "boomerang", "hr": "bumerang" },
-    { "en": "capital", "hr": "glavni grad" },
-    { "en": "continent", "hr": "kontinent" },
-    { "en": "country", "hr": "zemlja" },
-    { "en": "dingo", "hr": "dingo, vrsta australskog divljeg psa" },
-    { "en": "hunting", "hr": "lov" },
-    { "en": "kangaroo", "hr": "klokan" },
-    { "en": "koala", "hr": "koala" },
-    { "en": "live", "hr": "živjeti" },
-    { "en": "species", "hr": "vrsta" }
+    {
+      "en": "bush",
+      "hr": [
+        "grmlje",
+        "tlo prekriveno travom u Australiji"
+      ]
+    },
+    {
+      "en": "forest",
+      "hr": [
+        "šuma"
+      ]
+    },
+    {
+      "en": "gay",
+      "hr": [
+        "veseo"
+      ]
+    },
+    {
+      "en": "gum drop",
+      "hr": [
+        "gumeni ušećereni bombon"
+      ]
+    },
+    {
+      "en": "gum tree",
+      "hr": [
+        "eukaliptus"
+      ]
+    },
+    {
+      "en": "insect",
+      "hr": [
+        "kukac",
+        "insekt"
+      ]
+    },
+    {
+      "en": "laugh",
+      "hr": [
+        "smijati se",
+        "smijuckati se"
+      ]
+    },
+    {
+      "en": "boomerang",
+      "hr": [
+        "bumerang"
+      ]
+    },
+    {
+      "en": "capital",
+      "hr": [
+        "glavni grad"
+      ]
+    },
+    {
+      "en": "continent",
+      "hr": [
+        "kontinent"
+      ]
+    },
+    {
+      "en": "country",
+      "hr": [
+        "zemlja"
+      ]
+    },
+    {
+      "en": "dingo",
+      "hr": [
+        "dingo",
+        "vrsta australskog divljeg psa"
+      ]
+    },
+    {
+      "en": "hunting",
+      "hr": [
+        "lov"
+      ]
+    },
+    {
+      "en": "kangaroo",
+      "hr": [
+        "klokan"
+      ]
+    },
+    {
+      "en": "koala",
+      "hr": [
+        "koala"
+      ]
+    },
+    {
+      "en": "live",
+      "hr": [
+        "živjeti"
+      ]
+    },
+    {
+      "en": "species",
+      "hr": [
+        "vrsta"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "The kookaburra lives in the forests of Australia.",
       "blanks": [
-        { "word": "forests", "emoji": "🌲", "distractors": ["forrests", "forest", "bush"] }
+        {
+          "word": "forests",
+          "emoji": "🌲",
+          "distractors": [
+            "forrests",
+            "forest",
+            "bush"
+          ]
+        }
       ]
     },
     {
       "sentence": "The kookaburra has a laughing call.",
       "blanks": [
-        { "word": "laughing", "emoji": "😂", "distractors": ["lauging", "laughging", "singing"] }
+        {
+          "word": "laughing",
+          "emoji": "😂",
+          "distractors": [
+            "lauging",
+            "laughging",
+            "singing"
+          ]
+        }
       ]
     },
     {
       "sentence": "It eats insects and small animals.",
       "blanks": [
-        { "word": "insects", "emoji": "🐛", "distractors": ["innsects", "inseckts", "plants"] }
+        {
+          "word": "insects",
+          "emoji": "🐛",
+          "distractors": [
+            "innsects",
+            "inseckts",
+            "plants"
+          ]
+        }
       ]
     },
     {
       "sentence": "The kookaburra sleeps in a gum tree.",
       "blanks": [
-        { "word": "sleeps", "emoji": "😴", "distractors": ["sleep", "sleepps", "lives"] }
+        {
+          "word": "sleeps",
+          "emoji": "😴",
+          "distractors": [
+            "sleep",
+            "sleepps",
+            "lives"
+          ]
+        }
       ]
     },
     {
       "sentence": "It leaves the nest in the morning.",
       "blanks": [
-        { "word": "leaves", "emoji": "🌅", "distractors": ["leafs", "leavs", "goes"] }
+        {
+          "word": "leaves",
+          "emoji": "🌅",
+          "distractors": [
+            "leafs",
+            "leavs",
+            "goes"
+          ]
+        }
       ]
     },
     {
       "sentence": "It jumps on its prey.",
       "blanks": [
-        { "word": "jumps", "emoji": "⬇️", "distractors": ["jump", "jumpps", "falls"] }
+        {
+          "word": "jumps",
+          "emoji": "⬇️",
+          "distractors": [
+            "jump",
+            "jumpps",
+            "falls"
+          ]
+        }
       ]
     },
     {
       "sentence": "Australia has koalas and dingos.",
       "blanks": [
-        { "word": "koalas", "emoji": "🐨", "distractors": ["koala", "koallas", "pandas"] },
-        { "word": "dingos", "emoji": "🐕", "distractors": ["dingo", "dingoes", "wolves"] }
+        {
+          "word": "koalas",
+          "emoji": "🐨",
+          "distractors": [
+            "koala",
+            "koallas",
+            "pandas"
+          ]
+        },
+        {
+          "word": "dingos",
+          "emoji": "🐕",
+          "distractors": [
+            "dingo",
+            "dingoes",
+            "wolves"
+          ]
+        }
       ]
     },
     {
       "sentence": "Australia is both a country and a continent.",
       "blanks": [
-        { "word": "continent", "emoji": "🗺️", "distractors": ["continnent", "continant", "country"] }
+        {
+          "word": "continent",
+          "emoji": "🗺️",
+          "distractors": [
+            "continnent",
+            "continant",
+            "country"
+          ]
+        }
       ]
     },
     {
       "sentence": "The capital of Australia is Canberra.",
       "blanks": [
-        { "word": "Canberra", "emoji": "🏛️", "distractors": ["Camberra", "Canbbera", "Sydney"] }
+        {
+          "word": "Canberra",
+          "emoji": "🏛️",
+          "distractors": [
+            "Camberra",
+            "Canbbera",
+            "Sydney"
+          ]
+        }
       ]
     },
     {
       "sentence": "The biggest city in Australia is Sydney.",
       "blanks": [
-        { "word": "Sydney", "emoji": "🦘", "distractors": ["Canberra", "Sydnney", "Melbourne"] }
+        {
+          "word": "Sydney",
+          "emoji": "🦘",
+          "distractors": [
+            "Canberra",
+            "Sydnney",
+            "Melbourne"
+          ]
+        }
       ]
     },
     {
       "sentence": "Aborigines use a boomerang for hunting.",
       "blanks": [
-        { "word": "boomerang", "emoji": "🪃", "distractors": ["bomerang", "boomerangg", "spear"] }
+        {
+          "word": "boomerang",
+          "emoji": "🪃",
+          "distractors": [
+            "bomerang",
+            "boomerangg",
+            "spear"
+          ]
+        }
       ]
     },
     {
       "sentence": "Cricket is the most popular sport in Australia.",
       "blanks": [
-        { "word": "Cricket", "emoji": "🏏", "distractors": ["Football", "Criket", "Crickett"] }
+        {
+          "word": "Cricket",
+          "emoji": "🏏",
+          "distractors": [
+            "Football",
+            "Criket",
+            "Crickett"
+          ]
+        }
       ]
     },
     {
       "sentence": "Australia Day is on the 26th of January.",
       "blanks": [
-        { "word": "January", "emoji": "📅", "distractors": ["February", "Januray", "June"] }
+        {
+          "word": "January",
+          "emoji": "📅",
+          "distractors": [
+            "February",
+            "Januray",
+            "June"
+          ]
+        }
       ]
     },
     {
       "sentence": "Australia is also called Down Under.",
       "blanks": [
-        { "word": "Down Under", "emoji": "🌏", "distractors": ["Down Undder", "Donw Under", "Land Down"] }
+        {
+          "word": "Down Under",
+          "emoji": "🌏",
+          "distractors": [
+            "Down Undder",
+            "Donw Under",
+            "Land Down"
+          ]
+        }
       ]
     }
   ]

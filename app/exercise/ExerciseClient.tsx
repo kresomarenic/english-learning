@@ -16,10 +16,12 @@ function normalize(s: string) {
     .trim()
 }
 
-function isCorrect(heard: string, expected: string, alternatives: string[]): boolean {
-  const norm = normalize(expected)
+function isCorrect(heard: string, expectedVariants: string[], alternatives: string[]): boolean {
   const allHeard = [heard, ...alternatives].map(normalize)
-  return allHeard.some((h) => h === norm || h.includes(norm) || norm.includes(h))
+  return expectedVariants.some((expected) => {
+    const norm = normalize(expected)
+    return allHeard.some((h) => h === norm || h.includes(norm) || norm.includes(h))
+  })
 }
 
 export default function ExerciseClient() {
@@ -51,11 +53,18 @@ export default function ExerciseClient() {
   useEffect(() => {
     async function load() {
       const all: Word[] = []
+      const titles: string[] = []
       for (const slug of slugs) {
         const res = await fetch(`/api/unit?slug=${encodeURIComponent(slug)}`)
         const unit = await res.json()
         all.push(...unit.words)
+        if (unit.title) titles.push(unit.title)
       }
+      // Store lesson title for email report
+      sessionStorage.setItem(
+        'lessonTitle',
+        titles.length === 1 ? titles[0] : titles.join(', ')
+      )
       // Shuffle
       const shuffled = all.sort(() => Math.random() - 0.5)
       setWords(shuffled)
@@ -69,13 +78,20 @@ export default function ExerciseClient() {
   const prompt = currentWord
     ? direction === 'en-hr'
       ? currentWord.en
-      : currentWord.hr
+      : currentWord.hr[0]
     : ''
-  const answer = currentWord
+  // answerDisplay: the canonical answer shown in feedback and spoken aloud
+  const answerDisplay = currentWord
     ? direction === 'en-hr'
-      ? currentWord.hr
+      ? currentWord.hr[0]
       : currentWord.en
     : ''
+  // answerVariants: all accepted answers (used for correctness check)
+  const answerVariants: string[] = currentWord
+    ? direction === 'en-hr'
+      ? currentWord.hr
+      : [currentWord.en]
+    : []
 
   // Clear speakScheduled the moment TTS actually starts playing
   useEffect(() => {
@@ -103,7 +119,7 @@ export default function ExerciseClient() {
     if (status !== 'done' || !currentWord) return
 
     const alternatives = getAlternatives()
-    const correct = isCorrect(transcript, answer, alternatives)
+    const correct = isCorrect(transcript, answerVariants, alternatives)
     setHeardText(transcript)
     setFeedback(correct ? 'correct' : 'wrong')
 
@@ -220,10 +236,15 @@ export default function ExerciseClient() {
                 )}
                 <p className="text-slate-600 text-sm mt-2">
                   Točan odgovor:{' '}
-                  <span className="font-bold text-slate-800">{answer}</span>
+                  <span className="font-bold text-slate-800">{answerDisplay}</span>
+                  {answerVariants.length > 1 && (
+                    <span className="text-slate-400 text-xs ml-1">
+                      ({answerVariants.slice(1).join(', ')})
+                    </span>
+                  )}
                 </p>
                 <button
-                  onClick={() => speak(answer, speechLang)}
+                  onClick={() => speak(answerDisplay, speechLang)}
                   className="mt-2 text-sm text-indigo-500 underline"
                 >
                   🔊 Čuj točan odgovor

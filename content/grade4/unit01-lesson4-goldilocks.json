@@ -4,93 +4,245 @@
   "title": "Goldilocks and the Three Bears",
   "titleHr": "Zlatokosa i tri medvjeda",
   "words": [
-    { "en": "curious", "hr": "znatiželjan" },
-    { "en": "porridge", "hr": "kaša" },
-    { "en": "tiny", "hr": "sićušan" },
-    { "en": "famous", "hr": "slavan" },
-    { "en": "flag", "hr": "zastava" },
-    { "en": "palace", "hr": "palača" },
-    { "en": "Royal Family", "hr": "kraljevska obitelj" },
-    { "en": "Union Jack", "hr": "naziv za britansku zastavu" }
+    {
+      "en": "curious",
+      "hr": [
+        "znatiželjan"
+      ]
+    },
+    {
+      "en": "porridge",
+      "hr": [
+        "kaša"
+      ]
+    },
+    {
+      "en": "tiny",
+      "hr": [
+        "sićušan"
+      ]
+    },
+    {
+      "en": "famous",
+      "hr": [
+        "slavan"
+      ]
+    },
+    {
+      "en": "flag",
+      "hr": [
+        "zastava"
+      ]
+    },
+    {
+      "en": "palace",
+      "hr": [
+        "palača"
+      ]
+    },
+    {
+      "en": "Royal Family",
+      "hr": [
+        "kraljevska obitelj"
+      ]
+    },
+    {
+      "en": "Union Jack",
+      "hr": [
+        "naziv za britansku zastavu"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "Goldilocks is very curious.",
       "blanks": [
-        { "word": "curious", "emoji": "🧐", "distractors": ["curios", "currous", "curius"] }
+        {
+          "word": "curious",
+          "emoji": "🧐",
+          "distractors": [
+            "curios",
+            "currous",
+            "curius"
+          ]
+        }
       ]
     },
     {
       "sentence": "She goes into the kitchen.",
       "blanks": [
-        { "word": "kitchen", "emoji": "🍳", "distractors": ["bedroom", "kitchin", "kichen"] }
+        {
+          "word": "kitchen",
+          "emoji": "🍳",
+          "distractors": [
+            "bedroom",
+            "kitchin",
+            "kichen"
+          ]
+        }
       ]
     },
     {
       "sentence": "This porridge is too hot!",
       "blanks": [
-        { "word": "hot", "emoji": "🔥", "distractors": ["cold", "hots", "hott"] }
+        {
+          "word": "hot",
+          "emoji": "🔥",
+          "distractors": [
+            "cold",
+            "hots",
+            "hott"
+          ]
+        }
       ]
     },
     {
       "sentence": "This porridge is too cold!",
       "blanks": [
-        { "word": "cold", "emoji": "🧊", "distractors": ["hot", "coldd", "cole"] }
+        {
+          "word": "cold",
+          "emoji": "🧊",
+          "distractors": [
+            "hot",
+            "coldd",
+            "cole"
+          ]
+        }
       ]
     },
     {
       "sentence": "This porridge is just right!",
       "blanks": [
-        { "word": "right", "emoji": "✅", "distractors": ["wrong", "rihgt", "rights"] }
+        {
+          "word": "right",
+          "emoji": "✅",
+          "distractors": [
+            "wrong",
+            "rihgt",
+            "rights"
+          ]
+        }
       ]
     },
     {
       "sentence": "This chair is too high!",
       "blanks": [
-        { "word": "high", "emoji": "🪑", "distractors": ["low", "hight", "highs"] }
+        {
+          "word": "high",
+          "emoji": "🪑",
+          "distractors": [
+            "low",
+            "hight",
+            "highs"
+          ]
+        }
       ]
     },
     {
       "sentence": "This bed is too hard!",
       "blanks": [
-        { "word": "hard", "emoji": "🛏️", "distractors": ["soft", "heard", "hards"] }
+        {
+          "word": "hard",
+          "emoji": "🛏️",
+          "distractors": [
+            "soft",
+            "heard",
+            "hards"
+          ]
+        }
       ]
     },
     {
       "sentence": "This bed is too soft!",
       "blanks": [
-        { "word": "soft", "emoji": "🛏️", "distractors": ["hard", "softt", "sofe"] }
+        {
+          "word": "soft",
+          "emoji": "🛏️",
+          "distractors": [
+            "hard",
+            "softt",
+            "sofe"
+          ]
+        }
       ]
     },
     {
       "sentence": "She goes into the bedroom.",
       "blanks": [
-        { "word": "bedroom", "emoji": "😴", "distractors": ["kitchen", "bedroon", "bedoom"] }
+        {
+          "word": "bedroom",
+          "emoji": "😴",
+          "distractors": [
+            "kitchen",
+            "bedroon",
+            "bedoom"
+          ]
+        }
       ]
     },
     {
       "sentence": "Goldilocks falls asleep in Baby Bear's bed.",
       "blanks": [
-        { "word": "asleep", "emoji": "💤", "distractors": ["asleap", "asleep's", "awake"] }
+        {
+          "word": "asleep",
+          "emoji": "💤",
+          "distractors": [
+            "asleap",
+            "asleep's",
+            "awake"
+          ]
+        }
       ]
     },
     {
       "sentence": "The most famous family in Great Britain is the Royal Family.",
       "blanks": [
-        { "word": "famous", "emoji": "👑", "distractors": ["famouse", "fammus", "famos"] },
-        { "word": "Royal Family", "emoji": "🏰", "distractors": ["royal family", "Royall Family", "Three Bears"] }
+        {
+          "word": "famous",
+          "emoji": "👑",
+          "distractors": [
+            "famouse",
+            "fammus",
+            "famos"
+          ]
+        },
+        {
+          "word": "Royal Family",
+          "emoji": "🏰",
+          "distractors": [
+            "royal family",
+            "Royall Family",
+            "Three Bears"
+          ]
+        }
       ]
     },
     {
       "sentence": "The Queen lives in Buckingham Palace.",
       "blanks": [
-        { "word": "Palace", "emoji": "🏰", "distractors": ["palace", "Pallace", "castle"] }
+        {
+          "word": "Palace",
+          "emoji": "🏰",
+          "distractors": [
+            "palace",
+            "Pallace",
+            "castle"
+          ]
+        }
       ]
     },
     {
       "sentence": "The Union Jack is the British flag.",
       "blanks": [
-        { "word": "flag", "emoji": "🇬🇧", "distractors": ["flags", "flaag", "fleg"] }
+        {
+          "word": "flag",
+          "emoji": "🇬🇧",
+          "distractors": [
+            "flags",
+            "flaag",
+            "fleg"
+          ]
+        }
       ]
     }
   ]

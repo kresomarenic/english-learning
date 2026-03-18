@@ -4,83 +4,330 @@
   "title": "The Animal Fair",
   "titleHr": "Sajam životinja",
   "words": [
-    { "en": "baboon", "hr": "pavijan" },
-    { "en": "beast", "hr": "zvijer" },
-    { "en": "bunk", "hr": "krevet na kat" },
-    { "en": "fair", "hr": "sajam" },
-    { "en": "slide down", "hr": "odsklizati se prema dolje" },
-    { "en": "snooze", "hr": "drijemati" },
-    { "en": "sneeze", "hr": "kihnuti" },
-    { "en": "trunk", "hr": "surla" },
-    { "en": "bog", "hr": "močvara" },
-    { "en": "colourful", "hr": "šaren" },
-    { "en": "endangered", "hr": "ugrožen" },
-    { "en": "fur", "hr": "krzno" },
-    { "en": "gentle", "hr": "nježan" },
-    { "en": "giant", "hr": "div" },
-    { "en": "peaceful", "hr": "miroljubiv" },
-    { "en": "snail", "hr": "puž" },
-    { "en": "spot", "hr": "točka" },
-    { "en": "whale", "hr": "kit" },
-    { "en": "in the wild", "hr": "u divljini" }
+    {
+      "en": "baboon",
+      "hr": [
+        "pavijan"
+      ]
+    },
+    {
+      "en": "beast",
+      "hr": [
+        "zvijer"
+      ]
+    },
+    {
+      "en": "bunk",
+      "hr": [
+        "krevet na kat"
+      ]
+    },
+    {
+      "en": "fair",
+      "hr": [
+        "sajam"
+      ]
+    },
+    {
+      "en": "slide down",
+      "hr": [
+        "odsklizati se prema dolje"
+      ]
+    },
+    {
+      "en": "snooze",
+      "hr": [
+        "drijemati"
+      ]
+    },
+    {
+      "en": "sneeze",
+      "hr": [
+        "kihnuti"
+      ]
+    },
+    {
+      "en": "trunk",
+      "hr": [
+        "surla"
+      ]
+    },
+    {
+      "en": "bog",
+      "hr": [
+        "močvara"
+      ]
+    },
+    {
+      "en": "colourful",
+      "hr": [
+        "šaren",
+        "šarena",
+        "živopisan"
+      ]
+    },
+    {
+      "en": "endangered",
+      "hr": [
+        "ugrožen"
+      ]
+    },
+    {
+      "en": "fur",
+      "hr": [
+        "krzno"
+      ]
+    },
+    {
+      "en": "gentle",
+      "hr": [
+        "nježan",
+        "nježna",
+        "blag",
+        "blaga"
+      ]
+    },
+    {
+      "en": "giant",
+      "hr": [
+        "div"
+      ]
+    },
+    {
+      "en": "peaceful",
+      "hr": [
+        "miroljubiv",
+        "miroljubiva",
+        "miran",
+        "mirna"
+      ]
+    },
+    {
+      "en": "snail",
+      "hr": [
+        "puž"
+      ]
+    },
+    {
+      "en": "spot",
+      "hr": [
+        "točka"
+      ]
+    },
+    {
+      "en": "whale",
+      "hr": [
+        "kit"
+      ]
+    },
+    {
+      "en": "in the wild",
+      "hr": [
+        "u divljini"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "The baboon is combing his golden hair.",
       "blanks": [
-        { "word": "baboon",  "emoji": "🦍", "distractors": ["baboons", "babune", "boboon"] },
-        { "word": "combing", "emoji": "💇", "distractors": ["comb", "combs", "combed"] }
+        {
+          "word": "baboon",
+          "emoji": "🦍",
+          "distractors": [
+            "baboons",
+            "babune",
+            "boboon"
+          ]
+        },
+        {
+          "word": "combing",
+          "emoji": "💇",
+          "distractors": [
+            "comb",
+            "combs",
+            "combed"
+          ]
+        }
       ]
     },
     {
       "sentence": "The elephant sneezes and falls on her knees.",
       "blanks": [
-        { "word": "elephant", "emoji": "🐘", "distractors": ["elephants", "elefant", "elephent"] },
-        { "word": "sneezes",  "emoji": "🤧", "distractors": ["sneeze", "sneezing", "sneezed"] }
+        {
+          "word": "elephant",
+          "emoji": "🐘",
+          "distractors": [
+            "elephants",
+            "elefant",
+            "elephent"
+          ]
+        },
+        {
+          "word": "sneezes",
+          "emoji": "🤧",
+          "distractors": [
+            "sneeze",
+            "sneezing",
+            "sneezed"
+          ]
+        }
       ]
     },
     {
       "sentence": "The beast slides down the elephant's trunk.",
       "blanks": [
-        { "word": "beast", "emoji": "🐯", "distractors": ["beasts", "beaset", "beast's"] },
-        { "word": "trunk", "emoji": "🐘", "distractors": ["trunks", "tronk", "trunc"] }
+        {
+          "word": "beast",
+          "emoji": "🐯",
+          "distractors": [
+            "beasts",
+            "beaset",
+            "beast's"
+          ]
+        },
+        {
+          "word": "trunk",
+          "emoji": "🐘",
+          "distractors": [
+            "trunks",
+            "tronk",
+            "trunc"
+          ]
+        }
       ]
     },
     {
       "sentence": "The baboon falls out of his bunk.",
       "blanks": [
-        { "word": "baboon", "emoji": "🦍", "distractors": ["baboons", "babune", "boboon"] },
-        { "word": "bunk",   "emoji": "🛏️", "distractors": ["bunks", "bonk", "bunck"] }
+        {
+          "word": "baboon",
+          "emoji": "🦍",
+          "distractors": [
+            "baboons",
+            "babune",
+            "boboon"
+          ]
+        },
+        {
+          "word": "bunk",
+          "emoji": "🛏️",
+          "distractors": [
+            "bunks",
+            "bonk",
+            "bunck"
+          ]
+        }
       ]
     },
     {
       "sentence": "The beasts are waiting at the animal fair.",
       "blanks": [
-        { "word": "beasts", "emoji": "🐯", "distractors": ["beast", "beastes", "beestes"] },
-        { "word": "fair",   "emoji": "🎪", "distractors": ["fairs", "fare", "faier"] }
+        {
+          "word": "beasts",
+          "emoji": "🐯",
+          "distractors": [
+            "beast",
+            "beastes",
+            "beestes"
+          ]
+        },
+        {
+          "word": "fair",
+          "emoji": "🎪",
+          "distractors": [
+            "fairs",
+            "fare",
+            "faier"
+          ]
+        }
       ]
     },
     {
       "sentence": "The whale is a gentle giant of the ocean.",
       "blanks": [
-        { "word": "whale",  "emoji": "🐋", "distractors": ["whales", "wale", "whalle"] },
-        { "word": "gentle", "emoji": "🕊️", "distractors": ["gentles", "gentel", "gentil"] },
-        { "word": "giant",  "emoji": "🌊", "distractors": ["giants", "giante", "giannt"] }
+        {
+          "word": "whale",
+          "emoji": "🐋",
+          "distractors": [
+            "whales",
+            "wale",
+            "whalle"
+          ]
+        },
+        {
+          "word": "gentle",
+          "emoji": "🕊️",
+          "distractors": [
+            "gentles",
+            "gentel",
+            "gentil"
+          ]
+        },
+        {
+          "word": "giant",
+          "emoji": "🌊",
+          "distractors": [
+            "giants",
+            "giante",
+            "giannt"
+          ]
+        }
       ]
     },
     {
       "sentence": "The snail has a colourful shell and lives in the bog.",
       "blanks": [
-        { "word": "snail",     "emoji": "🐌", "distractors": ["snails", "snaile", "snale"] },
-        { "word": "colourful", "emoji": "🌈", "distractors": ["colour", "colorful", "colourfall"] },
-        { "word": "bog",       "emoji": "🌿", "distractors": ["bogs", "bogg", "bogue"] }
+        {
+          "word": "snail",
+          "emoji": "🐌",
+          "distractors": [
+            "snails",
+            "snaile",
+            "snale"
+          ]
+        },
+        {
+          "word": "colourful",
+          "emoji": "🌈",
+          "distractors": [
+            "colour",
+            "colorful",
+            "colourfall"
+          ]
+        },
+        {
+          "word": "bog",
+          "emoji": "🌿",
+          "distractors": [
+            "bogs",
+            "bogg",
+            "bogue"
+          ]
+        }
       ]
     },
     {
       "sentence": "The red wolf is an endangered animal in the wild.",
       "blanks": [
-        { "word": "wolf",       "emoji": "🐺", "distractors": ["wolfs", "wolph", "wolve"] },
-        { "word": "endangered", "emoji": "⚠️", "distractors": ["endanger", "endangerd", "endangers"] }
+        {
+          "word": "wolf",
+          "emoji": "🐺",
+          "distractors": [
+            "wolfs",
+            "wolph",
+            "wolve"
+          ]
+        },
+        {
+          "word": "endangered",
+          "emoji": "⚠️",
+          "distractors": [
+            "endanger",
+            "endangerd",
+            "endangers"
+          ]
+        }
       ]
     }
   ]

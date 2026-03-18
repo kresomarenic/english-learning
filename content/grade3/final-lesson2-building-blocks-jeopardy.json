@@ -4,7 +4,17 @@
   "title": "The Building Blocks Jeopardy",
   "titleHr": "Rizik - gradivni blokovi",
   "words": [
-    { "en": "race", "hr": "utrka" },
-    { "en": "jeopardy", "hr": "rizik (vrsta igre)" }
+    {
+      "en": "race",
+      "hr": [
+        "utrka"
+      ]
+    },
+    {
+      "en": "jeopardy",
+      "hr": [
+        "rizik (vrsta igre)"
+      ]
+    }
   ]
 }

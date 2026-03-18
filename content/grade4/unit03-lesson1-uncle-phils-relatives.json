@@ -4,108 +4,375 @@
   "title": "Uncle Phil's Relatives",
   "titleHr": "Stric Philovi rođaci",
   "words": [
-    { "en": "around", "hr": "oko" },
-    { "en": "autumn", "hr": "jesen" },
-    { "en": "beach", "hr": "plaža" },
-    { "en": "camera", "hr": "kamera" },
-    { "en": "city", "hr": "grad" },
-    { "en": "collect eggs", "hr": "skupljati jaja" },
-    { "en": "e-mail", "hr": "elektronička pošta" },
-    { "en": "feed the animals", "hr": "hraniti životinje" },
-    { "en": "holidays", "hr": "praznici" },
-    { "en": "keep animals", "hr": "držati životinje" },
-    { "en": "laptop", "hr": "prijenosno računalo" },
-    { "en": "milk the cows", "hr": "masti krave" },
-    { "en": "online lessons", "hr": "online nastava" },
-    { "en": "outdoors", "hr": "izvan kuće, na otvorenom" },
-    { "en": "project", "hr": "projekt" },
-    { "en": "relatives", "hr": "rodaci" },
-    { "en": "sailing", "hr": "jedrenje" },
-    { "en": "season", "hr": "godišnje doba" },
-    { "en": "sports camp", "hr": "sportski kamp" },
-    { "en": "spring", "hr": "proljeće" },
-    { "en": "study room", "hr": "radna soba" },
-    { "en": "surfing", "hr": "surfanje" },
-    { "en": "vegetable garden", "hr": "povrtnjak" },
-    { "en": "weather", "hr": "vrijeme" },
-    { "en": "week", "hr": "tjedan" }
+    {
+      "en": "around",
+      "hr": [
+        "oko"
+      ]
+    },
+    {
+      "en": "autumn",
+      "hr": [
+        "jesen"
+      ]
+    },
+    {
+      "en": "beach",
+      "hr": [
+        "plaža"
+      ]
+    },
+    {
+      "en": "camera",
+      "hr": [
+        "kamera"
+      ]
+    },
+    {
+      "en": "city",
+      "hr": [
+        "grad"
+      ]
+    },
+    {
+      "en": "collect eggs",
+      "hr": [
+        "skupljati jaja"
+      ]
+    },
+    {
+      "en": "e-mail",
+      "hr": [
+        "elektronička pošta",
+        "e-mail",
+        "email"
+      ]
+    },
+    {
+      "en": "feed the animals",
+      "hr": [
+        "hraniti životinje"
+      ]
+    },
+    {
+      "en": "holidays",
+      "hr": [
+        "praznici"
+      ]
+    },
+    {
+      "en": "keep animals",
+      "hr": [
+        "držati životinje"
+      ]
+    },
+    {
+      "en": "laptop",
+      "hr": [
+        "prijenosno računalo",
+        "laptop"
+      ]
+    },
+    {
+      "en": "milk the cows",
+      "hr": [
+        "masti krave"
+      ]
+    },
+    {
+      "en": "online lessons",
+      "hr": [
+        "online nastava"
+      ]
+    },
+    {
+      "en": "outdoors",
+      "hr": [
+        "izvan kuće",
+        "na otvorenom",
+        "vani"
+      ]
+    },
+    {
+      "en": "project",
+      "hr": [
+        "projekt"
+      ]
+    },
+    {
+      "en": "relatives",
+      "hr": [
+        "rodaci",
+        "rodbina"
+      ]
+    },
+    {
+      "en": "sailing",
+      "hr": [
+        "jedrenje"
+      ]
+    },
+    {
+      "en": "season",
+      "hr": [
+        "godišnje doba"
+      ]
+    },
+    {
+      "en": "sports camp",
+      "hr": [
+        "sportski kamp"
+      ]
+    },
+    {
+      "en": "spring",
+      "hr": [
+        "proljeće"
+      ]
+    },
+    {
+      "en": "study room",
+      "hr": [
+        "radna soba"
+      ]
+    },
+    {
+      "en": "surfing",
+      "hr": [
+        "surfanje"
+      ]
+    },
+    {
+      "en": "vegetable garden",
+      "hr": [
+        "povrtnjak"
+      ]
+    },
+    {
+      "en": "weather",
+      "hr": [
+        "vrijeme"
+      ]
+    },
+    {
+      "en": "week",
+      "hr": [
+        "tjedan"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "The Taylors live on a farm.",
       "blanks": [
-        { "word": "farm", "emoji": "🌾", "distractors": ["city", "farrm", "beach"] }
+        {
+          "word": "farm",
+          "emoji": "🌾",
+          "distractors": [
+            "city",
+            "farrm",
+            "beach"
+          ]
+        }
       ]
     },
     {
       "sentence": "They feed the animals and milk the cows.",
       "blanks": [
-        { "word": "feed", "emoji": "🐄", "distractors": ["feeds", "fede", "give"] },
-        { "word": "milk", "emoji": "🥛", "distractors": ["milks", "miilk", "wash"] }
+        {
+          "word": "feed",
+          "emoji": "🐄",
+          "distractors": [
+            "feeds",
+            "fede",
+            "give"
+          ]
+        },
+        {
+          "word": "milk",
+          "emoji": "🥛",
+          "distractors": [
+            "milks",
+            "miilk",
+            "wash"
+          ]
+        }
       ]
     },
     {
       "sentence": "The children collect eggs every morning.",
       "blanks": [
-        { "word": "collect", "emoji": "🥚", "distractors": ["collects", "colect", "find"] }
+        {
+          "word": "collect",
+          "emoji": "🥚",
+          "distractors": [
+            "collects",
+            "colect",
+            "find"
+          ]
+        }
       ]
     },
     {
       "sentence": "They keep horses and have a vegetable garden.",
       "blanks": [
-        { "word": "horses", "emoji": "🐴", "distractors": ["horss", "hores", "cows"] },
-        { "word": "vegetable garden", "emoji": "🥕", "distractors": ["vegetabel garden", "vegatable garden", "flower garden"] }
+        {
+          "word": "horses",
+          "emoji": "🐴",
+          "distractors": [
+            "horss",
+            "hores",
+            "cows"
+          ]
+        },
+        {
+          "word": "vegetable garden",
+          "emoji": "🥕",
+          "distractors": [
+            "vegetabel garden",
+            "vegatable garden",
+            "flower garden"
+          ]
+        }
       ]
     },
     {
       "sentence": "Their favourite season is Spring.",
       "blanks": [
-        { "word": "Spring", "emoji": "🌸", "distractors": ["Autumn", "Sprring", "Summer"] }
+        {
+          "word": "Spring",
+          "emoji": "🌸",
+          "distractors": [
+            "Autumn",
+            "Sprring",
+            "Summer"
+          ]
+        }
       ]
     },
     {
       "sentence": "They sit around the fire and sing songs.",
       "blanks": [
-        { "word": "fire", "emoji": "🔥", "distractors": ["fier", "fiire", "table"] },
-        { "word": "songs", "emoji": "🎵", "distractors": ["song", "songgs", "stories"] }
+        {
+          "word": "fire",
+          "emoji": "🔥",
+          "distractors": [
+            "fier",
+            "fiire",
+            "table"
+          ]
+        },
+        {
+          "word": "songs",
+          "emoji": "🎵",
+          "distractors": [
+            "song",
+            "songgs",
+            "stories"
+          ]
+        }
       ]
     },
     {
       "sentence": "The Whites live in Sydney near the beach.",
       "blanks": [
-        { "word": "Sydney", "emoji": "🌊", "distractors": ["Canberra", "Sydnney", "London"] },
-        { "word": "beach", "emoji": "🏖️", "distractors": ["park", "beech", "forest"] }
+        {
+          "word": "Sydney",
+          "emoji": "🌊",
+          "distractors": [
+            "Canberra",
+            "Sydnney",
+            "London"
+          ]
+        },
+        {
+          "word": "beach",
+          "emoji": "🏖️",
+          "distractors": [
+            "park",
+            "beech",
+            "forest"
+          ]
+        }
       ]
     },
     {
       "sentence": "The children go to school by bus.",
       "blanks": [
-        { "word": "bus", "emoji": "🚌", "distractors": ["car", "buss", "train"] }
+        {
+          "word": "bus",
+          "emoji": "🚌",
+          "distractors": [
+            "car",
+            "buss",
+            "train"
+          ]
+        }
       ]
     },
     {
       "sentence": "They like sport and spend a lot of time outdoors.",
       "blanks": [
-        { "word": "outdoors", "emoji": "🌞", "distractors": ["outdoor", "outdorrs", "indoors"] }
+        {
+          "word": "outdoors",
+          "emoji": "🌞",
+          "distractors": [
+            "outdoor",
+            "outdorrs",
+            "indoors"
+          ]
+        }
       ]
     },
     {
       "sentence": "They go sailing and surfing in summer.",
       "blanks": [
-        { "word": "sailing", "emoji": "⛵", "distractors": ["saling", "saiiling", "swimming"] },
-        { "word": "surfing", "emoji": "🏄", "distractors": ["surffing", "surving", "hiking"] }
+        {
+          "word": "sailing",
+          "emoji": "⛵",
+          "distractors": [
+            "saling",
+            "saiiling",
+            "swimming"
+          ]
+        },
+        {
+          "word": "surfing",
+          "emoji": "🏄",
+          "distractors": [
+            "surffing",
+            "surving",
+            "hiking"
+          ]
+        }
       ]
     },
     {
       "sentence": "Their favourite season is summer.",
       "blanks": [
-        { "word": "summer", "emoji": "☀️", "distractors": ["winter", "summmer", "spring"] }
+        {
+          "word": "summer",
+          "emoji": "☀️",
+          "distractors": [
+            "winter",
+            "summmer",
+            "spring"
+          ]
+        }
       ]
     },
     {
       "sentence": "The weather is hot and sunny.",
       "blanks": [
-        { "word": "weather", "emoji": "🌤️", "distractors": ["wheather", "wether", "season"] }
+        {
+          "word": "weather",
+          "emoji": "🌤️",
+          "distractors": [
+            "wheather",
+            "wether",
+            "season"
+          ]
+        }
       ]
     }
   ]

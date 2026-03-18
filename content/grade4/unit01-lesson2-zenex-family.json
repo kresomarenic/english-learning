@@ -4,101 +4,334 @@
   "title": "The Zenex Family",
   "titleHr": "Obitelj Zenex",
   "words": [
-    { "en": "arm", "hr": "ruka" },
-    { "en": "antenna", "hr": "antena" },
-    { "en": "beard", "hr": "brada" },
-    { "en": "creature", "hr": "stvorenje" },
-    { "en": "different", "hr": "drukčiji" },
-    { "en": "ear", "hr": "uho" },
-    { "en": "Earth", "hr": "Zemlja" },
-    { "en": "eye", "hr": "oko" },
-    { "en": "head", "hr": "glava" },
-    { "en": "leg", "hr": "noga" },
-    { "en": "mouth", "hr": "usta" },
-    { "en": "moustache", "hr": "brkovi" },
-    { "en": "nose", "hr": "nos" },
-    { "en": "planet", "hr": "planet" },
-    { "en": "plump", "hr": "debeljuškast" },
-    { "en": "spaceship", "hr": "svemirski brod" }
+    {
+      "en": "arm",
+      "hr": [
+        "ruka"
+      ]
+    },
+    {
+      "en": "antenna",
+      "hr": [
+        "antena"
+      ]
+    },
+    {
+      "en": "beard",
+      "hr": [
+        "brada"
+      ]
+    },
+    {
+      "en": "creature",
+      "hr": [
+        "stvorenje"
+      ]
+    },
+    {
+      "en": "different",
+      "hr": [
+        "drukčiji"
+      ]
+    },
+    {
+      "en": "ear",
+      "hr": [
+        "uho"
+      ]
+    },
+    {
+      "en": "Earth",
+      "hr": [
+        "Zemlja"
+      ]
+    },
+    {
+      "en": "eye",
+      "hr": [
+        "oko"
+      ]
+    },
+    {
+      "en": "head",
+      "hr": [
+        "glava"
+      ]
+    },
+    {
+      "en": "leg",
+      "hr": [
+        "noga"
+      ]
+    },
+    {
+      "en": "mouth",
+      "hr": [
+        "usta"
+      ]
+    },
+    {
+      "en": "moustache",
+      "hr": [
+        "brkovi"
+      ]
+    },
+    {
+      "en": "nose",
+      "hr": [
+        "nos"
+      ]
+    },
+    {
+      "en": "planet",
+      "hr": [
+        "planet"
+      ]
+    },
+    {
+      "en": "plump",
+      "hr": [
+        "debeljuškast"
+      ]
+    },
+    {
+      "en": "spaceship",
+      "hr": [
+        "svemirski brod",
+        "letjelica"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "They have got antennas on their heads.",
       "blanks": [
-        { "word": "antennas", "emoji": "📡", "distractors": ["antenna", "antenas", "anntenas"] }
+        {
+          "word": "antennas",
+          "emoji": "📡",
+          "distractors": [
+            "antenna",
+            "antenas",
+            "anntenas"
+          ]
+        }
       ]
     },
     {
       "sentence": "They haven't got any ears.",
       "blanks": [
-        { "word": "ears", "emoji": "👂", "distractors": ["ear", "years", "eares"] }
+        {
+          "word": "ears",
+          "emoji": "👂",
+          "distractors": [
+            "ear",
+            "years",
+            "eares"
+          ]
+        }
       ]
     },
     {
       "sentence": "Mum Zenex has got a big mouth.",
       "blanks": [
-        { "word": "mouth", "emoji": "👄", "distractors": ["mouths", "moath", "mouht"] }
+        {
+          "word": "mouth",
+          "emoji": "👄",
+          "distractors": [
+            "mouths",
+            "moath",
+            "mouht"
+          ]
+        }
       ]
     },
     {
       "sentence": "Dad Zenex is short and plump.",
       "blanks": [
-        { "word": "short", "emoji": "📏", "distractors": ["tall", "shor", "shorts"] },
-        { "word": "plump", "emoji": "🫃", "distractors": ["plumps", "plomps", "slim"] }
+        {
+          "word": "short",
+          "emoji": "📏",
+          "distractors": [
+            "tall",
+            "shor",
+            "shorts"
+          ]
+        },
+        {
+          "word": "plump",
+          "emoji": "🫃",
+          "distractors": [
+            "plumps",
+            "plomps",
+            "slim"
+          ]
+        }
       ]
     },
     {
       "sentence": "He has got a moustache and a beard.",
       "blanks": [
-        { "word": "moustache", "emoji": "👨", "distractors": ["moustaches", "mustache", "moustace"] },
-        { "word": "beard", "emoji": "🧔", "distractors": ["beards", "beared", "beard's"] }
+        {
+          "word": "moustache",
+          "emoji": "👨",
+          "distractors": [
+            "moustaches",
+            "mustache",
+            "moustace"
+          ]
+        },
+        {
+          "word": "beard",
+          "emoji": "🧔",
+          "distractors": [
+            "beards",
+            "beared",
+            "beard's"
+          ]
+        }
       ]
     },
     {
       "sentence": "Strange creatures live on the Earth.",
       "blanks": [
-        { "word": "creatures", "emoji": "👾", "distractors": ["creature", "creaturs", "cretures"] },
-        { "word": "Earth", "emoji": "🌍", "distractors": ["earth", "Earht", "Eart"] }
+        {
+          "word": "creatures",
+          "emoji": "👾",
+          "distractors": [
+            "creature",
+            "creaturs",
+            "cretures"
+          ]
+        },
+        {
+          "word": "Earth",
+          "emoji": "🌍",
+          "distractors": [
+            "earth",
+            "Earht",
+            "Eart"
+          ]
+        }
       ]
     },
     {
       "sentence": "They live on the planet Zenex.",
       "blanks": [
-        { "word": "planet", "emoji": "🪐", "distractors": ["planets", "planett", "moon"] }
+        {
+          "word": "planet",
+          "emoji": "🪐",
+          "distractors": [
+            "planets",
+            "planett",
+            "moon"
+          ]
+        }
       ]
     },
     {
       "sentence": "Mum Zenex is tall and skinny.",
       "blanks": [
-        { "word": "tall", "emoji": "📏", "distractors": ["short", "slim", "taller"] },
-        { "word": "skinny", "emoji": "🤸", "distractors": ["plump", "skiny", "skinnny"] }
+        {
+          "word": "tall",
+          "emoji": "📏",
+          "distractors": [
+            "short",
+            "slim",
+            "taller"
+          ]
+        },
+        {
+          "word": "skinny",
+          "emoji": "🤸",
+          "distractors": [
+            "plump",
+            "skiny",
+            "skinnny"
+          ]
+        }
       ]
     },
     {
       "sentence": "Zick can smell space storms because he has got two noses.",
       "blanks": [
-        { "word": "smell", "emoji": "👃", "distractors": ["smells", "smeel", "sniff"] },
-        { "word": "noses", "emoji": "👃", "distractors": ["nose", "nosess", "nozes"] }
+        {
+          "word": "smell",
+          "emoji": "👃",
+          "distractors": [
+            "smells",
+            "smeel",
+            "sniff"
+          ]
+        },
+        {
+          "word": "noses",
+          "emoji": "👃",
+          "distractors": [
+            "nose",
+            "nosess",
+            "nozes"
+          ]
+        }
       ]
     },
     {
       "sentence": "He can climb stars because he has got four arms and four legs.",
       "blanks": [
-        { "word": "arms", "emoji": "💪", "distractors": ["arm", "armss", "legs"] },
-        { "word": "legs", "emoji": "🦵", "distractors": ["leg", "legss", "arms"] }
+        {
+          "word": "arms",
+          "emoji": "💪",
+          "distractors": [
+            "arm",
+            "armss",
+            "legs"
+          ]
+        },
+        {
+          "word": "legs",
+          "emoji": "🦵",
+          "distractors": [
+            "leg",
+            "legss",
+            "arms"
+          ]
+        }
       ]
     },
     {
       "sentence": "They have got three eyes and two noses.",
       "blanks": [
-        { "word": "eyes", "emoji": "👁️", "distractors": ["eye", "eyess", "ears"] },
-        { "word": "noses", "emoji": "👃", "distractors": ["nose", "nosess", "mouths"] }
+        {
+          "word": "eyes",
+          "emoji": "👁️",
+          "distractors": [
+            "eye",
+            "eyess",
+            "ears"
+          ]
+        },
+        {
+          "word": "noses",
+          "emoji": "👃",
+          "distractors": [
+            "nose",
+            "nosess",
+            "mouths"
+          ]
+        }
       ]
     },
     {
       "sentence": "They haven't got any hair on their heads.",
       "blanks": [
-        { "word": "hair", "emoji": "💇", "distractors": ["hairs", "hare", "haair"] }
+        {
+          "word": "hair",
+          "emoji": "💇",
+          "distractors": [
+            "hairs",
+            "hare",
+            "haair"
+          ]
+        }
       ]
     }
   ]

@@ -4,16 +4,72 @@
   "title": "Itsy Bitsy Spider",
   "titleHr": "Mali paučić",
   "words": [
-    { "en": "again", "hr": "ponovo" },
-    { "en": "come down", "hr": "pasti (kiša)" },
-    { "en": "come out", "hr": "izići (sunce)" },
-    { "en": "climb up", "hr": "popeti se" },
-    { "en": "dry up", "hr": "osušiti" },
-    { "en": "itsy bitsy", "hr": "sitan, sićušan" },
-    { "en": "rain", "hr": "kiša" },
-    { "en": "spider", "hr": "pauk" },
-    { "en": "spout", "hr": "žlijeb" },
-    { "en": "sun", "hr": "sunce" },
-    { "en": "wash out", "hr": "isprati" }
+    {
+      "en": "again",
+      "hr": [
+        "ponovo"
+      ]
+    },
+    {
+      "en": "come down",
+      "hr": [
+        "pasti (kiša)"
+      ]
+    },
+    {
+      "en": "come out",
+      "hr": [
+        "izići (sunce)"
+      ]
+    },
+    {
+      "en": "climb up",
+      "hr": [
+        "popeti se"
+      ]
+    },
+    {
+      "en": "dry up",
+      "hr": [
+        "osušiti"
+      ]
+    },
+    {
+      "en": "itsy bitsy",
+      "hr": [
+        "sitan",
+        "sićušan"
+      ]
+    },
+    {
+      "en": "rain",
+      "hr": [
+        "kiša"
+      ]
+    },
+    {
+      "en": "spider",
+      "hr": [
+        "pauk"
+      ]
+    },
+    {
+      "en": "spout",
+      "hr": [
+        "žlijeb"
+      ]
+    },
+    {
+      "en": "sun",
+      "hr": [
+        "sunce"
+      ]
+    },
+    {
+      "en": "wash out",
+      "hr": [
+        "isprati"
+      ]
+    }
   ]
 }

@@ -4,99 +4,330 @@
   "title": "Meet My Family",
   "titleHr": "Upoznaj moju obitelj",
   "words": [
-    { "en": "aliens", "hr": "vanzemaljci" },
-    { "en": "astronomer", "hr": "astronom" },
-    { "en": "blonde hair", "hr": "plava kosa" },
-    { "en": "capital", "hr": "glavni grad" },
-    { "en": "clever", "hr": "pametan" },
-    { "en": "grey hair", "hr": "sijeda kosa" },
-    { "en": "old", "hr": "star" },
-    { "en": "pretty", "hr": "lijep" },
-    { "en": "scientist", "hr": "znanstvenik" },
-    { "en": "slim", "hr": "mršav" },
-    { "en": "species", "hr": "vrste" },
-    { "en": "strange", "hr": "čudan" },
-    { "en": "strong", "hr": "jak" },
-    { "en": "tall", "hr": "visok" },
-    { "en": "telescope", "hr": "teleskop" }
+    {
+      "en": "aliens",
+      "hr": [
+        "vanzemaljci",
+        "izvanzemaljci"
+      ]
+    },
+    {
+      "en": "astronomer",
+      "hr": [
+        "astronom"
+      ]
+    },
+    {
+      "en": "blonde hair",
+      "hr": [
+        "plava kosa"
+      ]
+    },
+    {
+      "en": "capital",
+      "hr": [
+        "glavni grad"
+      ]
+    },
+    {
+      "en": "clever",
+      "hr": [
+        "pametan",
+        "pametna",
+        "inteligentan"
+      ]
+    },
+    {
+      "en": "grey hair",
+      "hr": [
+        "sijeda kosa"
+      ]
+    },
+    {
+      "en": "old",
+      "hr": [
+        "star"
+      ]
+    },
+    {
+      "en": "pretty",
+      "hr": [
+        "lijep",
+        "dražestan",
+        "lijepa",
+        "dražesna"
+      ]
+    },
+    {
+      "en": "scientist",
+      "hr": [
+        "znanstvenik"
+      ]
+    },
+    {
+      "en": "slim",
+      "hr": [
+        "mršav",
+        "vitak",
+        "mršava",
+        "vitka"
+      ]
+    },
+    {
+      "en": "species",
+      "hr": [
+        "vrste"
+      ]
+    },
+    {
+      "en": "strange",
+      "hr": [
+        "čudan"
+      ]
+    },
+    {
+      "en": "strong",
+      "hr": [
+        "jak",
+        "jaka",
+        "snažan",
+        "snažna"
+      ]
+    },
+    {
+      "en": "tall",
+      "hr": [
+        "visok"
+      ]
+    },
+    {
+      "en": "telescope",
+      "hr": [
+        "teleskop"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "June is a scientist.",
       "blanks": [
-        { "word": "scientist", "emoji": "🔬", "distractors": ["astronomer", "scientest", "sientist"] }
+        {
+          "word": "scientist",
+          "emoji": "🔬",
+          "distractors": [
+            "astronomer",
+            "scientest",
+            "sientist"
+          ]
+        }
       ]
     },
     {
       "sentence": "She has got brown hair and green eyes.",
       "blanks": [
-        { "word": "brown", "emoji": "🟫", "distractors": ["blonde", "grey", "browne"] },
-        { "word": "green", "emoji": "💚", "distractors": ["blue", "brown", "grean"] }
+        {
+          "word": "brown",
+          "emoji": "🟫",
+          "distractors": [
+            "blonde",
+            "grey",
+            "browne"
+          ]
+        },
+        {
+          "word": "green",
+          "emoji": "💚",
+          "distractors": [
+            "blue",
+            "brown",
+            "grean"
+          ]
+        }
       ]
     },
     {
       "sentence": "She is tall and pretty.",
       "blanks": [
-        { "word": "tall", "emoji": "📏", "distractors": ["short", "slim", "taller"] },
-        { "word": "pretty", "emoji": "💄", "distractors": ["prety", "pretiy", "clever"] }
+        {
+          "word": "tall",
+          "emoji": "📏",
+          "distractors": [
+            "short",
+            "slim",
+            "taller"
+          ]
+        },
+        {
+          "word": "pretty",
+          "emoji": "💄",
+          "distractors": [
+            "prety",
+            "pretiy",
+            "clever"
+          ]
+        }
       ]
     },
     {
       "sentence": "She can make the best cakes in the world.",
       "blanks": [
-        { "word": "cakes", "emoji": "🎂", "distractors": ["cake", "bakes", "caakes"] }
+        {
+          "word": "cakes",
+          "emoji": "🎂",
+          "distractors": [
+            "cake",
+            "bakes",
+            "caakes"
+          ]
+        }
       ]
     },
     {
       "sentence": "William is an astronomer.",
       "blanks": [
-        { "word": "astronomer", "emoji": "🔭", "distractors": ["scientist", "astronomers", "astronommer"] }
+        {
+          "word": "astronomer",
+          "emoji": "🔭",
+          "distractors": [
+            "scientist",
+            "astronomers",
+            "astronommer"
+          ]
+        }
       ]
     },
     {
       "sentence": "He has got grey hair and blue eyes.",
       "blanks": [
-        { "word": "grey", "emoji": "🩶", "distractors": ["brown", "blonde", "grrey"] },
-        { "word": "blue", "emoji": "💙", "distractors": ["green", "bleu", "bluw"] }
+        {
+          "word": "grey",
+          "emoji": "🩶",
+          "distractors": [
+            "brown",
+            "blonde",
+            "grrey"
+          ]
+        },
+        {
+          "word": "blue",
+          "emoji": "💙",
+          "distractors": [
+            "green",
+            "bleu",
+            "bluw"
+          ]
+        }
       ]
     },
     {
       "sentence": "He has got a modern telescope.",
       "blanks": [
-        { "word": "telescope", "emoji": "🔭", "distractors": ["telescop", "telesope", "binoculars"] }
+        {
+          "word": "telescope",
+          "emoji": "🔭",
+          "distractors": [
+            "telescop",
+            "telesope",
+            "binoculars"
+          ]
+        }
       ]
     },
     {
       "sentence": "April is short and slim.",
       "blanks": [
-        { "word": "short", "emoji": "📏", "distractors": ["tall", "shor", "shorts"] },
-        { "word": "slim", "emoji": "🤸", "distractors": ["slimm", "slime", "plump"] }
+        {
+          "word": "short",
+          "emoji": "📏",
+          "distractors": [
+            "tall",
+            "shor",
+            "shorts"
+          ]
+        },
+        {
+          "word": "slim",
+          "emoji": "🤸",
+          "distractors": [
+            "slimm",
+            "slime",
+            "plump"
+          ]
+        }
       ]
     },
     {
       "sentence": "She has got blonde hair and big teeth.",
       "blanks": [
-        { "word": "blonde", "emoji": "👱", "distractors": ["brown", "blond", "blunde"] },
-        { "word": "teeth", "emoji": "🦷", "distractors": ["tooth", "teeths", "teethes"] }
+        {
+          "word": "blonde",
+          "emoji": "👱",
+          "distractors": [
+            "brown",
+            "blond",
+            "blunde"
+          ]
+        },
+        {
+          "word": "teeth",
+          "emoji": "🦷",
+          "distractors": [
+            "tooth",
+            "teeths",
+            "teethes"
+          ]
+        }
       ]
     },
     {
       "sentence": "April can name all the capitals in the world.",
       "blanks": [
-        { "word": "capitals", "emoji": "🌍", "distractors": ["capital", "capitols", "capitalls"] }
+        {
+          "word": "capitals",
+          "emoji": "🌍",
+          "distractors": [
+            "capital",
+            "capitols",
+            "capitalls"
+          ]
+        }
       ]
     },
     {
       "sentence": "William can tell you everything about stars and planets.",
       "blanks": [
-        { "word": "stars", "emoji": "⭐", "distractors": ["star", "stares", "strars"] },
-        { "word": "planets", "emoji": "🪐", "distractors": ["planet", "planetes", "planetts"] }
+        {
+          "word": "stars",
+          "emoji": "⭐",
+          "distractors": [
+            "star",
+            "stares",
+            "strars"
+          ]
+        },
+        {
+          "word": "planets",
+          "emoji": "🪐",
+          "distractors": [
+            "planet",
+            "planetes",
+            "planetts"
+          ]
+        }
       ]
     },
     {
       "sentence": "June likes reading about dinosaurs.",
       "blanks": [
-        { "word": "dinosaurs", "emoji": "🦕", "distractors": ["dinosaur", "dinosours", "dinosors"] }
+        {
+          "word": "dinosaurs",
+          "emoji": "🦕",
+          "distractors": [
+            "dinosaur",
+            "dinosours",
+            "dinosors"
+          ]
+        }
       ]
     }
   ]

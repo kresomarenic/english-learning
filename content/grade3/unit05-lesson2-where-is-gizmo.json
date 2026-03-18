@@ -4,25 +4,125 @@
   "title": "Where Is Gizmo?",
   "titleHr": "Gdje je Gizmo?",
   "words": [
-    { "en": "armchair", "hr": "naslonjač" },
-    { "en": "bath", "hr": "kada" },
-    { "en": "bed", "hr": "krevet" },
-    { "en": "carpet", "hr": "tepih" },
-    { "en": "cooker", "hr": "štednjak" },
-    { "en": "desk", "hr": "pisaći stol" },
-    { "en": "dishwasher", "hr": "stroj za pranje posuđa" },
-    { "en": "fridge", "hr": "hladnjak" },
-    { "en": "lamp", "hr": "svjetiljka" },
-    { "en": "sink", "hr": "sudoper" },
-    { "en": "sofa", "hr": "kauč" },
-    { "en": "wardrobe", "hr": "ormar za odjeću" },
-    { "en": "washbasin", "hr": "umivaonik" },
-    { "en": "washing machine", "hr": "stroj za pranje rublja" },
-    { "en": "behind", "hr": "iza" },
-    { "en": "in front of", "hr": "ispred" },
-    { "en": "shoes", "hr": "cipele" },
-    { "en": "slippers", "hr": "papuče" },
-    { "en": "socks", "hr": "čarape" },
-    { "en": "under", "hr": "ispod" }
+    {
+      "en": "armchair",
+      "hr": [
+        "naslonjač"
+      ]
+    },
+    {
+      "en": "bath",
+      "hr": [
+        "kada"
+      ]
+    },
+    {
+      "en": "bed",
+      "hr": [
+        "krevet"
+      ]
+    },
+    {
+      "en": "carpet",
+      "hr": [
+        "tepih"
+      ]
+    },
+    {
+      "en": "cooker",
+      "hr": [
+        "štednjak"
+      ]
+    },
+    {
+      "en": "desk",
+      "hr": [
+        "pisaći stol"
+      ]
+    },
+    {
+      "en": "dishwasher",
+      "hr": [
+        "stroj za pranje posuđa"
+      ]
+    },
+    {
+      "en": "fridge",
+      "hr": [
+        "hladnjak"
+      ]
+    },
+    {
+      "en": "lamp",
+      "hr": [
+        "svjetiljka"
+      ]
+    },
+    {
+      "en": "sink",
+      "hr": [
+        "sudoper"
+      ]
+    },
+    {
+      "en": "sofa",
+      "hr": [
+        "kauč"
+      ]
+    },
+    {
+      "en": "wardrobe",
+      "hr": [
+        "ormar za odjeću"
+      ]
+    },
+    {
+      "en": "washbasin",
+      "hr": [
+        "umivaonik"
+      ]
+    },
+    {
+      "en": "washing machine",
+      "hr": [
+        "stroj za pranje rublja"
+      ]
+    },
+    {
+      "en": "behind",
+      "hr": [
+        "iza"
+      ]
+    },
+    {
+      "en": "in front of",
+      "hr": [
+        "ispred"
+      ]
+    },
+    {
+      "en": "shoes",
+      "hr": [
+        "cipele"
+      ]
+    },
+    {
+      "en": "slippers",
+      "hr": [
+        "papuče"
+      ]
+    },
+    {
+      "en": "socks",
+      "hr": [
+        "čarape"
+      ]
+    },
+    {
+      "en": "under",
+      "hr": [
+        "ispod"
+      ]
+    }
   ]
 }

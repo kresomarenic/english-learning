@@ -15,10 +15,12 @@ function normalize(s: string) {
     .trim()
 }
 
-function isCorrect(heard: string, expected: string, alternatives: string[]): boolean {
-  const norm = normalize(expected)
+function isCorrect(heard: string, expectedVariants: string[], alternatives: string[]): boolean {
   const allHeard = [heard, ...alternatives].map(normalize)
-  return allHeard.some((h) => h === norm || h.includes(norm) || norm.includes(h))
+  return expectedVariants.some((expected) => {
+    const norm = normalize(expected)
+    return allHeard.some((h) => h === norm || h.includes(norm) || norm.includes(h))
+  })
 }
 
 export default function RetryClient() {
@@ -49,8 +51,11 @@ export default function RetryClient() {
   }, [])
 
   const currentWord = words[index]
-  const prompt = currentWord ? (direction === 'en-hr' ? currentWord.en : currentWord.hr) : ''
-  const answer = currentWord ? (direction === 'en-hr' ? currentWord.hr : currentWord.en) : ''
+  const prompt = currentWord ? (direction === 'en-hr' ? currentWord.en : currentWord.hr[0]) : ''
+  const answerDisplay = currentWord ? (direction === 'en-hr' ? currentWord.hr[0] : currentWord.en) : ''
+  const answerVariants: string[] = currentWord
+    ? direction === 'en-hr' ? currentWord.hr : [currentWord.en]
+    : []
 
   // Clear speakScheduled once TTS actually starts
   useEffect(() => {
@@ -72,7 +77,7 @@ export default function RetryClient() {
   useEffect(() => {
     if (status !== 'done' || !currentWord) return
     const alternatives = getAlternatives()
-    const correct = isCorrect(transcript, answer, alternatives)
+    const correct = isCorrect(transcript, answerVariants, alternatives)
     setHeardText(transcript)
     setFeedback(correct ? 'correct' : 'wrong')
     setResults((prev) => [...prev, { word: currentWord, direction, heard: transcript, correct }])
@@ -138,8 +143,13 @@ export default function RetryClient() {
                 <p className="text-3xl mb-1">❌</p>
                 <p className="text-red-600 font-bold text-lg">Nije točno</p>
                 {heardText && <p className="text-red-500 text-sm mt-1">Čuo/la sam: <span className="font-semibold">{heardText}</span></p>}
-                <p className="text-slate-600 text-sm mt-2">Točan odgovor: <span className="font-bold text-slate-800">{answer}</span></p>
-                <button onClick={() => speak(answer, speechLang)} className="mt-2 text-sm text-indigo-500 underline">🔊 Čuj točan odgovor</button>
+                <p className="text-slate-600 text-sm mt-2">
+                  Točan odgovor: <span className="font-bold text-slate-800">{answerDisplay}</span>
+                  {answerVariants.length > 1 && (
+                    <span className="text-slate-400 text-xs ml-1">({answerVariants.slice(1).join(', ')})</span>
+                  )}
+                </p>
+                <button onClick={() => speak(answerDisplay, speechLang)} className="mt-2 text-sm text-indigo-500 underline">🔊 Čuj točan odgovor</button>
               </>
             )}
           </div>

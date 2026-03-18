@@ -4,37 +4,197 @@
   "title": "Guess the Months!",
   "titleHr": "Pogodi mjesece!",
   "words": [
-    { "en": "January", "hr": "siječanj" },
-    { "en": "February", "hr": "veljača" },
-    { "en": "March", "hr": "ožujak" },
-    { "en": "April", "hr": "travanj" },
-    { "en": "May", "hr": "svibanj" },
-    { "en": "June", "hr": "lipanj" },
-    { "en": "July", "hr": "srpanj" },
-    { "en": "August", "hr": "kolovoz" },
-    { "en": "September", "hr": "rujan" },
-    { "en": "October", "hr": "listopad" },
-    { "en": "November", "hr": "studeni" },
-    { "en": "December", "hr": "prosinac" },
-    { "en": "autumn", "hr": "jesen" },
-    { "en": "basket", "hr": "košara" },
-    { "en": "calendar", "hr": "kalendar" },
-    { "en": "Christmas", "hr": "Božić" },
-    { "en": "cloudy", "hr": "oblačno" },
-    { "en": "decorate", "hr": "ukrasiti" },
-    { "en": "Easter", "hr": "Uskrs" },
-    { "en": "get ready", "hr": "pripremati se" },
-    { "en": "Halloween", "hr": "Noć vještica" },
-    { "en": "month", "hr": "mjesec" },
-    { "en": "listen to music", "hr": "slušati glazbu" },
-    { "en": "prepare", "hr": "pripremati" },
-    { "en": "season", "hr": "godišnje doba" },
-    { "en": "snowdrop", "hr": "visibaba" },
-    { "en": "spring", "hr": "proljeće" },
-    { "en": "summer", "hr": "ljeto" },
-    { "en": "summer camp", "hr": "ljetni kamp" },
-    { "en": "Valentine's Day", "hr": "Valentinovo" },
-    { "en": "warm", "hr": "toplo" },
-    { "en": "winter", "hr": "zima" }
+    {
+      "en": "January",
+      "hr": [
+        "siječanj"
+      ]
+    },
+    {
+      "en": "February",
+      "hr": [
+        "veljača"
+      ]
+    },
+    {
+      "en": "March",
+      "hr": [
+        "ožujak"
+      ]
+    },
+    {
+      "en": "April",
+      "hr": [
+        "travanj"
+      ]
+    },
+    {
+      "en": "May",
+      "hr": [
+        "svibanj"
+      ]
+    },
+    {
+      "en": "June",
+      "hr": [
+        "lipanj"
+      ]
+    },
+    {
+      "en": "July",
+      "hr": [
+        "srpanj"
+      ]
+    },
+    {
+      "en": "August",
+      "hr": [
+        "kolovoz"
+      ]
+    },
+    {
+      "en": "September",
+      "hr": [
+        "rujan"
+      ]
+    },
+    {
+      "en": "October",
+      "hr": [
+        "listopad"
+      ]
+    },
+    {
+      "en": "November",
+      "hr": [
+        "studeni"
+      ]
+    },
+    {
+      "en": "December",
+      "hr": [
+        "prosinac"
+      ]
+    },
+    {
+      "en": "autumn",
+      "hr": [
+        "jesen"
+      ]
+    },
+    {
+      "en": "basket",
+      "hr": [
+        "košara"
+      ]
+    },
+    {
+      "en": "calendar",
+      "hr": [
+        "kalendar"
+      ]
+    },
+    {
+      "en": "Christmas",
+      "hr": [
+        "Božić"
+      ]
+    },
+    {
+      "en": "cloudy",
+      "hr": [
+        "oblačno"
+      ]
+    },
+    {
+      "en": "decorate",
+      "hr": [
+        "ukrasiti"
+      ]
+    },
+    {
+      "en": "Easter",
+      "hr": [
+        "Uskrs"
+      ]
+    },
+    {
+      "en": "get ready",
+      "hr": [
+        "pripremati se"
+      ]
+    },
+    {
+      "en": "Halloween",
+      "hr": [
+        "Noć vještica"
+      ]
+    },
+    {
+      "en": "month",
+      "hr": [
+        "mjesec"
+      ]
+    },
+    {
+      "en": "listen to music",
+      "hr": [
+        "slušati glazbu"
+      ]
+    },
+    {
+      "en": "prepare",
+      "hr": [
+        "pripremati"
+      ]
+    },
+    {
+      "en": "season",
+      "hr": [
+        "godišnje doba"
+      ]
+    },
+    {
+      "en": "snowdrop",
+      "hr": [
+        "visibaba"
+      ]
+    },
+    {
+      "en": "spring",
+      "hr": [
+        "proljeće"
+      ]
+    },
+    {
+      "en": "summer",
+      "hr": [
+        "ljeto"
+      ]
+    },
+    {
+      "en": "summer camp",
+      "hr": [
+        "ljetni kamp"
+      ]
+    },
+    {
+      "en": "Valentine's Day",
+      "hr": [
+        "Valentinovo"
+      ]
+    },
+    {
+      "en": "warm",
+      "hr": [
+        "toplo"
+      ]
+    },
+    {
+      "en": "winter",
+      "hr": [
+        "zima"
+      ]
+    }
   ]
 }

@@ -4,21 +4,102 @@
   "title": "A Busy Week",
   "titleHr": "Tjedan s puno obaveza",
   "words": [
-    { "en": "busy week", "hr": "tjedan s puno obaveza" },
-    { "en": "day", "hr": "dan" },
-    { "en": "exciting", "hr": "uzbudljivo" },
-    { "en": "football practice", "hr": "trening nogometa" },
-    { "en": "helmet", "hr": "kaciga" },
-    { "en": "hour", "hr": "sat" },
-    { "en": "ice hockey practice", "hr": "trening hokeja na ledu" },
-    { "en": "learn something", "hr": "naučiti nešto" },
-    { "en": "notes", "hr": "note" },
-    { "en": "pair of trainers", "hr": "par tenisica" },
-    { "en": "piano class", "hr": "sat klavira" },
-    { "en": "picnic time", "hr": "vrijeme za piknik" },
-    { "en": "Science Club", "hr": "klub mladih znanstvenika" },
-    { "en": "singing class", "hr": "sat pjevanja" },
-    { "en": "volleyball practice", "hr": "trening odbojke" },
-    { "en": "week", "hr": "tjedan" }
+    {
+      "en": "busy week",
+      "hr": [
+        "tjedan s puno obaveza"
+      ]
+    },
+    {
+      "en": "day",
+      "hr": [
+        "dan"
+      ]
+    },
+    {
+      "en": "exciting",
+      "hr": [
+        "uzbudljivo"
+      ]
+    },
+    {
+      "en": "football practice",
+      "hr": [
+        "trening nogometa"
+      ]
+    },
+    {
+      "en": "helmet",
+      "hr": [
+        "kaciga",
+        "šljem"
+      ]
+    },
+    {
+      "en": "hour",
+      "hr": [
+        "sat"
+      ]
+    },
+    {
+      "en": "ice hockey practice",
+      "hr": [
+        "trening hokeja na ledu"
+      ]
+    },
+    {
+      "en": "learn something",
+      "hr": [
+        "naučiti nešto"
+      ]
+    },
+    {
+      "en": "notes",
+      "hr": [
+        "note"
+      ]
+    },
+    {
+      "en": "pair of trainers",
+      "hr": [
+        "par tenisica"
+      ]
+    },
+    {
+      "en": "piano class",
+      "hr": [
+        "sat klavira"
+      ]
+    },
+    {
+      "en": "picnic time",
+      "hr": [
+        "vrijeme za piknik"
+      ]
+    },
+    {
+      "en": "Science Club",
+      "hr": [
+        "klub mladih znanstvenika"
+      ]
+    },
+    {
+      "en": "singing class",
+      "hr": [
+        "sat pjevanja"
+      ]
+    },
+    {
+      "en": "volleyball practice",
+      "hr": [
+        "trening odbojke"
+      ]
+    },
+    {
+      "en": "week",
+      "hr": [
+        "tjedan"
+      ]
+    }
   ]
 }

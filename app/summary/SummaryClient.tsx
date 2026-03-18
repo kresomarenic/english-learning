@@ -25,7 +25,34 @@ export default function SummaryClient() {
 
   useEffect(() => {
     const raw = sessionStorage.getItem('results')
-    if (raw) setResults(JSON.parse(raw))
+    if (!raw) return
+    const parsed: SessionResult[] = JSON.parse(raw)
+    setResults(parsed)
+
+    // Fire email report (best-effort, never blocks the UI)
+    const userName = sessionStorage.getItem('userName') ?? 'Nepoznat'
+    const lessonTitle = sessionStorage.getItem('lessonTitle') ?? 'Vježba'
+    const wrong = parsed
+      .filter((r) => !r.correct)
+      .map((r) => ({
+        en: r.word.en,
+        hr: r.word.hr,
+        direction: r.direction,
+        heard: r.heard,
+      }))
+    const correct = parsed.filter((r) => r.correct).length
+    fetch('/api/report', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userName,
+        lessonTitle,
+        correct,
+        total: parsed.length,
+        timestamp: new Date().toISOString(),
+        wrong,
+      }),
+    }).catch(() => {/* silently ignore */})
   }, [])
 
   if (!results.length) {
@@ -76,10 +103,10 @@ export default function SummaryClient() {
                 >
                   <div>
                     <p className="font-semibold text-slate-800">
-                      {r.direction === 'en-hr' ? r.word.en : r.word.hr}
+                      {r.direction === 'en-hr' ? r.word.en : r.word.hr[0]}
                     </p>
                     <p className="text-sm text-green-600 font-medium">
-                      ✓ {r.direction === 'en-hr' ? r.word.hr : r.word.en}
+                      ✓ {r.direction === 'en-hr' ? r.word.hr.join(' / ') : r.word.en}
                     </p>
                     {r.heard && (
                       <p className="text-xs text-red-400 mt-0.5">
@@ -90,7 +117,7 @@ export default function SummaryClient() {
                   <button
                     onClick={() =>
                       speak(
-                        r.direction === 'en-hr' ? r.word.en : r.word.hr,
+                        r.direction === 'en-hr' ? r.word.en : r.word.hr[0],
                         r.direction === 'en-hr' ? 'en-US' : 'hr'
                       )
                     }

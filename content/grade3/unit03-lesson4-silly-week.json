@@ -4,13 +4,53 @@
   "title": "A Silly Week",
   "titleHr": "Smiješan tjedan",
   "words": [
-    { "en": "cold", "hr": "hladno" },
-    { "en": "foggy", "hr": "maglovito" },
-    { "en": "rainy", "hr": "kišovito" },
-    { "en": "sunny", "hr": "sunčano" },
-    { "en": "windy", "hr": "vjetrovito" },
-    { "en": "row a boat", "hr": "veslati čamac" },
-    { "en": "fly a kite", "hr": "puštati zmaja" },
-    { "en": "skate", "hr": "klizati" }
+    {
+      "en": "cold",
+      "hr": [
+        "hladno"
+      ]
+    },
+    {
+      "en": "foggy",
+      "hr": [
+        "maglovito"
+      ]
+    },
+    {
+      "en": "rainy",
+      "hr": [
+        "kišovito"
+      ]
+    },
+    {
+      "en": "sunny",
+      "hr": [
+        "sunčano"
+      ]
+    },
+    {
+      "en": "windy",
+      "hr": [
+        "vjetrovito"
+      ]
+    },
+    {
+      "en": "row a boat",
+      "hr": [
+        "veslati čamac"
+      ]
+    },
+    {
+      "en": "fly a kite",
+      "hr": [
+        "puštati zmaja"
+      ]
+    },
+    {
+      "en": "skate",
+      "hr": [
+        "klizati"
+      ]
+    }
   ]
 }

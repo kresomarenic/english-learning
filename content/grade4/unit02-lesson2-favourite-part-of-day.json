@@ -4,92 +4,264 @@
   "title": "My Favourite Part of the Day",
   "titleHr": "Moj omiljeni dio dana",
   "words": [
-    { "en": "always", "hr": "uvijek" },
-    { "en": "do homework", "hr": "napisati domaću zadaću" },
-    { "en": "have breakfast", "hr": "doručkovati" },
-    { "en": "forget", "hr": "zaboraviti" },
-    { "en": "make dinner", "hr": "raditi večeru" },
-    { "en": "never", "hr": "nikada" },
-    { "en": "often", "hr": "često" },
-    { "en": "roller-skate", "hr": "voziti se na kotuljkama" },
-    { "en": "sometimes", "hr": "ponekad" },
-    { "en": "stay at home", "hr": "ostati kod kuće" },
-    { "en": "usually", "hr": "obično" },
-    { "en": "wake up", "hr": "probuditi se" }
+    {
+      "en": "always",
+      "hr": [
+        "uvijek"
+      ]
+    },
+    {
+      "en": "do homework",
+      "hr": [
+        "napisati domaću zadaću"
+      ]
+    },
+    {
+      "en": "have breakfast",
+      "hr": [
+        "doručkovati"
+      ]
+    },
+    {
+      "en": "forget",
+      "hr": [
+        "zaboraviti"
+      ]
+    },
+    {
+      "en": "make dinner",
+      "hr": [
+        "raditi večeru"
+      ]
+    },
+    {
+      "en": "never",
+      "hr": [
+        "nikada"
+      ]
+    },
+    {
+      "en": "often",
+      "hr": [
+        "često"
+      ]
+    },
+    {
+      "en": "roller-skate",
+      "hr": [
+        "voziti se na kotuljkama"
+      ]
+    },
+    {
+      "en": "sometimes",
+      "hr": [
+        "ponekad"
+      ]
+    },
+    {
+      "en": "stay at home",
+      "hr": [
+        "ostati kod kuće"
+      ]
+    },
+    {
+      "en": "usually",
+      "hr": [
+        "obično"
+      ]
+    },
+    {
+      "en": "wake up",
+      "hr": [
+        "probuditi se"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "I wake up at 7 o'clock.",
       "blanks": [
-        { "word": "wake up", "emoji": "⏰", "distractors": ["wakes up", "wake", "wakeup"] }
+        {
+          "word": "wake up",
+          "emoji": "⏰",
+          "distractors": [
+            "wakes up",
+            "wake",
+            "wakeup"
+          ]
+        }
       ]
     },
     {
       "sentence": "I make my bed and go to the kitchen.",
       "blanks": [
-        { "word": "make", "emoji": "🛏️", "distractors": ["makes", "do", "mak"] }
+        {
+          "word": "make",
+          "emoji": "🛏️",
+          "distractors": [
+            "makes",
+            "do",
+            "mak"
+          ]
+        }
       ]
     },
     {
       "sentence": "I usually have cornflakes for breakfast.",
       "blanks": [
-        { "word": "usually", "emoji": "🥣", "distractors": ["always", "never", "usally"] }
+        {
+          "word": "usually",
+          "emoji": "🥣",
+          "distractors": [
+            "always",
+            "never",
+            "usally"
+          ]
+        }
       ]
     },
     {
       "sentence": "I brush my teeth and wash my face.",
       "blanks": [
-        { "word": "brush", "emoji": "🪥", "distractors": ["brushes", "brash", "wash"] },
-        { "word": "wash", "emoji": "🧼", "distractors": ["washes", "brash", "wesh"] }
+        {
+          "word": "brush",
+          "emoji": "🪥",
+          "distractors": [
+            "brushes",
+            "brash",
+            "wash"
+          ]
+        },
+        {
+          "word": "wash",
+          "emoji": "🧼",
+          "distractors": [
+            "washes",
+            "brash",
+            "wesh"
+          ]
+        }
       ]
     },
     {
       "sentence": "I put on my clothes and get my schoolbag.",
       "blanks": [
-        { "word": "put on", "emoji": "👕", "distractors": ["puts on", "put", "puton"] }
+        {
+          "word": "put on",
+          "emoji": "👕",
+          "distractors": [
+            "puts on",
+            "put",
+            "puton"
+          ]
+        }
       ]
     },
     {
       "sentence": "I run to school.",
       "blanks": [
-        { "word": "run", "emoji": "🏃", "distractors": ["runs", "ran", "walk"] }
+        {
+          "word": "run",
+          "emoji": "🏃",
+          "distractors": [
+            "runs",
+            "ran",
+            "walk"
+          ]
+        }
       ]
     },
     {
       "sentence": "I don't wake up at 11 o'clock.",
       "blanks": [
-        { "word": "wake up", "emoji": "💤", "distractors": ["wakes up", "wake", "wakeup"] }
+        {
+          "word": "wake up",
+          "emoji": "💤",
+          "distractors": [
+            "wakes up",
+            "wake",
+            "wakeup"
+          ]
+        }
       ]
     },
     {
       "sentence": "Luke always feels great in the afternoon.",
       "blanks": [
-        { "word": "always", "emoji": "☀️", "distractors": ["never", "sometimes", "allways"] }
+        {
+          "word": "always",
+          "emoji": "☀️",
+          "distractors": [
+            "never",
+            "sometimes",
+            "allways"
+          ]
+        }
       ]
     },
     {
       "sentence": "He usually goes out to the park.",
       "blanks": [
-        { "word": "usually", "emoji": "🌳", "distractors": ["always", "never", "usally"] }
+        {
+          "word": "usually",
+          "emoji": "🌳",
+          "distractors": [
+            "always",
+            "never",
+            "usally"
+          ]
+        }
       ]
     },
     {
       "sentence": "I sometimes stay at home and watch TV.",
       "blanks": [
-        { "word": "sometimes", "emoji": "📺", "distractors": ["always", "never", "somtimes"] },
-        { "word": "stay at home", "emoji": "🏠", "distractors": ["stay home", "stays at home", "stayathome"] }
+        {
+          "word": "sometimes",
+          "emoji": "📺",
+          "distractors": [
+            "always",
+            "never",
+            "somtimes"
+          ]
+        },
+        {
+          "word": "stay at home",
+          "emoji": "🏠",
+          "distractors": [
+            "stay home",
+            "stays at home",
+            "stayathome"
+          ]
+        }
       ]
     },
     {
       "sentence": "I never forget to do my homework.",
       "blanks": [
-        { "word": "never", "emoji": "🚫", "distractors": ["always", "sometimes", "nver"] }
+        {
+          "word": "never",
+          "emoji": "🚫",
+          "distractors": [
+            "always",
+            "sometimes",
+            "nver"
+          ]
+        }
       ]
     },
     {
       "sentence": "We often make dinner together.",
       "blanks": [
-        { "word": "often", "emoji": "🍽️", "distractors": ["always", "never", "offten"] }
+        {
+          "word": "often",
+          "emoji": "🍽️",
+          "distractors": [
+            "always",
+            "never",
+            "offten"
+          ]
+        }
       ]
     }
   ]

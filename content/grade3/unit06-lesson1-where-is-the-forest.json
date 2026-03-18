@@ -4,46 +4,254 @@
   "title": "Where Is the Forest?",
   "titleHr": "Gdje je šuma?",
   "words": [
-    { "en": "cat", "hr": "mačka" },
-    { "en": "bear", "hr": "medvjed" },
-    { "en": "cow", "hr": "krava" },
-    { "en": "crocodile", "hr": "krokodil" },
-    { "en": "dog", "hr": "pas" },
-    { "en": "dolphin", "hr": "dupin" },
-    { "en": "donkey", "hr": "magarac" },
-    { "en": "duck", "hr": "patka" },
-    { "en": "elephant", "hr": "slon" },
-    { "en": "fish", "hr": "riba" },
-    { "en": "fox", "hr": "lisica" },
-    { "en": "frog", "hr": "žaba" },
-    { "en": "giraffe", "hr": "žirafa" },
-    { "en": "hen", "hr": "kokoš" },
-    { "en": "hippo", "hr": "vodeni konj" },
-    { "en": "horse", "hr": "konj" },
-    { "en": "jaguar", "hr": "jaguar" },
-    { "en": "lion", "hr": "lav" },
-    { "en": "monkey", "hr": "majmun" },
-    { "en": "mouse", "hr": "miš" },
-    { "en": "owl", "hr": "sova" },
-    { "en": "parrot", "hr": "papiga" },
-    { "en": "pig", "hr": "svinja" },
-    { "en": "polar bear", "hr": "polarni medvjed" },
-    { "en": "rabbit", "hr": "zec" },
-    { "en": "sheep", "hr": "ovca" },
-    { "en": "spider", "hr": "pauk" },
-    { "en": "squirrel", "hr": "vjeverica" },
-    { "en": "tiger", "hr": "tigar" },
-    { "en": "wolf", "hr": "vuk" },
-    { "en": "zebra", "hr": "zebra" },
-    { "en": "Arctic", "hr": "Arktik" },
-    { "en": "corn", "hr": "kukuruz" },
-    { "en": "desert", "hr": "pustinja" },
-    { "en": "farm", "hr": "farma, seosko gospodarstvo" },
-    { "en": "forest", "hr": "šuma" },
-    { "en": "grass", "hr": "trava" },
-    { "en": "honey", "hr": "med" },
-    { "en": "jungle", "hr": "džungla" },
-    { "en": "meat", "hr": "meso" },
-    { "en": "ocean", "hr": "ocean" }
+    {
+      "en": "cat",
+      "hr": [
+        "mačka"
+      ]
+    },
+    {
+      "en": "bear",
+      "hr": [
+        "medvjed"
+      ]
+    },
+    {
+      "en": "cow",
+      "hr": [
+        "krava"
+      ]
+    },
+    {
+      "en": "crocodile",
+      "hr": [
+        "krokodil"
+      ]
+    },
+    {
+      "en": "dog",
+      "hr": [
+        "pas"
+      ]
+    },
+    {
+      "en": "dolphin",
+      "hr": [
+        "dupin",
+        "delfin"
+      ]
+    },
+    {
+      "en": "donkey",
+      "hr": [
+        "magarac"
+      ]
+    },
+    {
+      "en": "duck",
+      "hr": [
+        "patka"
+      ]
+    },
+    {
+      "en": "elephant",
+      "hr": [
+        "slon"
+      ]
+    },
+    {
+      "en": "fish",
+      "hr": [
+        "riba"
+      ]
+    },
+    {
+      "en": "fox",
+      "hr": [
+        "lisica"
+      ]
+    },
+    {
+      "en": "frog",
+      "hr": [
+        "žaba"
+      ]
+    },
+    {
+      "en": "giraffe",
+      "hr": [
+        "žirafa"
+      ]
+    },
+    {
+      "en": "hen",
+      "hr": [
+        "kokoš"
+      ]
+    },
+    {
+      "en": "hippo",
+      "hr": [
+        "vodeni konj",
+        "nilski konj"
+      ]
+    },
+    {
+      "en": "horse",
+      "hr": [
+        "konj"
+      ]
+    },
+    {
+      "en": "jaguar",
+      "hr": [
+        "jaguar"
+      ]
+    },
+    {
+      "en": "lion",
+      "hr": [
+        "lav"
+      ]
+    },
+    {
+      "en": "monkey",
+      "hr": [
+        "majmun"
+      ]
+    },
+    {
+      "en": "mouse",
+      "hr": [
+        "miš"
+      ]
+    },
+    {
+      "en": "owl",
+      "hr": [
+        "sova"
+      ]
+    },
+    {
+      "en": "parrot",
+      "hr": [
+        "papiga"
+      ]
+    },
+    {
+      "en": "pig",
+      "hr": [
+        "svinja"
+      ]
+    },
+    {
+      "en": "polar bear",
+      "hr": [
+        "polarni medvjed"
+      ]
+    },
+    {
+      "en": "rabbit",
+      "hr": [
+        "zec"
+      ]
+    },
+    {
+      "en": "sheep",
+      "hr": [
+        "ovca"
+      ]
+    },
+    {
+      "en": "spider",
+      "hr": [
+        "pauk"
+      ]
+    },
+    {
+      "en": "squirrel",
+      "hr": [
+        "vjeverica"
+      ]
+    },
+    {
+      "en": "tiger",
+      "hr": [
+        "tigar"
+      ]
+    },
+    {
+      "en": "wolf",
+      "hr": [
+        "vuk"
+      ]
+    },
+    {
+      "en": "zebra",
+      "hr": [
+        "zebra"
+      ]
+    },
+    {
+      "en": "Arctic",
+      "hr": [
+        "Arktik"
+      ]
+    },
+    {
+      "en": "corn",
+      "hr": [
+        "kukuruz"
+      ]
+    },
+    {
+      "en": "desert",
+      "hr": [
+        "pustinja"
+      ]
+    },
+    {
+      "en": "farm",
+      "hr": [
+        "farma",
+        "seosko gospodarstvo"
+      ]
+    },
+    {
+      "en": "forest",
+      "hr": [
+        "šuma"
+      ]
+    },
+    {
+      "en": "grass",
+      "hr": [
+        "trava"
+      ]
+    },
+    {
+      "en": "honey",
+      "hr": [
+        "med"
+      ]
+    },
+    {
+      "en": "jungle",
+      "hr": [
+        "džungla"
+      ]
+    },
+    {
+      "en": "meat",
+      "hr": [
+        "meso"
+      ]
+    },
+    {
+      "en": "ocean",
+      "hr": [
+        "ocean"
+      ]
+    }
   ]
 }

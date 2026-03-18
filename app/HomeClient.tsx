@@ -1,9 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { UnitMeta, Direction } from '@/types/content'
 import PWAInstallButton from '@/app/components/PWAInstallButton'
+import NameEntryModal from '@/app/components/NameEntryModal'
+
+const USER_NAME_KEY = 'englishApp_userName'
 
 const GRADE_LABELS = ['1. razred', '2. razred', '3. razred', '4. razred']
 const GRADE_COLORS = [
@@ -49,6 +52,20 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
   const [selectedGrade, setSelectedGrade] = useState<number | null>(null)
   const [direction, setDirection] = useState<Direction>('en-hr')
   const [openUnits, setOpenUnits] = useState<Set<string>>(new Set())
+  const [userName, setUserName] = useState<string | null>(null)
+  const [nameChecked, setNameChecked] = useState(false)
+
+  // Read name from localStorage once mounted (avoids SSR mismatch)
+  useEffect(() => {
+    const stored = localStorage.getItem(USER_NAME_KEY)
+    setUserName(stored)
+    setNameChecked(true)
+  }, [])
+
+  function saveName(name: string) {
+    localStorage.setItem(USER_NAME_KEY, name)
+    setUserName(name)
+  }
 
   const filteredUnits = selectedGrade
     ? units.filter((u) => u.grade === selectedGrade)
@@ -57,6 +74,7 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
   const unitGroups = groupByUnit(filteredUnits)
 
   function startSession(slugs: string[]) {
+    if (userName) sessionStorage.setItem('userName', userName)
     const params = new URLSearchParams()
     params.set('slugs', slugs.join(','))
     params.set('direction', direction)
@@ -64,6 +82,7 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
   }
 
   function startFillInBlank(slugs: string[]) {
+    if (userName) sessionStorage.setItem('userName', userName)
     const params = new URLSearchParams()
     params.set('slugs', slugs.join(','))
     router.push(`/exercise/fill-in-blank?${params.toString()}`)
@@ -79,9 +98,24 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-indigo-50 to-slate-50">
+      {/* Name entry modal — shown only after localStorage is checked and name is missing */}
+      {nameChecked && !userName && <NameEntryModal onSave={saveName} />}
+
       {/* Header */}
       <header className="px-4 pt-10 pb-4 text-center relative">
-        <div className="absolute top-4 right-4">
+        <div className="absolute top-4 right-4 flex items-center gap-2">
+          {userName && (
+            <button
+              onClick={() => {
+                localStorage.removeItem(USER_NAME_KEY)
+                setUserName(null)
+              }}
+              title="Promijeni ime"
+              className="text-xs text-slate-400 hover:text-slate-600 border border-slate-200 rounded-full px-2 py-0.5"
+            >
+              {userName} ✏️
+            </button>
+          )}
           <PWAInstallButton />
         </div>
         <div className="text-4xl mb-2">🌟</div>

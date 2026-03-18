@@ -4,24 +4,125 @@
   "title": "Meet Ms Springfield",
   "titleHr": "Upoznajte gospođicu Springfield",
   "words": [
-    { "en": "alarm clock", "hr": "budilica" },
-    { "en": "big blue eyes", "hr": "velike plave oči" },
-    { "en": "blonde hair", "hr": "plava kosa" },
-    { "en": "champion", "hr": "prvak" },
-    { "en": "computer game", "hr": "kompjuterska igrica" },
-    { "en": "favourite", "hr": "omiljeni, najdraži" },
-    { "en": "flower", "hr": "cvijet" },
-    { "en": "garden", "hr": "vrt" },
-    { "en": "hobby", "hr": "hobi" },
-    { "en": "horse riding", "hr": "jahanje konja" },
-    { "en": "medal", "hr": "medalja" },
-    { "en": "music", "hr": "glazba" },
-    { "en": "nice", "hr": "lijep, simpatičan" },
-    { "en": "poetry", "hr": "pjesništvo" },
-    { "en": "pretty", "hr": "lijep, dražestan" },
-    { "en": "romantic", "hr": "romantičan" },
-    { "en": "rose", "hr": "ruža" },
-    { "en": "special", "hr": "poseban" },
-    { "en": "story", "hr": "priča" }
+    {
+      "en": "alarm clock",
+      "hr": [
+        "budilica"
+      ]
+    },
+    {
+      "en": "big blue eyes",
+      "hr": [
+        "velike plave oči"
+      ]
+    },
+    {
+      "en": "blonde hair",
+      "hr": [
+        "plava kosa"
+      ]
+    },
+    {
+      "en": "champion",
+      "hr": [
+        "prvak"
+      ]
+    },
+    {
+      "en": "computer game",
+      "hr": [
+        "kompjuterska igrica"
+      ]
+    },
+    {
+      "en": "favourite",
+      "hr": [
+        "omiljeni",
+        "najdraži"
+      ]
+    },
+    {
+      "en": "flower",
+      "hr": [
+        "cvijet"
+      ]
+    },
+    {
+      "en": "garden",
+      "hr": [
+        "vrt"
+      ]
+    },
+    {
+      "en": "hobby",
+      "hr": [
+        "hobi"
+      ]
+    },
+    {
+      "en": "horse riding",
+      "hr": [
+        "jahanje konja"
+      ]
+    },
+    {
+      "en": "medal",
+      "hr": [
+        "medalja"
+      ]
+    },
+    {
+      "en": "music",
+      "hr": [
+        "glazba",
+        "muzika"
+      ]
+    },
+    {
+      "en": "nice",
+      "hr": [
+        "lijep",
+        "simpatičan"
+      ]
+    },
+    {
+      "en": "poetry",
+      "hr": [
+        "pjesništvo"
+      ]
+    },
+    {
+      "en": "pretty",
+      "hr": [
+        "lijep",
+        "dražestan",
+        "lijepa",
+        "dražesna"
+      ]
+    },
+    {
+      "en": "romantic",
+      "hr": [
+        "romantičan"
+      ]
+    },
+    {
+      "en": "rose",
+      "hr": [
+        "ruža"
+      ]
+    },
+    {
+      "en": "special",
+      "hr": [
+        "poseban"
+      ]
+    },
+    {
+      "en": "story",
+      "hr": [
+        "priča"
+      ]
+    }
   ]
 }

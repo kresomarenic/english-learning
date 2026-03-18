@@ -4,96 +4,296 @@
   "title": "School Can Be Fun",
   "titleHr": "Škola može biti zabavna",
   "words": [
-    { "en": "art", "hr": "likovni odgoj" },
-    { "en": "Croatian", "hr": "hrvatski jezik" },
-    { "en": "drawing", "hr": "crtanje" },
-    { "en": "English", "hr": "engleski jezik" },
-    { "en": "French", "hr": "francuski jezik" },
-    { "en": "German", "hr": "njemački jezik" },
-    { "en": "IT", "hr": "informatika" },
-    { "en": "Italian", "hr": "talijanski jezik" },
-    { "en": "maths", "hr": "matematika" },
-    { "en": "music", "hr": "glazbeni odgoj" },
-    { "en": "P.E.", "hr": "tjelesni odgoj" },
-    { "en": "R.E.", "hr": "vjeronauk" },
-    { "en": "science", "hr": "priroda" },
-    { "en": "subject", "hr": "školski predmet" }
+    {
+      "en": "art",
+      "hr": [
+        "likovni odgoj"
+      ]
+    },
+    {
+      "en": "Croatian",
+      "hr": [
+        "hrvatski jezik"
+      ]
+    },
+    {
+      "en": "drawing",
+      "hr": [
+        "crtanje"
+      ]
+    },
+    {
+      "en": "English",
+      "hr": [
+        "engleski jezik"
+      ]
+    },
+    {
+      "en": "French",
+      "hr": [
+        "francuski jezik"
+      ]
+    },
+    {
+      "en": "German",
+      "hr": [
+        "njemački jezik"
+      ]
+    },
+    {
+      "en": "IT",
+      "hr": [
+        "informatika"
+      ]
+    },
+    {
+      "en": "Italian",
+      "hr": [
+        "talijanski jezik"
+      ]
+    },
+    {
+      "en": "maths",
+      "hr": [
+        "matematika"
+      ]
+    },
+    {
+      "en": "music",
+      "hr": [
+        "glazbeni odgoj",
+        "glazba",
+        "muzika"
+      ]
+    },
+    {
+      "en": "P.E.",
+      "hr": [
+        "tjelesni odgoj"
+      ]
+    },
+    {
+      "en": "R.E.",
+      "hr": [
+        "vjeronauk"
+      ]
+    },
+    {
+      "en": "science",
+      "hr": [
+        "priroda"
+      ]
+    },
+    {
+      "en": "subject",
+      "hr": [
+        "školski predmet"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "Jessica's favourite subjects are English and French.",
       "blanks": [
-        { "word": "English", "emoji": "🇬🇧", "distractors": ["Inglish", "Englich", "German"] },
-        { "word": "French", "emoji": "🇫🇷", "distractors": ["Frensh", "Franch", "Italian"] }
+        {
+          "word": "English",
+          "emoji": "🇬🇧",
+          "distractors": [
+            "Inglish",
+            "Englich",
+            "German"
+          ]
+        },
+        {
+          "word": "French",
+          "emoji": "🇫🇷",
+          "distractors": [
+            "Frensh",
+            "Franch",
+            "Italian"
+          ]
+        }
       ]
     },
     {
       "sentence": "She is excellent at reading and writing stories.",
       "blanks": [
-        { "word": "excellent", "emoji": "⭐", "distractors": ["excelent", "excellant", "good"] }
+        {
+          "word": "excellent",
+          "emoji": "⭐",
+          "distractors": [
+            "excelent",
+            "excellant",
+            "good"
+          ]
+        }
       ]
     },
     {
       "sentence": "She has volleyball practice twice a week.",
       "blanks": [
-        { "word": "volleyball", "emoji": "🏐", "distractors": ["vollyball", "voleyball", "football"] },
-        { "word": "twice", "emoji": "✌️", "distractors": ["once", "three times", "twize"] }
+        {
+          "word": "volleyball",
+          "emoji": "🏐",
+          "distractors": [
+            "vollyball",
+            "voleyball",
+            "football"
+          ]
+        },
+        {
+          "word": "twice",
+          "emoji": "✌️",
+          "distractors": [
+            "once",
+            "three times",
+            "twize"
+          ]
+        }
       ]
     },
     {
       "sentence": "Greg's favourite subjects are computer science and P.E.",
       "blanks": [
-        { "word": "science", "emoji": "💻", "distractors": ["sience", "scince", "maths"] },
-        { "word": "P.E.", "emoji": "🤸", "distractors": ["R.E.", "P.E", "art"] }
+        {
+          "word": "science",
+          "emoji": "💻",
+          "distractors": [
+            "sience",
+            "scince",
+            "maths"
+          ]
+        },
+        {
+          "word": "P.E.",
+          "emoji": "🤸",
+          "distractors": [
+            "R.E.",
+            "P.E",
+            "art"
+          ]
+        }
       ]
     },
     {
       "sentence": "He has swimming practice every day.",
       "blanks": [
-        { "word": "swimming", "emoji": "🏊", "distractors": ["swiming", "swimmng", "running"] }
+        {
+          "word": "swimming",
+          "emoji": "🏊",
+          "distractors": [
+            "swiming",
+            "swimmng",
+            "running"
+          ]
+        }
       ]
     },
     {
       "sentence": "Luke has problems with science and maths.",
       "blanks": [
-        { "word": "science", "emoji": "🧪", "distractors": ["sience", "scince", "music"] },
-        { "word": "maths", "emoji": "➕", "distractors": ["math", "mats", "arts"] }
+        {
+          "word": "science",
+          "emoji": "🧪",
+          "distractors": [
+            "sience",
+            "scince",
+            "music"
+          ]
+        },
+        {
+          "word": "maths",
+          "emoji": "➕",
+          "distractors": [
+            "math",
+            "mats",
+            "arts"
+          ]
+        }
       ]
     },
     {
       "sentence": "Luke's favourite day of the week is Saturday.",
       "blanks": [
-        { "word": "Saturday", "emoji": "📅", "distractors": ["Saterday", "Saturdy", "Sunday"] }
+        {
+          "word": "Saturday",
+          "emoji": "📅",
+          "distractors": [
+            "Saterday",
+            "Saturdy",
+            "Sunday"
+          ]
+        }
       ]
     },
     {
       "sentence": "School can sometimes be really boring.",
       "blanks": [
-        { "word": "sometimes", "emoji": "😴", "distractors": ["always", "never", "somtimes"] }
+        {
+          "word": "sometimes",
+          "emoji": "😴",
+          "distractors": [
+            "always",
+            "never",
+            "somtimes"
+          ]
+        }
       ]
     },
     {
       "sentence": "I learn something new every day.",
       "blanks": [
-        { "word": "every day", "emoji": "📚", "distractors": ["every days", "each day", "everday"] }
+        {
+          "word": "every day",
+          "emoji": "📚",
+          "distractors": [
+            "every days",
+            "each day",
+            "everday"
+          ]
+        }
       ]
     },
     {
       "sentence": "I'm very busy, but I always do my homework.",
       "blanks": [
-        { "word": "always", "emoji": "✏️", "distractors": ["never", "sometimes", "allways"] }
+        {
+          "word": "always",
+          "emoji": "✏️",
+          "distractors": [
+            "never",
+            "sometimes",
+            "allways"
+          ]
+        }
       ]
     },
     {
       "sentence": "Luke's favourite day is Saturday because there is no school.",
       "blanks": [
-        { "word": "school", "emoji": "🏫", "distractors": ["scool", "shcool", "homework"] }
+        {
+          "word": "school",
+          "emoji": "🏫",
+          "distractors": [
+            "scool",
+            "shcool",
+            "homework"
+          ]
+        }
       ]
     },
     {
       "sentence": "It's time for his ice-hockey practice!",
       "blanks": [
-        { "word": "ice-hockey", "emoji": "🏒", "distractors": ["icehockey", "ice hockey", "swimming"] }
+        {
+          "word": "ice-hockey",
+          "emoji": "🏒",
+          "distractors": [
+            "icehockey",
+            "ice hockey",
+            "swimming"
+          ]
+        }
       ]
     }
   ]

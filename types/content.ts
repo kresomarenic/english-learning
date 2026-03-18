@@ -1,6 +1,6 @@
 export interface Word {
   en: string
-  hr: string
+  hr: string[] // first item is the display/canonical translation; all items are accepted answers
 }
 
 export interface FillInBlankOption {

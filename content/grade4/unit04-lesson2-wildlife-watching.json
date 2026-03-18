@@ -4,74 +4,265 @@
   "title": "Wildlife Watching",
   "titleHr": "Promatranje divljih životinja",
   "words": [
-    { "en": "bald eagle", "hr": "bjeloglavi orao" },
-    { "en": "beaver", "hr": "dabar" },
-    { "en": "bison", "hr": "bizon" },
-    { "en": "herd", "hr": "krdo" },
-    { "en": "horns", "hr": "rogovi" },
-    { "en": "pond", "hr": "jezerce" },
-    { "en": "report", "hr": "izvještaj" },
-    { "en": "symbol", "hr": "simbol" },
-    { "en": "tail", "hr": "rep" },
-    { "en": "wide", "hr": "širok" },
-    { "en": "wings", "hr": "krila" }
+    {
+      "en": "bald eagle",
+      "hr": [
+        "bjeloglavi orao"
+      ]
+    },
+    {
+      "en": "beaver",
+      "hr": [
+        "dabar"
+      ]
+    },
+    {
+      "en": "bison",
+      "hr": [
+        "bizon"
+      ]
+    },
+    {
+      "en": "herd",
+      "hr": [
+        "krdo"
+      ]
+    },
+    {
+      "en": "horns",
+      "hr": [
+        "rogovi"
+      ]
+    },
+    {
+      "en": "pond",
+      "hr": [
+        "jezerce"
+      ]
+    },
+    {
+      "en": "report",
+      "hr": [
+        "izvještaj"
+      ]
+    },
+    {
+      "en": "symbol",
+      "hr": [
+        "simbol"
+      ]
+    },
+    {
+      "en": "tail",
+      "hr": [
+        "rep"
+      ]
+    },
+    {
+      "en": "wide",
+      "hr": [
+        "širok"
+      ]
+    },
+    {
+      "en": "wings",
+      "hr": [
+        "krila"
+      ]
+    }
   ],
   "fillInBlanks": [
     {
       "sentence": "The bald eagle is flying high in the sky.",
       "blanks": [
-        { "word": "bald eagle", "emoji": "🦅", "distractors": ["bald eagles", "bold eagle", "bald egale"] },
-        { "word": "flying",    "emoji": "✈️", "distractors": ["fly", "flies", "flew"] }
+        {
+          "word": "bald eagle",
+          "emoji": "🦅",
+          "distractors": [
+            "bald eagles",
+            "bold eagle",
+            "bald egale"
+          ]
+        },
+        {
+          "word": "flying",
+          "emoji": "✈️",
+          "distractors": [
+            "fly",
+            "flies",
+            "flew"
+          ]
+        }
       ]
     },
     {
       "sentence": "The beavers are building a pond near the river.",
       "blanks": [
-        { "word": "beavers",  "emoji": "🦫", "distractors": ["beaver", "beavres", "beavors"] },
-        { "word": "building", "emoji": "🏗️", "distractors": ["build", "builds", "built"] },
-        { "word": "pond",     "emoji": "💧", "distractors": ["ponds", "pand", "lake"] }
+        {
+          "word": "beavers",
+          "emoji": "🦫",
+          "distractors": [
+            "beaver",
+            "beavres",
+            "beavors"
+          ]
+        },
+        {
+          "word": "building",
+          "emoji": "🏗️",
+          "distractors": [
+            "build",
+            "builds",
+            "built"
+          ]
+        },
+        {
+          "word": "pond",
+          "emoji": "💧",
+          "distractors": [
+            "ponds",
+            "pand",
+            "lake"
+          ]
+        }
       ]
     },
     {
       "sentence": "The bison has very sharp horns.",
       "blanks": [
-        { "word": "bison", "emoji": "🦬", "distractors": ["bisons", "byson", "bisone"] },
-        { "word": "horns", "emoji": "🐂", "distractors": ["horn", "hornss", "hornes"] }
+        {
+          "word": "bison",
+          "emoji": "🦬",
+          "distractors": [
+            "bisons",
+            "byson",
+            "bisone"
+          ]
+        },
+        {
+          "word": "horns",
+          "emoji": "🐂",
+          "distractors": [
+            "horn",
+            "hornss",
+            "hornes"
+          ]
+        }
       ]
     },
     {
       "sentence": "Uncle Phil is driving past a herd of bison.",
       "blanks": [
-        { "word": "herd",  "emoji": "🦬", "distractors": ["herds", "herd's", "pack"] },
-        { "word": "bison", "emoji": "🦬", "distractors": ["bisons", "byson", "bisone"] }
+        {
+          "word": "herd",
+          "emoji": "🦬",
+          "distractors": [
+            "herds",
+            "herd's",
+            "pack"
+          ]
+        },
+        {
+          "word": "bison",
+          "emoji": "🦬",
+          "distractors": [
+            "bisons",
+            "byson",
+            "bisone"
+          ]
+        }
       ]
     },
     {
       "sentence": "The beaver has a very funny tail.",
       "blanks": [
-        { "word": "beaver", "emoji": "🦫", "distractors": ["beavers", "beavar", "beavor"] },
-        { "word": "tail",   "emoji": "🐾", "distractors": ["tails", "tale", "taile"] }
+        {
+          "word": "beaver",
+          "emoji": "🦫",
+          "distractors": [
+            "beavers",
+            "beavar",
+            "beavor"
+          ]
+        },
+        {
+          "word": "tail",
+          "emoji": "🐾",
+          "distractors": [
+            "tails",
+            "tale",
+            "taile"
+          ]
+        }
       ]
     },
     {
       "sentence": "The bald eagle has wings more than two metres wide.",
       "blanks": [
-        { "word": "bald eagle", "emoji": "🦅", "distractors": ["bald eagles", "bold eagle", "bald egale"] },
-        { "word": "wings",      "emoji": "🪶", "distractors": ["wing", "wongs", "winks"] }
+        {
+          "word": "bald eagle",
+          "emoji": "🦅",
+          "distractors": [
+            "bald eagles",
+            "bold eagle",
+            "bald egale"
+          ]
+        },
+        {
+          "word": "wings",
+          "emoji": "🪶",
+          "distractors": [
+            "wing",
+            "wongs",
+            "winks"
+          ]
+        }
       ]
     },
     {
       "sentence": "Some beavers are swimming in the pond.",
       "blanks": [
-        { "word": "swimming", "emoji": "🏊", "distractors": ["swim", "swims", "swam"] },
-        { "word": "pond",     "emoji": "💧", "distractors": ["ponds", "pand", "lake"] }
+        {
+          "word": "swimming",
+          "emoji": "🏊",
+          "distractors": [
+            "swim",
+            "swims",
+            "swam"
+          ]
+        },
+        {
+          "word": "pond",
+          "emoji": "💧",
+          "distractors": [
+            "ponds",
+            "pand",
+            "lake"
+          ]
+        }
       ]
     },
     {
       "sentence": "Two bison are fighting near the river.",
       "blanks": [
-        { "word": "bison",    "emoji": "🦬", "distractors": ["bisons", "byson", "bisone"] },
-        { "word": "fighting", "emoji": "🥊", "distractors": ["fight", "fights", "fought"] }
+        {
+          "word": "bison",
+          "emoji": "🦬",
+          "distractors": [
+            "bisons",
+            "byson",
+            "bisone"
+          ]
+        },
+        {
+          "word": "fighting",
+          "emoji": "🥊",
+          "distractors": [
+            "fight",
+            "fights",
+            "fought"
+          ]
+        }
       ]
     }
   ]

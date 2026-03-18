@@ -4,23 +4,113 @@
   "title": "Elliot's House",
   "titleHr": "Elliotova kuća",
   "words": [
-    { "en": "bathroom", "hr": "kupaonica" },
-    { "en": "bedroom", "hr": "spavaća soba" },
-    { "en": "chimney", "hr": "dimnjak" },
-    { "en": "dining room", "hr": "blagovaonica" },
-    { "en": "garden", "hr": "vrt" },
-    { "en": "hall", "hr": "hodnik" },
-    { "en": "kitchen", "hr": "kuhinja" },
-    { "en": "living room", "hr": "dnevna soba" },
-    { "en": "my room", "hr": "moja soba" },
-    { "en": "roof", "hr": "krov" },
-    { "en": "butterfly", "hr": "leptir" },
-    { "en": "cat", "hr": "mačka" },
-    { "en": "frog", "hr": "žaba" },
-    { "en": "hear", "hr": "čuti" },
-    { "en": "mouse", "hr": "miš" },
-    { "en": "noisy night", "hr": "bučna noć" },
-    { "en": "snake", "hr": "zmija" },
-    { "en": "squirrel", "hr": "vjeverica" }
+    {
+      "en": "bathroom",
+      "hr": [
+        "kupaonica"
+      ]
+    },
+    {
+      "en": "bedroom",
+      "hr": [
+        "spavaća soba"
+      ]
+    },
+    {
+      "en": "chimney",
+      "hr": [
+        "dimnjak"
+      ]
+    },
+    {
+      "en": "dining room",
+      "hr": [
+        "blagovaonica"
+      ]
+    },
+    {
+      "en": "garden",
+      "hr": [
+        "vrt"
+      ]
+    },
+    {
+      "en": "hall",
+      "hr": [
+        "hodnik"
+      ]
+    },
+    {
+      "en": "kitchen",
+      "hr": [
+        "kuhinja"
+      ]
+    },
+    {
+      "en": "living room",
+      "hr": [
+        "dnevna soba"
+      ]
+    },
+    {
+      "en": "my room",
+      "hr": [
+        "moja soba"
+      ]
+    },
+    {
+      "en": "roof",
+      "hr": [
+        "krov"
+      ]
+    },
+    {
+      "en": "butterfly",
+      "hr": [
+        "leptir"
+      ]
+    },
+    {
+      "en": "cat",
+      "hr": [
+        "mačka"
+      ]
+    },
+    {
+      "en": "frog",
+      "hr": [
+        "žaba"
+      ]
+    },
+    {
+      "en": "hear",
+      "hr": [
+        "čuti"
+      ]
+    },
+    {
+      "en": "mouse",
+      "hr": [
+        "miš"
+      ]
+    },
+    {
+      "en": "noisy night",
+      "hr": [
+        "bučna noć"
+      ]
+    },
+    {
+      "en": "snake",
+      "hr": [
+        "zmija"
+      ]
+    },
+    {
+      "en": "squirrel",
+      "hr": [
+        "vjeverica"
+      ]
+    }
   ]
 }
