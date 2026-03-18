@@ -23,5 +23,78 @@
     { "en": "snake", "hr": "zmija" },
     { "en": "South Africa", "hr": "Južnoafrička Republika" },
     { "en": "South America", "hr": "Južna Amerika" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "The seals are singing with April.",
+      "blanks": [
+        { "word": "seals",   "emoji": "🦭", "distractors": ["seal", "seales", "sealss"] },
+        { "word": "singing", "emoji": "🎵", "distractors": ["sing", "sings", "sang"] }
+      ]
+    },
+    {
+      "sentence": "The lions are sleeping under a tree.",
+      "blanks": [
+        { "word": "lions",    "emoji": "🦁", "distractors": ["lion", "lyons", "liones"] },
+        { "word": "sleeping", "emoji": "😴", "distractors": ["sleep", "sleeps", "slept"] }
+      ]
+    },
+    {
+      "sentence": "The rhinos are eating grass.",
+      "blanks": [
+        { "word": "rhinos", "emoji": "🦏", "distractors": ["rhino", "rhynos", "rhinoes"] },
+        { "word": "eating", "emoji": "🌿", "distractors": ["eat", "eats", "ate"] }
+      ]
+    },
+    {
+      "sentence": "The hippos are swimming in the lake.",
+      "blanks": [
+        { "word": "hippos",    "emoji": "🦛", "distractors": ["hippo", "hippoes", "hippys"] },
+        { "word": "swimming",  "emoji": "🏊", "distractors": ["swim", "swims", "swam"] }
+      ]
+    },
+    {
+      "sentence": "The elephant is taking a photo.",
+      "blanks": [
+        { "word": "elephant", "emoji": "🐘", "distractors": ["elephants", "elefant", "elephent"] },
+        { "word": "taking",   "emoji": "📸", "distractors": ["take", "takes", "took"] }
+      ]
+    },
+    {
+      "sentence": "The jaguar is relaxing in the rainforest.",
+      "blanks": [
+        { "word": "jaguar",     "emoji": "🐆", "distractors": ["jaguars", "jagure", "jaguor"] },
+        { "word": "relaxing",   "emoji": "😌", "distractors": ["relax", "relaxes", "relaxed"] },
+        { "word": "rainforest", "emoji": "🌿", "distractors": ["rainforests", "rain forest", "rainforrest"] }
+      ]
+    },
+    {
+      "sentence": "The pink dolphin is swimming next to the boat.",
+      "blanks": [
+        { "word": "dolphin",  "emoji": "🐬", "distractors": ["dolphins", "dolpin", "dolfin"] },
+        { "word": "swimming", "emoji": "🌊", "distractors": ["swim", "swims", "swam"] }
+      ]
+    },
+    {
+      "sentence": "Elliot is taking photos of the owls.",
+      "blanks": [
+        { "word": "owls",   "emoji": "🦉", "distractors": ["owl", "owles", "owells"] },
+        { "word": "taking", "emoji": "📸", "distractors": ["take", "takes", "took"] }
+      ]
+    },
+    {
+      "sentence": "The reindeer is running in the snow.",
+      "blanks": [
+        { "word": "reindeer", "emoji": "🦌", "distractors": ["reindeers", "reindear", "reindere"] },
+        { "word": "running",  "emoji": "🏃", "distractors": ["run", "runs", "ran"] }
+      ]
+    },
+    {
+      "sentence": "The llama is standing next to Kim.",
+      "blanks": [
+        { "word": "llama",    "emoji": "🦙", "distractors": ["llamas", "lama", "llamah"] },
+        { "word": "standing", "emoji": "🧍", "distractors": ["stand", "stands", "stood"] }
+      ]
+    }
   ]
 }
