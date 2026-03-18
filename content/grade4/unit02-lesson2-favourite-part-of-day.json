@@ -37,7 +37,8 @@
     {
       "en": "never",
       "hr": [
-        "nikada"
+        "nikada",
+        "nikad"
       ]
     },
     {
@@ -55,7 +56,9 @@
     {
       "en": "sometimes",
       "hr": [
-        "ponekad"
+        "ponekad",
+        "kadšto",
+        "katkad"
       ]
     },
     {
@@ -67,13 +70,16 @@
     {
       "en": "usually",
       "hr": [
-        "obično"
+        "obično",
+        "uglavnom"
       ]
     },
     {
       "en": "wake up",
       "hr": [
-        "probuditi se"
+        "probuditi se",
+        "ustati",
+        "dizati se"
       ]
     }
   ],

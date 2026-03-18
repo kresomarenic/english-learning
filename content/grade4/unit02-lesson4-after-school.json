@@ -104,7 +104,9 @@
     {
       "en": "sweater",
       "hr": [
-        "džemper"
+        "džemper",
+        "pulover",
+        "vesta"
       ]
     },
     {
@@ -116,7 +118,8 @@
     {
       "en": "trousers",
       "hr": [
-        "hlače"
+        "hlače",
+        "pantaloni"
       ]
     },
     {

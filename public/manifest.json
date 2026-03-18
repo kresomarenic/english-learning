@@ -1,8 +1,10 @@
 {
+  "id": "https://englishvk.readybit.hr/",
   "name": "Učimo Engleski",
   "short_name": "English",
   "description": "Vježbaj engleski jezik",
-  "start_url": "/",
+  "start_url": "https://englishvk.readybit.hr/",
+  "scope": "https://englishvk.readybit.hr/",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#6366f1",

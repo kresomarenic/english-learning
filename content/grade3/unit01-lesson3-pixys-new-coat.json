@@ -19,13 +19,20 @@
     {
       "en": "beautiful",
       "hr": [
-        "lijep"
+        "lijep",
+        "lijepa",
+        "lijepo",
+        "krasan"
       ]
     },
     {
       "en": "happy",
       "hr": [
-        "sretan"
+        "sretan",
+        "sretna",
+        "veseo",
+        "vesela",
+        "radostan"
       ]
     },
     {
@@ -86,7 +93,9 @@
     {
       "en": "sad",
       "hr": [
-        "tužan"
+        "tužan",
+        "tužna",
+        "tužno"
       ]
     },
     {

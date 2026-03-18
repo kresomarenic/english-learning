@@ -63,7 +63,9 @@
     {
       "en": "loud",
       "hr": [
-        "glasan"
+        "glasan",
+        "glasna",
+        "glasno"
       ]
     },
     {
@@ -103,19 +105,25 @@
     {
       "en": "scared",
       "hr": [
-        "uplašen"
+        "uplašen",
+        "prestrašen",
+        "preplašen"
       ]
     },
     {
       "en": "tall",
       "hr": [
-        "visok"
+        "visok",
+        "visoka",
+        "visoki"
       ]
     },
     {
       "en": "thin",
       "hr": [
-        "mršav"
+        "mršav",
+        "mršava",
+        "vitak"
       ]
     },
     {

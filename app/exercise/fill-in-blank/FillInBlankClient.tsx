@@ -57,6 +57,7 @@ export default function FillInBlankClient({
   const [score, setScore] = useState(0)
   const [done, setDone] = useState(false)
   const [speakScheduled, setSpeakScheduled] = useState(false)
+  const [wrongItems, setWrongItems] = useState<{ sentence: string; answer: string; heard: string }[]>([])
 
   // Randomise on the client only — avoids SSR/hydration mismatch
   useEffect(() => {
@@ -98,7 +99,11 @@ export default function FillInBlankClient({
     )
     setHeardText(transcript)
     setFeedback(correct ? 'correct' : 'wrong')
-    if (correct) setScore((s) => s + 1)
+    if (correct) {
+      setScore((s) => s + 1)
+    } else {
+      setWrongItems((prev) => [...prev, { sentence: current.displayed, answer: current.answer, heard: transcript }])
+    }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status])
 
@@ -122,6 +127,32 @@ export default function FillInBlankClient({
     }
   }, [feedback, handleNext])
 
+  // Fire email report when exercise is done
+  useEffect(() => {
+    if (!done || exercises.length === 0) return
+    const userName = sessionStorage.getItem('userName') ?? 'Nepoznat'
+    const title = sessionStorage.getItem('lessonTitle') ?? lessonTitle
+    const wrong = wrongItems.map((w) => ({
+      en: w.sentence,
+      hr: [w.answer],
+      direction: 'en-hr',
+      heard: w.heard,
+    }))
+    fetch('/api/report', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        userName,
+        lessonTitle: title,
+        correct: score,
+        total: exercises.length,
+        timestamp: new Date().toISOString(),
+        wrong,
+      }),
+    }).catch(() => {/* silently ignore */})
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [done])
+
   // Handle choice tap
   function handleChoiceTap(choice: string) {
     if (feedback) return
@@ -129,7 +160,11 @@ export default function FillInBlankClient({
     setTappedChoice(choice)
     setHeardText(choice)
     setFeedback(correct ? 'correct' : 'wrong')
-    if (correct) setScore((s) => s + 1)
+    if (correct) {
+      setScore((s) => s + 1)
+    } else {
+      setWrongItems((prev) => [...prev, { sentence: current.displayed, answer: current.answer, heard: choice }])
+    }
   }
 
   // Switch mode: reset current exercise state but keep progress
