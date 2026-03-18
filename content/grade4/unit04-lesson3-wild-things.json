@@ -95,6 +95,27 @@
         { "word": "llama",    "emoji": "🦙", "distractors": ["llamas", "lama", "llamah"] },
         { "word": "standing", "emoji": "🧍", "distractors": ["stand", "stands", "stood"] }
       ]
+    },
+    {
+      "sentence": "The elephant is sleeping under a big tree.",
+      "blanks": [
+        { "word": "elephant", "emoji": "🐘", "distractors": ["elephants", "elefant", "elephent"] },
+        { "word": "sleeping", "emoji": "😴", "distractors": ["sleep", "sleeps", "slept"] }
+      ]
+    },
+    {
+      "sentence": "The hippos are relaxing in the lake.",
+      "blanks": [
+        { "word": "hippos",   "emoji": "🦛", "distractors": ["hippo", "hippoes", "hippys"] },
+        { "word": "relaxing", "emoji": "😌", "distractors": ["relax", "relaxes", "relaxed"] }
+      ]
+    },
+    {
+      "sentence": "The seals are swimming in the water.",
+      "blanks": [
+        { "word": "seals",     "emoji": "🦭", "distractors": ["seal", "seales", "sealss"] },
+        { "word": "swimming",  "emoji": "🌊", "distractors": ["swim", "swims", "swam"] }
+      ]
     }
   ]
 }
