@@ -63,8 +63,10 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
     router.push(`/exercise?${params.toString()}`)
   }
 
-  function startFillInBlank(slug: string) {
-    router.push(`/exercise/fill-in-blank?slug=${encodeURIComponent(slug)}`)
+  function startFillInBlank(slugs: string[]) {
+    const params = new URLSearchParams()
+    params.set('slugs', slugs.join(','))
+    router.push(`/exercise/fill-in-blank?${params.toString()}`)
   }
 
   function toggleUnit(key: string) {
@@ -88,14 +90,6 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
       </header>
 
       <main className="flex-1 px-4 pb-8 max-w-md mx-auto w-full">
-
-        {/* Practice all button */}
-        <button
-          onClick={() => startSession(units.map((u) => u.slug))}
-          className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-2xl mb-5 text-lg shadow-md active:scale-95 transition-transform"
-        >
-          ▶ Vježbaj sve lekcije
-        </button>
 
         {/* Grade filter */}
         <div className="flex gap-2 mb-4 overflow-x-auto pb-1">
@@ -124,17 +118,31 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
           ))}
         </div>
 
-        {/* Practice whole grade button */}
-        {selectedGrade && (
-          <button
-            onClick={() =>
-              startSession(units.filter((u) => u.grade === selectedGrade).map((u) => u.slug))
-            }
-            className={`w-full py-3 rounded-2xl font-bold mb-4 border-2 text-base active:scale-95 transition-transform ${GRADE_COLORS[selectedGrade - 1]}`}
-          >
-            ▶ Vježbaj cijeli {selectedGrade}. razred
-          </button>
-        )}
+        {/* Practice whole grade buttons */}
+        {selectedGrade && (() => {
+          const gradeTranslationSlugs = units.filter((u) => u.grade === selectedGrade && u.wordCount > 0).map((u) => u.slug)
+          const gradeFillInBlankSlugs = units.filter((u) => u.grade === selectedGrade && u.fillInBlankCount > 0).map((u) => u.slug)
+          return (
+            <div className={`flex gap-2 mb-4`}>
+              {gradeTranslationSlugs.length > 0 && (
+                <button
+                  onClick={() => startSession(gradeTranslationSlugs)}
+                  className={`flex-1 py-3 rounded-2xl font-bold border-2 text-sm active:scale-95 transition-transform ${GRADE_COLORS[selectedGrade - 1]}`}
+                >
+                  🔤 Prijevod
+                </button>
+              )}
+              {gradeFillInBlankSlugs.length > 0 && (
+                <button
+                  onClick={() => startFillInBlank(gradeFillInBlankSlugs)}
+                  className={`flex-1 py-3 rounded-2xl font-bold border-2 text-sm active:scale-95 transition-transform ${GRADE_COLORS[selectedGrade - 1]}`}
+                >
+                  ✏️ Rečenice
+                </button>
+              )}
+            </div>
+          )
+        })()}
 
         {/* Unit groups — collapsible */}
         <div className="flex flex-col gap-3">
@@ -168,18 +176,33 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    {/* Practice whole unit */}
-                    <span
-                      role="button"
-                      onClick={(e) => {
-                        e.stopPropagation()
-                        startSession(group.lessons.map((l) => l.slug))
-                      }}
-                      className="text-xs font-semibold px-3 py-1.5 bg-indigo-600 text-white rounded-full active:scale-95 transition-transform"
-                    >
-                      ▶ Sve
-                    </span>
+                  <div className="flex items-center gap-1.5">
+                    {/* Practice whole unit — translation */}
+                    {group.lessons.some((l) => l.wordCount > 0) && (
+                      <span
+                        role="button"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          startSession(group.lessons.filter((l) => l.wordCount > 0).map((l) => l.slug))
+                        }}
+                        className="text-xs font-semibold px-2.5 py-1.5 bg-indigo-600 text-white rounded-full active:scale-95 transition-transform"
+                      >
+                        🔤
+                      </span>
+                    )}
+                    {/* Practice whole unit — fill in blank */}
+                    {group.lessons.some((l) => l.fillInBlankCount > 0) && (
+                      <span
+                        role="button"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          startFillInBlank(group.lessons.filter((l) => l.fillInBlankCount > 0).map((l) => l.slug))
+                        }}
+                        className="text-xs font-semibold px-2.5 py-1.5 bg-emerald-600 text-white rounded-full active:scale-95 transition-transform"
+                      >
+                        ✏️
+                      </span>
+                    )}
                     <span
                       className={`text-slate-400 text-lg transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
                     >
@@ -236,7 +259,7 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
                           )}
                           {lesson.fillInBlankCount > 0 && (
                             <button
-                              onClick={() => startFillInBlank(lesson.slug)}
+                              onClick={() => startFillInBlank([lesson.slug])}
                               className="flex flex-col items-center px-3 py-1.5 bg-emerald-600 text-white rounded-xl active:scale-95 transition-transform"
                             >
                               <span className="text-xs font-bold">✏️ {lesson.fillInBlankCount}</span>
