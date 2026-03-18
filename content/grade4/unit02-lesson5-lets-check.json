@@ -1,0 +1,100 @@
+{
+  "grade": 4,
+  "unit": 2,
+  "title": "Let's Check!",
+  "titleHr": "Provjeri znanje!",
+  "words": [],
+  "fillInBlanks": [
+    {
+      "sentence": "Pete wakes up early, at 7 o'clock.",
+      "blanks": [
+        { "word": "wakes up", "emoji": "⏰", "distractors": ["wake up", "wakeup", "gets up"] }
+      ]
+    },
+    {
+      "sentence": "He always wears a cap and sunglasses.",
+      "blanks": [
+        { "word": "wears", "emoji": "🕶️", "distractors": ["wear", "weers", "puts"] }
+      ]
+    },
+    {
+      "sentence": "He doesn't walk with bodyguards.",
+      "blanks": [
+        { "word": "doesn't", "emoji": "🚶", "distractors": ["don't", "does", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "He always reads his e-mails.",
+      "blanks": [
+        { "word": "reads", "emoji": "📧", "distractors": ["read", "reeds", "writes"] }
+      ]
+    },
+    {
+      "sentence": "He plays the guitar in his free time.",
+      "blanks": [
+        { "word": "plays", "emoji": "🎸", "distractors": ["play", "playes", "watches"] }
+      ]
+    },
+    {
+      "sentence": "He doesn't go to school.",
+      "blanks": [
+        { "word": "doesn't", "emoji": "🚫", "distractors": ["don't", "does", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "He only takes tests.",
+      "blanks": [
+        { "word": "takes", "emoji": "📝", "distractors": ["take", "does", "takess"] }
+      ]
+    },
+    {
+      "sentence": "He likes English and music best.",
+      "blanks": [
+        { "word": "likes", "emoji": "🎵", "distractors": ["like", "lieks", "loves"] }
+      ]
+    },
+    {
+      "sentence": "He only watches cartoons.",
+      "blanks": [
+        { "word": "watches", "emoji": "📺", "distractors": ["watch", "watchs", "sees"] }
+      ]
+    },
+    {
+      "sentence": "Greg doesn't watch TV every day.",
+      "blanks": [
+        { "word": "doesn't", "emoji": "📺", "distractors": ["don't", "does", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "Tess wakes up at 10 o'clock in the evening.",
+      "blanks": [
+        { "word": "evening", "emoji": "🦉", "distractors": ["morning", "evenng", "evning"] }
+      ]
+    },
+    {
+      "sentence": "Jessica plays volleyball twice a week.",
+      "blanks": [
+        { "word": "plays", "emoji": "🏐", "distractors": ["play", "playes", "practises"] },
+        { "word": "twice", "emoji": "✌️", "distractors": ["once", "three times", "twize"] }
+      ]
+    },
+    {
+      "sentence": "Tina lives in Croatia.",
+      "blanks": [
+        { "word": "lives", "emoji": "🇭🇷", "distractors": ["live", "livs", "stays"] }
+      ]
+    },
+    {
+      "sentence": "Elliot doesn't like worm salad.",
+      "blanks": [
+        { "word": "doesn't", "emoji": "🪱", "distractors": ["don't", "does", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "She always does her homework.",
+      "blanks": [
+        { "word": "always", "emoji": "✏️", "distractors": ["never", "sometimes", "allways"] }
+      ]
+    }
+  ]
+}

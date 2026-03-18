@@ -24,5 +24,90 @@
     { "en": "sweater vest", "hr": "pleteni prsluk" },
     { "en": "trousers", "hr": "hlače" },
     { "en": "Vikings", "hr": "vikinzi" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "She always makes her homework.",
+      "blanks": [
+        { "word": "always", "emoji": "✏️", "distractors": ["never", "sometimes", "allways"] }
+      ]
+    },
+    {
+      "sentence": "She often makes some tea.",
+      "blanks": [
+        { "word": "often", "emoji": "🍵", "distractors": ["always", "never", "offten"] }
+      ]
+    },
+    {
+      "sentence": "She sometimes reads a book.",
+      "blanks": [
+        { "word": "sometimes", "emoji": "📖", "distractors": ["always", "never", "somtimes"] }
+      ]
+    },
+    {
+      "sentence": "She never watches TV.",
+      "blanks": [
+        { "word": "never", "emoji": "📺", "distractors": ["always", "sometimes", "nver"] }
+      ]
+    },
+    {
+      "sentence": "Teacher Mary writes stories about animals.",
+      "blanks": [
+        { "word": "writes", "emoji": "📝", "distractors": ["write", "writs", "reads"] }
+      ]
+    },
+    {
+      "sentence": "She often listens to rock music.",
+      "blanks": [
+        { "word": "often", "emoji": "🎸", "distractors": ["always", "never", "offten"] }
+      ]
+    },
+    {
+      "sentence": "She plays the guitar twice a week.",
+      "blanks": [
+        { "word": "guitar", "emoji": "🎸", "distractors": ["gutiar", "guiter", "violin"] }
+      ]
+    },
+    {
+      "sentence": "Amalia wears a light-blue shirt and a grey skirt.",
+      "blanks": [
+        { "word": "shirt", "emoji": "👔", "distractors": ["skirt", "shrit", "shert"] },
+        { "word": "skirt", "emoji": "👗", "distractors": ["shirt", "skirtt", "skert"] }
+      ]
+    },
+    {
+      "sentence": "Oliver wears grey trousers and a dark-blue sweater.",
+      "blanks": [
+        { "word": "trousers", "emoji": "👖", "distractors": ["troussers", "trouserss", "shorts"] },
+        { "word": "sweater", "emoji": "🧥", "distractors": ["sweter", "sweatter", "shirt"] }
+      ]
+    },
+    {
+      "sentence": "Amalia's favourite subjects are coding and IT.",
+      "blanks": [
+        { "word": "coding", "emoji": "💻", "distractors": ["codding", "koding", "drawing"] },
+        { "word": "IT", "emoji": "🖥️", "distractors": ["it", "I.T.", "art"] }
+      ]
+    },
+    {
+      "sentence": "Oliver's favourite subjects are history and geography.",
+      "blanks": [
+        { "word": "history", "emoji": "📜", "distractors": ["histoty", "histry", "maths"] },
+        { "word": "geography", "emoji": "🗺️", "distractors": ["geograpy", "geografy", "science"] }
+      ]
+    },
+    {
+      "sentence": "They go to the Tower School in London.",
+      "blanks": [
+        { "word": "Tower School", "emoji": "🏫", "distractors": ["Tower school", "Towel School", "London School"] }
+      ]
+    },
+    {
+      "sentence": "They are learning about the Stone Age and the Vikings.",
+      "blanks": [
+        { "word": "Stone Age", "emoji": "🪨", "distractors": ["Stone age", "Ston Age", "Iron Age"] },
+        { "word": "Vikings", "emoji": "⚔️", "distractors": ["Viking", "Vikingss", "Vikigns"] }
+      ]
+    }
   ]
 }

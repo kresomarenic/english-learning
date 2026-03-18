@@ -16,5 +16,86 @@
     { "en": "think about", "hr": "razmišljati o nekome" },
     { "en": "watch", "hr": "gledati" },
     { "en": "work out", "hr": "trenirati" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "Tess wakes up late.",
+      "blanks": [
+        { "word": "late", "emoji": "🌙", "distractors": ["early", "latte", "lately"] }
+      ]
+    },
+    {
+      "sentence": "She doesn't brush her teeth, but she works out.",
+      "blanks": [
+        { "word": "brush", "emoji": "🪥", "distractors": ["brushes", "wash", "brash"] },
+        { "word": "works out", "emoji": "💪", "distractors": ["work out", "works", "works in"] }
+      ]
+    },
+    {
+      "sentence": "She goes to Owl Night School.",
+      "blanks": [
+        { "word": "goes", "emoji": "🦉", "distractors": ["go", "went", "gos"] }
+      ]
+    },
+    {
+      "sentence": "She visits her friend Owly.",
+      "blanks": [
+        { "word": "visits", "emoji": "🤝", "distractors": ["visit", "visited", "vissits"] }
+      ]
+    },
+    {
+      "sentence": "She has worm salad for dinner.",
+      "blanks": [
+        { "word": "worm", "emoji": "🪱", "distractors": ["worms", "wrom", "wyrm"] }
+      ]
+    },
+    {
+      "sentence": "She watches Owlcop on TV.",
+      "blanks": [
+        { "word": "watches", "emoji": "📺", "distractors": ["watch", "watchs", "see"] }
+      ]
+    },
+    {
+      "sentence": "She practises a new trick every day.",
+      "blanks": [
+        { "word": "practises", "emoji": "✨", "distractors": ["practise", "practices", "practtises"] }
+      ]
+    },
+    {
+      "sentence": "Elliot wakes up early, at 7 o'clock.",
+      "blanks": [
+        { "word": "early", "emoji": "⏰", "distractors": ["late", "earlie", "earley"] }
+      ]
+    },
+    {
+      "sentence": "He has orange juice, toast and an egg for breakfast.",
+      "blanks": [
+        { "word": "breakfast", "emoji": "🍳", "distractors": ["dinner", "breaksfast", "brekfast"] }
+      ]
+    },
+    {
+      "sentence": "He brushes his teeth.",
+      "blanks": [
+        { "word": "brushes", "emoji": "🪥", "distractors": ["brush", "brashes", "washes"] }
+      ]
+    },
+    {
+      "sentence": "He doesn't go to school.",
+      "blanks": [
+        { "word": "doesn't", "emoji": "🚫", "distractors": ["don't", "does", "isn't"] }
+      ]
+    },
+    {
+      "sentence": "He watches documentary films.",
+      "blanks": [
+        { "word": "documentary", "emoji": "🎬", "distractors": ["documantary", "documentery", "cartoon"] }
+      ]
+    },
+    {
+      "sentence": "He goes to bed at 10 o'clock in the evening.",
+      "blanks": [
+        { "word": "evening", "emoji": "🌙", "distractors": ["morning", "evenng", "evning"] }
+      ]
+    }
   ]
 }
