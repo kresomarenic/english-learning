@@ -29,5 +29,84 @@
     { "en": "vegetable garden", "hr": "povrtnjak" },
     { "en": "weather", "hr": "vrijeme" },
     { "en": "week", "hr": "tjedan" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "The Taylors live on a farm.",
+      "blanks": [
+        { "word": "farm", "emoji": "🌾", "distractors": ["city", "farrm", "beach"] }
+      ]
+    },
+    {
+      "sentence": "They feed the animals and milk the cows.",
+      "blanks": [
+        { "word": "feed", "emoji": "🐄", "distractors": ["feeds", "fede", "give"] },
+        { "word": "milk", "emoji": "🥛", "distractors": ["milks", "miilk", "wash"] }
+      ]
+    },
+    {
+      "sentence": "The children collect eggs every morning.",
+      "blanks": [
+        { "word": "collect", "emoji": "🥚", "distractors": ["collects", "colect", "find"] }
+      ]
+    },
+    {
+      "sentence": "They keep horses and have a vegetable garden.",
+      "blanks": [
+        { "word": "horses", "emoji": "🐴", "distractors": ["horss", "hores", "cows"] },
+        { "word": "vegetable garden", "emoji": "🥕", "distractors": ["vegetabel garden", "vegatable garden", "flower garden"] }
+      ]
+    },
+    {
+      "sentence": "Their favourite season is Spring.",
+      "blanks": [
+        { "word": "Spring", "emoji": "🌸", "distractors": ["Autumn", "Sprring", "Summer"] }
+      ]
+    },
+    {
+      "sentence": "They sit around the fire and sing songs.",
+      "blanks": [
+        { "word": "fire", "emoji": "🔥", "distractors": ["fier", "fiire", "table"] },
+        { "word": "songs", "emoji": "🎵", "distractors": ["song", "songgs", "stories"] }
+      ]
+    },
+    {
+      "sentence": "The Whites live in Sydney near the beach.",
+      "blanks": [
+        { "word": "Sydney", "emoji": "🌊", "distractors": ["Canberra", "Sydnney", "London"] },
+        { "word": "beach", "emoji": "🏖️", "distractors": ["park", "beech", "forest"] }
+      ]
+    },
+    {
+      "sentence": "The children go to school by bus.",
+      "blanks": [
+        { "word": "bus", "emoji": "🚌", "distractors": ["car", "buss", "train"] }
+      ]
+    },
+    {
+      "sentence": "They like sport and spend a lot of time outdoors.",
+      "blanks": [
+        { "word": "outdoors", "emoji": "🌞", "distractors": ["outdoor", "outdorrs", "indoors"] }
+      ]
+    },
+    {
+      "sentence": "They go sailing and surfing in summer.",
+      "blanks": [
+        { "word": "sailing", "emoji": "⛵", "distractors": ["saling", "saiiling", "swimming"] },
+        { "word": "surfing", "emoji": "🏄", "distractors": ["surffing", "surving", "hiking"] }
+      ]
+    },
+    {
+      "sentence": "Their favourite season is summer.",
+      "blanks": [
+        { "word": "summer", "emoji": "☀️", "distractors": ["winter", "summmer", "spring"] }
+      ]
+    },
+    {
+      "sentence": "The weather is hot and sunny.",
+      "blanks": [
+        { "word": "weather", "emoji": "🌤️", "distractors": ["wheather", "wether", "season"] }
+      ]
+    }
   ]
 }

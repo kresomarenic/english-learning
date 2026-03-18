@@ -23,5 +23,84 @@
     { "en": "tennis", "hr": "tenis" },
     { "en": "trainers", "hr": "tenisice za trčanje" },
     { "en": "volleyball", "hr": "odbojka" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "For swimming you need shorts and trainers.",
+      "blanks": [
+        { "word": "shorts", "emoji": "🩳", "distractors": ["shortss", "shrots", "trousers"] },
+        { "word": "trainers", "emoji": "👟", "distractors": ["trainerss", "trainners", "boots"] }
+      ]
+    },
+    {
+      "sentence": "For swimming you need a swimsuit.",
+      "blanks": [
+        { "word": "swimsuit", "emoji": "🩱", "distractors": ["swimmsuit", "swimssuit", "shorts"] }
+      ]
+    },
+    {
+      "sentence": "Oliver plays cricket for the school team.",
+      "blanks": [
+        { "word": "cricket", "emoji": "🏏", "distractors": ["criket", "crickett", "football"] },
+        { "word": "school team", "emoji": "🏅", "distractors": ["school teem", "schol team", "national team"] }
+      ]
+    },
+    {
+      "sentence": "Amalia plays volleyball twice a week.",
+      "blanks": [
+        { "word": "volleyball", "emoji": "🏐", "distractors": ["vollyball", "volleybal", "basketball"] }
+      ]
+    },
+    {
+      "sentence": "For cycling you need a helmet.",
+      "blanks": [
+        { "word": "helmet", "emoji": "⛑️", "distractors": ["helmett", "helemt", "cap"] }
+      ]
+    },
+    {
+      "sentence": "They go cycling in the countryside.",
+      "blanks": [
+        { "word": "cycling", "emoji": "🚴", "distractors": ["cyckling", "cicling", "hiking"] },
+        { "word": "countryside", "emoji": "🌳", "distractors": ["coutrnyside", "contryside", "city"] }
+      ]
+    },
+    {
+      "sentence": "Hiking and golf are individual sports.",
+      "blanks": [
+        { "word": "Hiking", "emoji": "🥾", "distractors": ["Hikking", "Hikin", "Cycling"] },
+        { "word": "golf", "emoji": "⛳", "distractors": ["golff", "gof", "tennis"] }
+      ]
+    },
+    {
+      "sentence": "Football and cricket are team sports.",
+      "blanks": [
+        { "word": "Football", "emoji": "⚽", "distractors": ["Footbal", "Footballl", "Tennis"] }
+      ]
+    },
+    {
+      "sentence": "For tennis you need a racket.",
+      "blanks": [
+        { "word": "racket", "emoji": "🎾", "distractors": ["rakcet", "rakket", "bat"] }
+      ]
+    },
+    {
+      "sentence": "For cycling you always wear a helmet.",
+      "blanks": [
+        { "word": "helmet", "emoji": "⛑️", "distractors": ["helmett", "helemt", "cap"] }
+      ]
+    },
+    {
+      "sentence": "For swimming you need a swimsuit.",
+      "blanks": [
+        { "word": "swimsuit", "emoji": "🩱", "distractors": ["swimmsuit", "swimssuit", "shorts"] }
+      ]
+    },
+    {
+      "sentence": "For hiking you need hiking boots and a backpack.",
+      "blanks": [
+        { "word": "hiking boots", "emoji": "🥾", "distractors": ["hiking bots", "hikin boots", "trainers"] },
+        { "word": "backpack", "emoji": "🎒", "distractors": ["backpak", "backpackk", "bag"] }
+      ]
+    }
   ]
 }

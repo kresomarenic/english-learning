@@ -21,5 +21,92 @@
     { "en": "koala", "hr": "koala" },
     { "en": "live", "hr": "živjeti" },
     { "en": "species", "hr": "vrsta" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "The kookaburra lives in the forests of Australia.",
+      "blanks": [
+        { "word": "forests", "emoji": "🌲", "distractors": ["forrests", "forest", "bush"] }
+      ]
+    },
+    {
+      "sentence": "The kookaburra has a laughing call.",
+      "blanks": [
+        { "word": "laughing", "emoji": "😂", "distractors": ["lauging", "laughging", "singing"] }
+      ]
+    },
+    {
+      "sentence": "It eats insects and small animals.",
+      "blanks": [
+        { "word": "insects", "emoji": "🐛", "distractors": ["innsects", "inseckts", "plants"] }
+      ]
+    },
+    {
+      "sentence": "The kookaburra sleeps in a gum tree.",
+      "blanks": [
+        { "word": "sleeps", "emoji": "😴", "distractors": ["sleep", "sleepps", "lives"] }
+      ]
+    },
+    {
+      "sentence": "It leaves the nest in the morning.",
+      "blanks": [
+        { "word": "leaves", "emoji": "🌅", "distractors": ["leafs", "leavs", "goes"] }
+      ]
+    },
+    {
+      "sentence": "It jumps on its prey.",
+      "blanks": [
+        { "word": "jumps", "emoji": "⬇️", "distractors": ["jump", "jumpps", "falls"] }
+      ]
+    },
+    {
+      "sentence": "Australia has koalas and dingos.",
+      "blanks": [
+        { "word": "koalas", "emoji": "🐨", "distractors": ["koala", "koallas", "pandas"] },
+        { "word": "dingos", "emoji": "🐕", "distractors": ["dingo", "dingoes", "wolves"] }
+      ]
+    },
+    {
+      "sentence": "Australia is both a country and a continent.",
+      "blanks": [
+        { "word": "continent", "emoji": "🗺️", "distractors": ["continnent", "continant", "country"] }
+      ]
+    },
+    {
+      "sentence": "The capital of Australia is Canberra.",
+      "blanks": [
+        { "word": "Canberra", "emoji": "🏛️", "distractors": ["Camberra", "Canbbera", "Sydney"] }
+      ]
+    },
+    {
+      "sentence": "The biggest city in Australia is Sydney.",
+      "blanks": [
+        { "word": "Sydney", "emoji": "🦘", "distractors": ["Canberra", "Sydnney", "Melbourne"] }
+      ]
+    },
+    {
+      "sentence": "Aborigines use a boomerang for hunting.",
+      "blanks": [
+        { "word": "boomerang", "emoji": "🪃", "distractors": ["bomerang", "boomerangg", "spear"] }
+      ]
+    },
+    {
+      "sentence": "Cricket is the most popular sport in Australia.",
+      "blanks": [
+        { "word": "Cricket", "emoji": "🏏", "distractors": ["Football", "Criket", "Crickett"] }
+      ]
+    },
+    {
+      "sentence": "Australia Day is on the 26th of January.",
+      "blanks": [
+        { "word": "January", "emoji": "📅", "distractors": ["February", "Januray", "June"] }
+      ]
+    },
+    {
+      "sentence": "Australia is also called Down Under.",
+      "blanks": [
+        { "word": "Down Under", "emoji": "🌏", "distractors": ["Down Undder", "Donw Under", "Land Down"] }
+      ]
+    }
   ]
 }

@@ -1,0 +1,99 @@
+{
+  "grade": 4,
+  "unit": 3,
+  "title": "Let's Check!",
+  "titleHr": "Provjeri znanje!",
+  "words": [],
+  "fillInBlanks": [
+    {
+      "sentence": "We live in Sydney.",
+      "blanks": [
+        { "word": "live", "emoji": "🏙️", "distractors": ["lives", "livve", "stay"] }
+      ]
+    },
+    {
+      "sentence": "The children go to school by bus.",
+      "blanks": [
+        { "word": "bus", "emoji": "🚌", "distractors": ["car", "buss", "buse"] }
+      ]
+    },
+    {
+      "sentence": "We like sport and spend a lot of time outdoors.",
+      "blanks": [
+        { "word": "outdoors", "emoji": "🌞", "distractors": ["outdoor", "outdorrs", "indoors"] }
+      ]
+    },
+    {
+      "sentence": "The Taylors live on Blue Creek Station.",
+      "blanks": [
+        { "word": "live", "emoji": "🌾", "distractors": ["lives", "livve", "stay"] }
+      ]
+    },
+    {
+      "sentence": "They keep sheep and cows.",
+      "blanks": [
+        { "word": "keep", "emoji": "🐑", "distractors": ["keeps", "keeep", "feed"] }
+      ]
+    },
+    {
+      "sentence": "The Earth travels around the sun.",
+      "blanks": [
+        { "word": "travels", "emoji": "🔄", "distractors": ["travel", "travells", "flies"] }
+      ]
+    },
+    {
+      "sentence": "The sun is a shiny star.",
+      "blanks": [
+        { "word": "star", "emoji": "⭐", "distractors": ["planet", "sttar", "moon"] }
+      ]
+    },
+    {
+      "sentence": "There are lots of rainforests near the equator.",
+      "blanks": [
+        { "word": "equator", "emoji": "🌡️", "distractors": ["equattor", "equater", "North Pole"] }
+      ]
+    },
+    {
+      "sentence": "The kookaburra lives in the forests of Australia.",
+      "blanks": [
+        { "word": "lives", "emoji": "🌲", "distractors": ["live", "livess", "stays"] }
+      ]
+    },
+    {
+      "sentence": "Cricket is the most popular sport in Australia.",
+      "blanks": [
+        { "word": "Cricket", "emoji": "🏏", "distractors": ["Football", "Criket", "Crickett"] }
+      ]
+    },
+    {
+      "sentence": "Football is the most popular sport in Britain.",
+      "blanks": [
+        { "word": "Football", "emoji": "⚽", "distractors": ["Cricket", "Footbal", "Volleybal"] }
+      ]
+    },
+    {
+      "sentence": "The Whites don't live on a farm.",
+      "blanks": [
+        { "word": "don't", "emoji": "🚫", "distractors": ["doesn't", "do", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "The Taylors don't go to school by bus.",
+      "blanks": [
+        { "word": "don't", "emoji": "🚌", "distractors": ["doesn't", "do", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "The capital of Australia is Canberra.",
+      "blanks": [
+        { "word": "Canberra", "emoji": "🏛️", "distractors": ["Camberra", "Canbbera", "Sydney"] }
+      ]
+    },
+    {
+      "sentence": "Australia is both a country and a continent.",
+      "blanks": [
+        { "word": "continent", "emoji": "🗺️", "distractors": ["continnent", "continant", "country"] }
+      ]
+    }
+  ]
+}

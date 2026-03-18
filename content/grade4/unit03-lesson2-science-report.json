@@ -21,5 +21,83 @@
     { "en": "sun", "hr": "sunce" },
     { "en": "sunshine", "hr": "sunčeva svjetlost" },
     { "en": "travel", "hr": "putovati" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "The sun is a shiny star.",
+      "blanks": [
+        { "word": "shiny", "emoji": "✨", "distractors": ["shiney", "shyni", "bright"] },
+        { "word": "star", "emoji": "⭐", "distractors": ["planet", "sttar", "moon"] }
+      ]
+    },
+    {
+      "sentence": "The Earth is a planet.",
+      "blanks": [
+        { "word": "planet", "emoji": "🌍", "distractors": ["star", "planett", "moon"] }
+      ]
+    },
+    {
+      "sentence": "There are lots of rainforests near the equator.",
+      "blanks": [
+        { "word": "equator", "emoji": "🌡️", "distractors": ["equattor", "equater", "North Pole"] }
+      ]
+    },
+    {
+      "sentence": "It is very rainy near the equator.",
+      "blanks": [
+        { "word": "rainy", "emoji": "🌧️", "distractors": ["raini", "rainy", "sunny"] }
+      ]
+    },
+    {
+      "sentence": "There are lots of rainforests near the equator.",
+      "blanks": [
+        { "word": "rainforests", "emoji": "🌿", "distractors": ["rainforrests", "rainforest", "forests"] }
+      ]
+    },
+    {
+      "sentence": "At the South Pole and North Pole it is very cold.",
+      "blanks": [
+        { "word": "South Pole", "emoji": "🧊", "distractors": ["Soth Pole", "Sourth Pole", "equator"] },
+        { "word": "North Pole", "emoji": "❄️", "distractors": ["Nroth Pole", "Norht Pole", "South Pole"] }
+      ]
+    },
+    {
+      "sentence": "In winter it is dark for a long time.",
+      "blanks": [
+        { "word": "dark", "emoji": "🌑", "distractors": ["light", "daark", "bright"] }
+      ]
+    },
+    {
+      "sentence": "The Earth travels around the sun.",
+      "blanks": [
+        { "word": "travels", "emoji": "🔄", "distractors": ["travel", "travells", "flies"] }
+      ]
+    },
+    {
+      "sentence": "The part of Earth close to the equator is very hot.",
+      "blanks": [
+        { "word": "close", "emoji": "📍", "distractors": ["near", "clsoe", "far"] }
+      ]
+    },
+    {
+      "sentence": "It is cold and snowy at the North Pole.",
+      "blanks": [
+        { "word": "cold", "emoji": "🥶", "distractors": ["hot", "coldd", "cool"] },
+        { "word": "snowy", "emoji": "❄️", "distractors": ["snowy", "snowwy", "rainy"] }
+      ]
+    },
+    {
+      "sentence": "It is hot and sunny near the equator.",
+      "blanks": [
+        { "word": "hot", "emoji": "🌡️", "distractors": ["cold", "hott", "warm"] },
+        { "word": "sunny", "emoji": "☀️", "distractors": ["sunnny", "sunni", "rainy"] }
+      ]
+    },
+    {
+      "sentence": "Zagreb is not near the equator.",
+      "blanks": [
+        { "word": "Zagreb", "emoji": "🇭🇷", "distractors": ["London", "Zagrb", "Zagrab"] }
+      ]
+    }
   ]
 }
