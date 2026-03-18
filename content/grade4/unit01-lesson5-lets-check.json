@@ -1,0 +1,99 @@
+{
+  "grade": 4,
+  "unit": 1,
+  "title": "Let's Check!",
+  "titleHr": "Provjeri znanje!",
+  "words": [],
+  "fillInBlanks": [
+    {
+      "sentence": "June has got grey hair and blue eyes.",
+      "blanks": [
+        { "word": "has got", "emoji": "💇", "distractors": ["have got", "is", "hasn't got"] }
+      ]
+    },
+    {
+      "sentence": "April has got a strange hobby.",
+      "blanks": [
+        { "word": "has got", "emoji": "🕷️", "distractors": ["have got", "is", "hasn't got"] }
+      ]
+    },
+    {
+      "sentence": "June isn't short and plump.",
+      "blanks": [
+        { "word": "isn't", "emoji": "🚫", "distractors": ["is", "aren't", "wasn't"] }
+      ]
+    },
+    {
+      "sentence": "The Zenexes have got three eyes.",
+      "blanks": [
+        { "word": "have got", "emoji": "👁️", "distractors": ["has got", "haven't got", "are"] }
+      ]
+    },
+    {
+      "sentence": "Elliot and April have got two cousins.",
+      "blanks": [
+        { "word": "have got", "emoji": "👫", "distractors": ["has got", "haven't got", "are"] }
+      ]
+    },
+    {
+      "sentence": "April can do maths.",
+      "blanks": [
+        { "word": "can", "emoji": "🧮", "distractors": ["can't", "is", "has"] }
+      ]
+    },
+    {
+      "sentence": "John and Margaret are Elliot's grandparents.",
+      "blanks": [
+        { "word": "are", "emoji": "👴👵", "distractors": ["is", "aren't", "were"] }
+      ]
+    },
+    {
+      "sentence": "Dad Zenex is tall.",
+      "blanks": [
+        { "word": "is", "emoji": "👾", "distractors": ["are", "isn't", "was"] }
+      ]
+    },
+    {
+      "sentence": "George and May haven't got two sons.",
+      "blanks": [
+        { "word": "haven't got", "emoji": "👨‍👩", "distractors": ["have got", "hasn't got", "haven't"] }
+      ]
+    },
+    {
+      "sentence": "People can't fly.",
+      "blanks": [
+        { "word": "can't", "emoji": "🚫", "distractors": ["can", "cannot", "don't"] }
+      ]
+    },
+    {
+      "sentence": "The Zenex twins have got a dog named Zen.",
+      "blanks": [
+        { "word": "have got", "emoji": "🐕", "distractors": ["has got", "haven't got", "are"] }
+      ]
+    },
+    {
+      "sentence": "April can name all the capitals in the world.",
+      "blanks": [
+        { "word": "can", "emoji": "🌍", "distractors": ["can't", "is", "has"] }
+      ]
+    },
+    {
+      "sentence": "The Zenex family isn't from the planet Earth.",
+      "blanks": [
+        { "word": "isn't", "emoji": "🌍", "distractors": ["is", "aren't", "wasn't"] }
+      ]
+    },
+    {
+      "sentence": "Goldilocks is very curious.",
+      "blanks": [
+        { "word": "is", "emoji": "🧐", "distractors": ["are", "isn't", "was"] }
+      ]
+    },
+    {
+      "sentence": "The Three Bears are back home.",
+      "blanks": [
+        { "word": "are", "emoji": "🐻", "distractors": ["is", "aren't", "were"] }
+      ]
+    }
+  ]
+}

@@ -13,5 +13,79 @@
     { "en": "parents", "hr": "roditelji" },
     { "en": "son", "hr": "sin" },
     { "en": "uncle", "hr": "ujak, stric, tetak" }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "April is Elliot's sister.",
+      "blanks": [
+        { "word": "sister", "emoji": "👧", "distractors": ["brother", "cousin", "daughter"] }
+      ]
+    },
+    {
+      "sentence": "Elliot is April's brother.",
+      "blanks": [
+        { "word": "brother", "emoji": "👦", "distractors": ["sister", "cousin", "son"] }
+      ]
+    },
+    {
+      "sentence": "June and William are Elliot's parents.",
+      "blanks": [
+        { "word": "parents", "emoji": "👨‍👩‍👦", "distractors": ["grandparents", "cousins", "aunt"] }
+      ]
+    },
+    {
+      "sentence": "Margaret and John are Elliot's grandparents.",
+      "blanks": [
+        { "word": "grandparents", "emoji": "👴👵", "distractors": ["parents", "grandma", "grandpa"] }
+      ]
+    },
+    {
+      "sentence": "Jackie and Joy are Elliot's cousins.",
+      "blanks": [
+        { "word": "cousins", "emoji": "👫", "distractors": ["cousin", "sisters", "aunt"] }
+      ]
+    },
+    {
+      "sentence": "George is Elliot's uncle.",
+      "blanks": [
+        { "word": "uncle", "emoji": "🧔", "distractors": ["aunt", "grandpa", "cousin"] }
+      ]
+    },
+    {
+      "sentence": "May is Elliot's aunt.",
+      "blanks": [
+        { "word": "aunt", "emoji": "👩", "distractors": ["uncle", "grandma", "cousin"] }
+      ]
+    },
+    {
+      "sentence": "Elliot is June and William's son.",
+      "blanks": [
+        { "word": "son", "emoji": "👦", "distractors": ["daughter", "nephew", "cousin"] }
+      ]
+    },
+    {
+      "sentence": "April is June and William's daughter.",
+      "blanks": [
+        { "word": "daughter", "emoji": "👧", "distractors": ["son", "niece", "cousin"] }
+      ]
+    },
+    {
+      "sentence": "Margaret is Elliot's grandma.",
+      "blanks": [
+        { "word": "grandma", "emoji": "👵", "distractors": ["grandpa", "aunt", "mum"] }
+      ]
+    },
+    {
+      "sentence": "John is Elliot's grandpa.",
+      "blanks": [
+        { "word": "grandpa", "emoji": "👴", "distractors": ["grandma", "uncle", "dad"] }
+      ]
+    },
+    {
+      "sentence": "Whose cap is this? It's Jackie's!",
+      "blanks": [
+        { "word": "Whose", "emoji": "🧢", "distractors": ["Who's", "Who", "What's"] }
+      ]
+    }
   ]
 }
