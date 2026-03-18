@@ -89,26 +89,6 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
 
       <main className="flex-1 px-4 pb-8 max-w-md mx-auto w-full">
 
-        {/* Direction toggle */}
-        <div className="bg-white rounded-2xl border border-slate-200 p-1 flex mb-5">
-          <button
-            onClick={() => setDirection('en-hr')}
-            className={`flex-1 py-2 rounded-xl text-sm font-medium transition-all ${
-              direction === 'en-hr' ? 'bg-indigo-600 text-white shadow' : 'text-slate-500'
-            }`}
-          >
-            English → Hrvatski
-          </button>
-          <button
-            onClick={() => setDirection('hr-en')}
-            className={`flex-1 py-2 rounded-xl text-sm font-medium transition-all ${
-              direction === 'hr-en' ? 'bg-indigo-600 text-white shadow' : 'text-slate-500'
-            }`}
-          >
-            Hrvatski → English
-          </button>
-        </div>
-
         {/* Practice all button */}
         <button
           onClick={() => startSession(units.map((u) => u.slug))}
@@ -222,13 +202,37 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
                         </div>
                         <div className="flex items-center gap-2 ml-3 flex-shrink-0">
                           {lesson.wordCount > 0 && (
-                            <button
-                              onClick={() => startSession([lesson.slug])}
-                              className="flex flex-col items-center px-3 py-1.5 bg-indigo-600 text-white rounded-xl active:scale-95 transition-transform"
-                            >
-                              <span className="text-xs font-bold">🔤 {lesson.wordCount}</span>
-                              <span className="text-[10px] opacity-80">prijevod</span>
-                            </button>
+                            <div className="flex flex-col items-center gap-1">
+                              <button
+                                onClick={() => startSession([lesson.slug])}
+                                className="flex flex-col items-center px-3 py-1.5 bg-indigo-600 text-white rounded-xl active:scale-95 transition-transform w-full"
+                              >
+                                <span className="text-xs font-bold">🔤 {lesson.wordCount}</span>
+                                <span className="text-[10px] opacity-80">prijevod</span>
+                              </button>
+                              <div className="flex rounded-lg overflow-hidden border border-indigo-300 w-full">
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); setDirection('en-hr') }}
+                                  className={`flex-1 text-[10px] font-semibold py-0.5 transition-colors ${
+                                    direction === 'en-hr'
+                                      ? 'bg-indigo-600 text-white'
+                                      : 'bg-white text-indigo-500'
+                                  }`}
+                                >
+                                  EN
+                                </button>
+                                <button
+                                  onClick={(e) => { e.stopPropagation(); setDirection('hr-en') }}
+                                  className={`flex-1 text-[10px] font-semibold py-0.5 transition-colors ${
+                                    direction === 'hr-en'
+                                      ? 'bg-indigo-600 text-white'
+                                      : 'bg-white text-indigo-500'
+                                  }`}
+                                >
+                                  HR
+                                </button>
+                              </div>
+                            </div>
                           )}
                           {lesson.fillInBlankCount > 0 && (
                             <button
