@@ -86,8 +86,26 @@ export function useSpeechRecognition(lang: string) {
             statusRef.current = 'idle'
           }
         } else if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
-          setStatus('denied')
-          statusRef.current = 'denied'
+          // Check actual mic permission — these errors can also fire for
+          // unrelated reasons (no user gesture, Chrome service hiccup, etc.)
+          // Only show the "denied" message if the browser explicitly says denied.
+          navigator.permissions
+            .query({ name: 'microphone' as PermissionName })
+            .then((result) => {
+              if (result.state === 'denied') {
+                setStatus('denied')
+                statusRef.current = 'denied'
+              } else {
+                // Permission is granted or prompt — treat as a transient error
+                setStatus('idle')
+                statusRef.current = 'idle'
+              }
+            })
+            .catch(() => {
+              // permissions API unavailable (e.g. Firefox) — just go idle
+              setStatus('idle')
+              statusRef.current = 'idle'
+            })
         } else {
           setStatus('error')
           statusRef.current = 'error'
