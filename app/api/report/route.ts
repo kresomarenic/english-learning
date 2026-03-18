@@ -20,7 +20,7 @@ interface ReportPayload {
 export async function POST(req: NextRequest) {
   const apiKey = process.env.RESEND_API_KEY
   const TO_EMAIL = process.env.REPORT_TO_EMAIL ?? 'kresimir.marenic@gmail.com'
-  const FROM_EMAIL = process.env.REPORT_FROM_EMAIL ?? 'onboarding@resend.dev'
+  const FROM_EMAIL = process.env.REPORT_FROM_EMAIL ?? 'english@readybit.hr'
 
   if (!apiKey) {
     // Silently succeed when key not configured (dev environment)
@@ -89,7 +89,7 @@ export async function POST(req: NextRequest) {
   `
 
   const resend = new Resend(apiKey)
-  const { error } = await resend.emails.send({
+  const { data, error } = await resend.emails.send({
     from: FROM_EMAIL,
     to: TO_EMAIL,
     subject: `[Engleski] ${userName} — ${lessonTitle} (${correct}/${total})`,
@@ -97,9 +97,10 @@ export async function POST(req: NextRequest) {
   })
 
   if (error) {
-    console.error('Resend error:', error)
+    console.error('[report] Resend error:', JSON.stringify(error))
     return NextResponse.json({ ok: false, error }, { status: 500 })
   }
 
-  return NextResponse.json({ ok: true })
+  console.log('[report] Email sent:', data?.id, '→', TO_EMAIL)
+  return NextResponse.json({ ok: true, id: data?.id })
 }
