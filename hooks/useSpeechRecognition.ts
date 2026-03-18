@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-type Status = 'idle' | 'listening' | 'done' | 'error' | 'unsupported'
+type Status = 'idle' | 'listening' | 'done' | 'error' | 'denied' | 'unsupported'
 
 interface RecognitionInstance extends EventTarget {
   lang: string
@@ -58,8 +58,9 @@ export function useSpeechRecognition(lang: string) {
         .catch(() => { /* permission denied — SpeechRecognition handles it */ })
     }
 
-    // Warm up immediately so the very first tap is instant
-    warmUpMic()
+    // Do NOT warm up on mount — doing so triggers the mic permission dialog
+    // before the user has interacted with the mic button, which can lead to
+    // accidental dismissal and subsequent 'not-allowed' errors.
 
     function spawn() {
       const rec = new Ctor()
@@ -84,6 +85,9 @@ export function useSpeechRecognition(lang: string) {
             setStatus('idle')
             statusRef.current = 'idle'
           }
+        } else if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
+          setStatus('denied')
+          statusRef.current = 'denied'
         } else {
           setStatus('error')
           statusRef.current = 'error'
@@ -132,6 +136,11 @@ export function useSpeechRecognition(lang: string) {
   const start = useCallback(() => {
     if (statusRef.current === 'unsupported') return
     if (statusRef.current === 'listening') return  // already active
+    // Allow retry from denied/error — user may have just granted permission
+    if (statusRef.current === 'denied') {
+      statusRef.current = 'idle'
+      setStatus('idle')
+    }
 
     setTranscript('')
     // Set listening immediately for instant button feedback,

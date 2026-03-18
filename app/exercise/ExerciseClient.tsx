@@ -291,6 +291,11 @@ export default function ExerciseClient() {
             Preglednik ne podržava prepoznavanje govora. Koristi Chrome.
           </p>
         )}
+        {status === 'denied' && (
+          <p className="text-sm text-orange-500 mt-3 text-center">
+            ⚠️ Mikrofon nije dopušten. Klikni na 🔒 u adresnoj traci i dopusti mikrofon, zatim pritisni gumb ponovo.
+          </p>
+        )}
 
         {status !== 'listening' && !feedback && (
           <p className="text-slate-400 text-sm mt-4 text-center">

@@ -416,6 +416,11 @@ export default function FillInBlankClient({
                 Preglednik ne podržava prepoznavanje govora. Koristi Chrome.
               </p>
             )}
+            {status === 'denied' && (
+              <p className="text-sm text-orange-500 mt-3 text-center">
+                ⚠️ Mikrofon nije dopušten. Klikni na 🔒 u adresnoj traci i dopusti mikrofon, zatim pritisni gumb ponovo.
+              </p>
+            )}
           </>
         )}
 
