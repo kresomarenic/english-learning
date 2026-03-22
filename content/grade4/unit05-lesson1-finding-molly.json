@@ -1,0 +1,112 @@
+{
+  "grade": 4,
+  "unit": 5,
+  "title": "Finding Molly",
+  "titleHr": "Tražeći Molly",
+  "words": [
+    { "en": "bank", "hr": ["banka"] },
+    { "en": "bookshop", "hr": ["knjižara"] },
+    { "en": "church", "hr": ["crkva"] },
+    { "en": "cinema", "hr": ["kino"] },
+    { "en": "easy", "hr": ["lako"] },
+    { "en": "greengrocer's", "hr": ["prodavaonica voća i povrća"] },
+    { "en": "hotel", "hr": ["hotel"] },
+    { "en": "library", "hr": ["knjižnica"] },
+    { "en": "market", "hr": ["tržnica"] },
+    { "en": "museum", "hr": ["muzej"] },
+    { "en": "nursery", "hr": ["vrtić"] },
+    { "en": "playground", "hr": ["igralište"] },
+    { "en": "police", "hr": ["policija"] },
+    { "en": "police officer", "hr": ["policajac"] },
+    { "en": "police station", "hr": ["policijska postaja"] },
+    { "en": "post office", "hr": ["pošta"] },
+    { "en": "theatre", "hr": ["kazalište"] },
+    { "en": "upset", "hr": ["uznemiren"] },
+    { "en": "Excuse me.", "hr": ["Oprostite."] },
+    { "en": "Go down Main Street.", "hr": ["Idi niz Glavnu ulicu."] },
+    { "en": "Let's call the police.", "hr": ["Pozovimo policiju."] },
+    { "en": "Molly is missing.", "hr": ["Molly je nestala."] },
+    { "en": "Not at all.", "hr": ["Nema na čemu."] },
+    { "en": "Thank you very much.", "hr": ["Puno hvala."] },
+    { "en": "Turn left / right.", "hr": ["Skreni lijevo / desno."] },
+    { "en": "What happened?", "hr": ["Što se dogodilo?"] },
+    { "en": "What should we do?", "hr": ["Što bismo trebali učiniti?"] },
+    { "en": "You're welcome.", "hr": ["Nema na čemu."] },
+    { "en": "You can't miss it!", "hr": ["Ne možeš promašiti!"] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "Go down Main Street.",
+      "blanks": [
+        { "word": "down", "emoji": "⬇️", "distractors": ["up", "left", "right"] }
+      ]
+    },
+    {
+      "sentence": "Let's call the police.",
+      "blanks": [
+        { "word": "police", "emoji": "🚔", "distractors": ["museum", "library", "cinema"] }
+      ]
+    },
+    {
+      "sentence": "Molly is missing.",
+      "blanks": [
+        { "word": "missing", "emoji": "❓", "distractors": ["upset", "found", "lost"] }
+      ]
+    },
+    {
+      "sentence": "What happened?",
+      "blanks": [
+        { "word": "happened", "emoji": "😮", "distractors": ["changed", "missed", "wrong"] }
+      ]
+    },
+    {
+      "sentence": "That's easy.",
+      "blanks": [
+        { "word": "easy", "emoji": "😊", "distractors": ["hard", "funny", "great"] }
+      ]
+    },
+    {
+      "sentence": "You're welcome.",
+      "blanks": [
+        { "word": "welcome", "emoji": "🙏", "distractors": ["right", "sure", "fine"] }
+      ]
+    },
+    {
+      "sentence": "Thank you very much.",
+      "blanks": [
+        { "word": "much", "emoji": "💙", "distractors": ["good", "well", "lots"] }
+      ]
+    },
+    {
+      "sentence": "Turn right into Park Street.",
+      "blanks": [
+        { "word": "right", "emoji": "➡️", "distractors": ["left", "up", "straight"] },
+        { "word": "left", "emoji": "⬅️", "distractors": ["right", "up", "straight"] }
+      ]
+    },
+    {
+      "sentence": "The pet shop is between the toy shop and the sweet shop.",
+      "blanks": [
+        { "word": "between", "emoji": "↔️", "distractors": ["next to", "opposite", "behind"] }
+      ]
+    },
+    {
+      "sentence": "The library is to the left of the bookshop.",
+      "blanks": [
+        { "word": "library", "emoji": "📚", "distractors": ["bank", "cinema", "museum"] }
+      ]
+    },
+    {
+      "sentence": "The cinema is next to the theatre.",
+      "blanks": [
+        { "word": "cinema", "emoji": "🎬", "distractors": ["museum", "church", "library"] }
+      ]
+    },
+    {
+      "sentence": "The police station is between the bank and the post office.",
+      "blanks": [
+        { "word": "police station", "emoji": "🚔", "distractors": ["library", "market", "hotel"] }
+      ]
+    }
+  ]
+}

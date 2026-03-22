@@ -1,0 +1,97 @@
+{
+  "grade": 4,
+  "unit": 5,
+  "title": "A Tour of London",
+  "titleHr": "Obilazak Londona",
+  "words": [
+    { "en": "clock tower", "hr": ["toranj sa satom"] },
+    { "en": "country", "hr": ["država"] },
+    { "en": "double-decker bus", "hr": ["autobus na kat"] },
+    { "en": "famous", "hr": ["poznat"] },
+    { "en": "fountain", "hr": ["fontana"] },
+    { "en": "Great Britain", "hr": ["Velika Britanija"] },
+    { "en": "postbox", "hr": ["poštanski sandučić"] },
+    { "en": "prison", "hr": ["zatvor"] },
+    { "en": "river", "hr": ["rijeka"] },
+    { "en": "square", "hr": ["trg"] },
+    { "en": "statue", "hr": ["kip"] },
+    { "en": "telephone box", "hr": ["telefonska govornica"] },
+    { "en": "tower", "hr": ["kula", "toranj"] },
+    { "en": "underground", "hr": ["podzemna željeznica"] },
+    { "en": "wheel", "hr": ["kotač"] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "On the streets of London you can see black taxis.",
+      "blanks": [
+        { "word": "black", "emoji": "🖤", "distractors": ["red", "yellow", "white"] }
+      ]
+    },
+    {
+      "sentence": "On the streets of London you can see red double-decker buses.",
+      "blanks": [
+        { "word": "red", "emoji": "🔴", "distractors": ["black", "yellow", "blue"] }
+      ]
+    },
+    {
+      "sentence": "The biggest park in London is Hyde Park.",
+      "blanks": [
+        { "word": "Hyde", "emoji": "🌳", "distractors": ["Buckingham", "Trafalgar", "Oxford"] }
+      ]
+    },
+    {
+      "sentence": "There is a bell inside Big Ben.",
+      "blanks": [
+        { "word": "bell", "emoji": "🔔", "distractors": ["clock", "wheel", "fountain"] }
+      ]
+    },
+    {
+      "sentence": "People call the London Underground the Tube.",
+      "blanks": [
+        { "word": "Underground", "emoji": "🚇", "distractors": ["double-decker", "postbox", "taxi"] }
+      ]
+    },
+    {
+      "sentence": "The Tower of London is an old castle.",
+      "blanks": [
+        { "word": "castle", "emoji": "🏰", "distractors": ["square", "museum", "theatre"] }
+      ]
+    },
+    {
+      "sentence": "Oxford Street is a famous street with a lot of shops.",
+      "blanks": [
+        { "word": "shops", "emoji": "🛍️", "distractors": ["cinemas", "museums", "statues"] }
+      ]
+    },
+    {
+      "sentence": "Tower Bridge is very old and beautiful.",
+      "blanks": [
+        { "word": "Tower", "emoji": "🌉", "distractors": ["Trafalgar", "Oxford", "London"] }
+      ]
+    },
+    {
+      "sentence": "This big wheel is called the London Eye.",
+      "blanks": [
+        { "word": "Eye", "emoji": "👁️", "distractors": ["Ear", "Bridge", "Tower"] }
+      ]
+    },
+    {
+      "sentence": "The London telephone boxes and postboxes are red.",
+      "blanks": [
+        { "word": "red", "emoji": "🔴", "distractors": ["yellow", "green", "blue"] }
+      ]
+    },
+    {
+      "sentence": "The Tower of London was a prison, but now it is a museum.",
+      "blanks": [
+        { "word": "prison", "emoji": "🏛️", "distractors": ["castle", "museum", "church"] }
+      ]
+    },
+    {
+      "sentence": "You can see Admiral Nelson's statue in Trafalgar Square.",
+      "blanks": [
+        { "word": "Trafalgar Square", "emoji": "🏛️", "distractors": ["Hyde Park", "Oxford Street", "Tower Bridge"] }
+      ]
+    }
+  ]
+}

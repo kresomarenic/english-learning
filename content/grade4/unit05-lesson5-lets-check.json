@@ -1,0 +1,81 @@
+{
+  "grade": 4,
+  "unit": 5,
+  "title": "Let's Check!",
+  "titleHr": "Provjeri znanje!",
+  "words": [],
+  "fillInBlanks": [
+    {
+      "sentence": "Let's call the police.",
+      "blanks": [
+        { "word": "police", "emoji": "🚔", "distractors": ["museum", "library", "hotel"] }
+      ]
+    },
+    {
+      "sentence": "Go down Main Street.",
+      "blanks": [
+        { "word": "down", "emoji": "⬇️", "distractors": ["up", "left", "right"] }
+      ]
+    },
+    {
+      "sentence": "The pet shop is between the toy shop and the sweet shop.",
+      "blanks": [
+        { "word": "between", "emoji": "↔️", "distractors": ["next to", "opposite", "behind"] }
+      ]
+    },
+    {
+      "sentence": "There is a bakery in Park Street.",
+      "blanks": [
+        { "word": "is", "emoji": "✅", "distractors": ["are", "isn't", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "There aren't many cars there.",
+      "blanks": [
+        { "word": "aren't", "emoji": "❌", "distractors": ["isn't", "is", "are"] }
+      ]
+    },
+    {
+      "sentence": "Let's go to the butcher's first.",
+      "blanks": [
+        { "word": "butcher's", "emoji": "🥩", "distractors": ["bakery", "dairy", "greengrocer's"] }
+      ]
+    },
+    {
+      "sentence": "What do you think of watermelon for dessert?",
+      "blanks": [
+        { "word": "watermelon", "emoji": "🍉", "distractors": ["strawberry", "cherry", "plum"] }
+      ]
+    },
+    {
+      "sentence": "People call the London Underground the Tube.",
+      "blanks": [
+        { "word": "Underground", "emoji": "🚇", "distractors": ["double-decker", "postbox", "taxi"] }
+      ]
+    },
+    {
+      "sentence": "The Tower of London is an old castle.",
+      "blanks": [
+        { "word": "castle", "emoji": "🏰", "distractors": ["square", "museum", "theatre"] }
+      ]
+    },
+    {
+      "sentence": "This big wheel is called the London Eye.",
+      "blanks": [
+        { "word": "Eye", "emoji": "👁️", "distractors": ["Ear", "Bridge", "Tower"] }
+      ]
+    },
+    {
+      "sentence": "On the streets of London you can see red double-decker buses.",
+      "blanks": [
+        { "word": "red", "emoji": "🔴", "distractors": ["black", "yellow", "blue"] }
+      ]
+    },
+    {
+      "sentence": "Hyde Park is the biggest park in London.",
+      "blanks": [
+        { "word": "Hyde Park", "emoji": "🌳", "distractors": ["Trafalgar Square", "Tower Bridge", "Oxford Street"] }
+      ]
+    }
+  ]
+}

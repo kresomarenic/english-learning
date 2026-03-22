@@ -1,0 +1,112 @@
+{
+  "grade": 4,
+  "unit": 5,
+  "title": "At the Market",
+  "titleHr": "Na tržnici",
+  "words": [
+    { "en": "butcher", "hr": ["mesar"] },
+    { "en": "bacon", "hr": ["slanina"] },
+    { "en": "bread", "hr": ["kruh"] },
+    { "en": "broccoli", "hr": ["brokula"] },
+    { "en": "cheese", "hr": ["sir"] },
+    { "en": "cherry", "hr": ["trešnja"] },
+    { "en": "dairy", "hr": ["mliječni proizvodi"] },
+    { "en": "dessert", "hr": ["slastica", "desert"] },
+    { "en": "fruit", "hr": ["voće"] },
+    { "en": "ham", "hr": ["šunka"] },
+    { "en": "list", "hr": ["popis", "lista"] },
+    { "en": "need", "hr": ["trebati"] },
+    { "en": "meat", "hr": ["meso"] },
+    { "en": "pear", "hr": ["kruška"] },
+    { "en": "pepper", "hr": ["paprika"] },
+    { "en": "plum", "hr": ["šljiva"] },
+    { "en": "sausage", "hr": ["kobasica"] },
+    { "en": "soup", "hr": ["juha"] },
+    { "en": "spinach", "hr": ["špinat"] },
+    { "en": "steak", "hr": ["odrezak"] },
+    { "en": "strawberry", "hr": ["jagoda"] },
+    { "en": "tomato", "hr": ["rajčica"] },
+    { "en": "vegetables", "hr": ["povrće"] },
+    { "en": "watermelon", "hr": ["lubenica"] },
+    { "en": "yoghurt", "hr": ["jogurt"] },
+    { "en": "Let me see!", "hr": ["Daj da vidim!"] },
+    { "en": "What would you like?", "hr": ["Što bi želio?"] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "Let's go to the butcher's first.",
+      "blanks": [
+        { "word": "butcher's", "emoji": "🥩", "distractors": ["bakery", "dairy", "market"] }
+      ]
+    },
+    {
+      "sentence": "Let's get the meat and the bread.",
+      "blanks": [
+        { "word": "meat", "emoji": "🥩", "distractors": ["fruit", "cheese", "vegetables"] }
+      ]
+    },
+    {
+      "sentence": "I'll make some soup.",
+      "blanks": [
+        { "word": "soup", "emoji": "🍲", "distractors": ["steak", "dessert", "salad"] }
+      ]
+    },
+    {
+      "sentence": "Let's not forget cheese and milk.",
+      "blanks": [
+        { "word": "cheese", "emoji": "🧀", "distractors": ["bread", "ham", "bacon"] }
+      ]
+    },
+    {
+      "sentence": "We need some spinach for the soup.",
+      "blanks": [
+        { "word": "spinach", "emoji": "🌿", "distractors": ["broccoli", "pepper", "pear"] }
+      ]
+    },
+    {
+      "sentence": "And we need some eggs!",
+      "blanks": [
+        { "word": "eggs", "emoji": "🥚", "distractors": ["cheese", "milk", "butter"] }
+      ]
+    },
+    {
+      "sentence": "What do you think of watermelon for dessert?",
+      "blanks": [
+        { "word": "watermelon", "emoji": "🍉", "distractors": ["strawberry", "cherry", "plum"] },
+        { "word": "dessert", "emoji": "🍰", "distractors": ["fruit", "soup", "salad"] }
+      ]
+    },
+    {
+      "sentence": "I would like a fruit salad.",
+      "blanks": [
+        { "word": "fruit", "emoji": "🍎", "distractors": ["ham", "cheese", "egg"] }
+      ]
+    },
+    {
+      "sentence": "I will have an orange juice.",
+      "blanks": [
+        { "word": "orange", "emoji": "🍊", "distractors": ["apple", "lemon", "carrot"] }
+      ]
+    },
+    {
+      "sentence": "We need some bread, some steaks and some vegetables.",
+      "blanks": [
+        { "word": "bread", "emoji": "🍞", "distractors": ["ham", "bacon", "sausage"] },
+        { "word": "steaks", "emoji": "🥩", "distractors": ["tomatoes", "plums", "pears"] },
+        { "word": "vegetables", "emoji": "🥦", "distractors": ["fruits", "desserts", "soups"] }
+      ]
+    },
+    {
+      "sentence": "There is a lot of fruit at Lizzie's Fruit.",
+      "blanks": [
+        { "word": "fruit", "emoji": "🍎", "distractors": ["meat", "dairy", "vegetables"] }
+      ]
+    },
+    {
+      "sentence": "They buy yoghurt at the Dairy Mary.",
+      "blanks": [
+        { "word": "yoghurt", "emoji": "🥛", "distractors": ["cheese", "milk", "butter"] }
+      ]
+    }
+  ]
+}

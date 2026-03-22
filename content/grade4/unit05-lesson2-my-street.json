@@ -1,0 +1,95 @@
+{
+  "grade": 4,
+  "unit": 5,
+  "title": "My Street",
+  "titleHr": "Moja ulica",
+  "words": [
+    { "en": "bakery", "hr": ["pekara"] },
+    { "en": "bread", "hr": ["kruh"] },
+    { "en": "doughnut", "hr": ["krafna"] },
+    { "en": "pet shop", "hr": ["prodavaonica kućnih ljubimaca"] },
+    { "en": "sweet shop", "hr": ["prodavaonica slatkiša"] },
+    { "en": "town", "hr": ["grad"] },
+    { "en": "toy shop", "hr": ["prodavaonica igračaka"] },
+    { "en": "There is a bakery in Park Street.", "hr": ["U ulici Park nalazi se pekarnica."] },
+    { "en": "There isn't a school in Park Street.", "hr": ["U ulici Park ne nalazi se škola."] },
+    { "en": "There are two parks in Park Street.", "hr": ["U ulici Park nalaze se dva parka."] },
+    { "en": "There aren't many cars there.", "hr": ["Tamo nema mnogo automobila."] },
+    { "en": "Is there a school in your street?", "hr": ["Nalazi li se škola u tvojoj ulici?"] },
+    { "en": "Are there any trees there?", "hr": ["Ima li tamo drveća?"] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "I buy bread at the bakery every day.",
+      "blanks": [
+        { "word": "bakery", "emoji": "🥖", "distractors": ["sweet shop", "toy shop", "greengrocer's"] }
+      ]
+    },
+    {
+      "sentence": "I buy fruit and vegetables at the greengrocer's.",
+      "blanks": [
+        { "word": "greengrocer's", "emoji": "🥦", "distractors": ["toy shop", "bakery", "sweet shop"] }
+      ]
+    },
+    {
+      "sentence": "Next to the bakery there is a sweet shop.",
+      "blanks": [
+        { "word": "sweet shop", "emoji": "🍬", "distractors": ["supermarket", "toy shop", "pet shop"] }
+      ]
+    },
+    {
+      "sentence": "Opposite my house there is Uncle Phil's pet shop.",
+      "blanks": [
+        { "word": "pet shop", "emoji": "🐾", "distractors": ["toy shop", "bakery", "sweet shop"] }
+      ]
+    },
+    {
+      "sentence": "To the left of the pet shop there is a toy shop.",
+      "blanks": [
+        { "word": "toy shop", "emoji": "🧸", "distractors": ["bakery", "sweet shop", "pet shop"] }
+      ]
+    },
+    {
+      "sentence": "To the right of the sweet shop there is a bakery.",
+      "blanks": [
+        { "word": "bakery", "emoji": "🥖", "distractors": ["sweet shop", "toy shop", "market"] }
+      ]
+    },
+    {
+      "sentence": "There are two parks in my street.",
+      "blanks": [
+        { "word": "parks", "emoji": "🌳", "distractors": ["shops", "houses", "trees"] }
+      ]
+    },
+    {
+      "sentence": "There is a bakery in Park Street.",
+      "blanks": [
+        { "word": "is", "emoji": "✅", "distractors": ["are", "isn't", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "There are two parks.",
+      "blanks": [
+        { "word": "are", "emoji": "✅", "distractors": ["is", "isn't", "aren't"] }
+      ]
+    },
+    {
+      "sentence": "There isn't a school.",
+      "blanks": [
+        { "word": "isn't", "emoji": "❌", "distractors": ["aren't", "is", "are"] }
+      ]
+    },
+    {
+      "sentence": "There aren't many cars in the street.",
+      "blanks": [
+        { "word": "aren't", "emoji": "❌", "distractors": ["isn't", "is", "are"] }
+      ]
+    },
+    {
+      "sentence": "There is a doughnut shop in town.",
+      "blanks": [
+        { "word": "doughnut", "emoji": "🍩", "distractors": ["bread", "sweet", "lollipop"] }
+      ]
+    }
+  ]
+}
