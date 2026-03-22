@@ -52,6 +52,7 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
   const [selectedGrade, setSelectedGrade] = useState<number | null>(null)
   const [direction, setDirection] = useState<Direction>('en-hr')
   const [openUnits, setOpenUnits] = useState<Set<string>>(new Set())
+  const [openGrades, setOpenGrades] = useState<Set<number>>(new Set())
   const [userName, setUserName] = useState<string | null>(null)
   const [nameChecked, setNameChecked] = useState(false)
 
@@ -94,6 +95,139 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
       next.has(key) ? next.delete(key) : next.add(key)
       return next
     })
+  }
+
+  function toggleGrade(grade: number) {
+    setOpenGrades((prev) => {
+      const next = new Set(prev)
+      next.has(grade) ? next.delete(grade) : next.add(grade)
+      return next
+    })
+  }
+
+  function renderUnitGroup(group: UnitGroup, showGradeLabel = false) {
+    const key = `${group.grade}-${group.unit}`
+    const isOpen = openUnits.has(key)
+    const gradeIdx = group.grade - 1
+
+    return (
+      <div
+        key={key}
+        className={`rounded-2xl border-2 overflow-hidden ${GRADE_ACCENT[gradeIdx]}`}
+      >
+        <button
+          onClick={() => toggleUnit(key)}
+          className="w-full px-4 py-3.5 flex items-center justify-between text-left"
+        >
+          <div className="flex items-center gap-3">
+            {showGradeLabel && (
+              <span className={`text-xs font-bold px-2 py-0.5 rounded-full border ${GRADE_COLORS[gradeIdx]}`}>
+                {GRADE_LABELS[gradeIdx]}
+              </span>
+            )}
+            <div>
+              <p className="font-bold text-slate-800 leading-tight">
+                Unit {group.unit}
+              </p>
+              <p className="text-xs text-slate-500">
+                {group.lessons.length} lekcij{group.lessons.length === 1 ? 'a' : 'e'} · {group.totalWords} riječi
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center gap-1.5">
+            {group.lessons.some((l) => l.wordCount > 0) && (
+              <span
+                role="button"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  startSession(group.lessons.filter((l) => l.wordCount > 0).map((l) => l.slug))
+                }}
+                className="text-xs font-semibold px-2.5 py-1.5 bg-indigo-600 text-white rounded-full active:scale-95 transition-transform"
+              >
+                🔤
+              </span>
+            )}
+            {group.lessons.some((l) => l.fillInBlankCount > 0) && (
+              <span
+                role="button"
+                onClick={(e) => {
+                  e.stopPropagation()
+                  startFillInBlank(group.lessons.filter((l) => l.fillInBlankCount > 0).map((l) => l.slug))
+                }}
+                className="text-xs font-semibold px-2.5 py-1.5 bg-emerald-600 text-white rounded-full active:scale-95 transition-transform"
+              >
+                ✏️
+              </span>
+            )}
+            <span
+              className={`text-slate-400 text-lg transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+            >
+              ▾
+            </span>
+          </div>
+        </button>
+
+        {isOpen && (
+          <div className="border-t border-slate-200 bg-white divide-y divide-slate-100">
+            {group.lessons.map((lesson) => (
+              <div
+                key={lesson.slug}
+                className="px-4 py-3 flex items-center justify-between"
+              >
+                <div className="flex-1 min-w-0">
+                  <p className="font-medium text-slate-800 text-sm">{lesson.title}</p>
+                  <p className="text-xs text-slate-400">{lesson.titleHr}</p>
+                </div>
+                <div className="flex items-center gap-2 ml-3 flex-shrink-0">
+                  {lesson.wordCount > 0 && (
+                    <div className="flex flex-col items-center gap-1">
+                      <button
+                        onClick={() => startSession([lesson.slug])}
+                        className="flex flex-col items-center px-3 py-1.5 bg-indigo-600 text-white rounded-xl active:scale-95 transition-transform w-full"
+                      >
+                        <span className="text-xs font-bold">🔤 {lesson.wordCount}</span>
+                        <span className="text-[10px] opacity-80">prijevod</span>
+                      </button>
+                      <div className="flex rounded-lg overflow-hidden border border-indigo-300 w-full">
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setDirection('en-hr') }}
+                          className={`flex-1 text-[10px] font-semibold py-0.5 transition-colors ${
+                            direction === 'en-hr'
+                              ? 'bg-indigo-600 text-white'
+                              : 'bg-white text-indigo-500'
+                          }`}
+                        >
+                          EN
+                        </button>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setDirection('hr-en') }}
+                          className={`flex-1 text-[10px] font-semibold py-0.5 transition-colors ${
+                            direction === 'hr-en'
+                              ? 'bg-indigo-600 text-white'
+                              : 'bg-white text-indigo-500'
+                          }`}
+                        >
+                          HR
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                  {lesson.fillInBlankCount > 0 && (
+                    <button
+                      onClick={() => startFillInBlank([lesson.slug])}
+                      className="flex flex-col items-center px-3 py-1.5 bg-emerald-600 text-white rounded-xl active:scale-95 transition-transform"
+                    >
+                      <span className="text-xs font-bold">✏️ {lesson.fillInBlankCount}</span>
+                      <span className="text-[10px] opacity-80">rečenice</span>
+                    </button>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    )
   }
 
   return (
@@ -178,136 +312,70 @@ export default function HomeClient({ units }: { units: UnitMeta[] }) {
           )
         })()}
 
-        {/* Unit groups — collapsible */}
+        {/* Unit groups — collapsible, grouped by grade when showing all */}
         <div className="flex flex-col gap-3">
-          {unitGroups.map((group) => {
-            const key = `${group.grade}-${group.unit}`
-            const isOpen = openUnits.has(key)
-            const gradeIdx = group.grade - 1
+          {selectedGrade ? (
+            unitGroups.map((group) => renderUnitGroup(group, true))
+          ) : (
+            ACTIVE_GRADES.filter((g) => unitGroups.some((u) => u.grade === g)).map((grade) => {
+              const gradeIdx = grade - 1
+              const isGradeOpen = openGrades.has(grade)
+              const gradeUnitGroups = unitGroups.filter((u) => u.grade === grade)
+              const totalWords = gradeUnitGroups.reduce((sum, g) => sum + g.totalWords, 0)
+              const gradeSlugsTranslation = units.filter((u) => u.grade === grade && u.wordCount > 0).map((u) => u.slug)
+              const gradeSlugsFillin = units.filter((u) => u.grade === grade && u.fillInBlankCount > 0).map((u) => u.slug)
 
-            return (
-              <div
-                key={key}
-                className={`rounded-2xl border-2 overflow-hidden ${GRADE_ACCENT[gradeIdx]}`}
-              >
-                {/* Unit header — tap to expand */}
-                <button
-                  onClick={() => toggleUnit(key)}
-                  className="w-full px-4 py-3.5 flex items-center justify-between text-left"
-                >
-                  <div className="flex items-center gap-3">
-                    <span
-                      className={`text-xs font-bold px-2 py-0.5 rounded-full border ${GRADE_COLORS[gradeIdx]}`}
-                    >
-                      {GRADE_LABELS[gradeIdx]}
-                    </span>
-                    <div>
-                      <p className="font-bold text-slate-800 leading-tight">
-                        Unit {group.unit}
-                      </p>
-                      <p className="text-xs text-slate-500">
-                        {group.lessons.length} lekcij{group.lessons.length === 1 ? 'a' : 'e'} · {group.totalWords} riječi
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    {/* Practice whole unit — translation */}
-                    {group.lessons.some((l) => l.wordCount > 0) && (
-                      <span
-                        role="button"
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          startSession(group.lessons.filter((l) => l.wordCount > 0).map((l) => l.slug))
-                        }}
-                        className="text-xs font-semibold px-2.5 py-1.5 bg-indigo-600 text-white rounded-full active:scale-95 transition-transform"
-                      >
-                        🔤
+              return (
+                <div key={grade} className={`rounded-2xl border-2 overflow-hidden ${GRADE_ACCENT[gradeIdx]}`}>
+                  <button
+                    onClick={() => toggleGrade(grade)}
+                    className="w-full px-4 py-3.5 flex items-center justify-between text-left"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className={`text-xs font-bold px-2 py-0.5 rounded-full border ${GRADE_COLORS[gradeIdx]}`}>
+                        {GRADE_LABELS[gradeIdx]}
                       </span>
-                    )}
-                    {/* Practice whole unit — fill in blank */}
-                    {group.lessons.some((l) => l.fillInBlankCount > 0) && (
-                      <span
-                        role="button"
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          startFillInBlank(group.lessons.filter((l) => l.fillInBlankCount > 0).map((l) => l.slug))
-                        }}
-                        className="text-xs font-semibold px-2.5 py-1.5 bg-emerald-600 text-white rounded-full active:scale-95 transition-transform"
-                      >
-                        ✏️
-                      </span>
-                    )}
-                    <span
-                      className={`text-slate-400 text-lg transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
-                    >
-                      ▾
-                    </span>
-                  </div>
-                </button>
-
-                {/* Lessons list */}
-                {isOpen && (
-                  <div className="border-t border-slate-200 bg-white divide-y divide-slate-100">
-                    {group.lessons.map((lesson) => (
-                      <div
-                        key={lesson.slug}
-                        className="px-4 py-3 flex items-center justify-between"
-                      >
-                        <div className="flex-1 min-w-0">
-                          <p className="font-medium text-slate-800 text-sm">{lesson.title}</p>
-                          <p className="text-xs text-slate-400">{lesson.titleHr}</p>
-                        </div>
-                        <div className="flex items-center gap-2 ml-3 flex-shrink-0">
-                          {lesson.wordCount > 0 && (
-                            <div className="flex flex-col items-center gap-1">
-                              <button
-                                onClick={() => startSession([lesson.slug])}
-                                className="flex flex-col items-center px-3 py-1.5 bg-indigo-600 text-white rounded-xl active:scale-95 transition-transform w-full"
-                              >
-                                <span className="text-xs font-bold">🔤 {lesson.wordCount}</span>
-                                <span className="text-[10px] opacity-80">prijevod</span>
-                              </button>
-                              <div className="flex rounded-lg overflow-hidden border border-indigo-300 w-full">
-                                <button
-                                  onClick={(e) => { e.stopPropagation(); setDirection('en-hr') }}
-                                  className={`flex-1 text-[10px] font-semibold py-0.5 transition-colors ${
-                                    direction === 'en-hr'
-                                      ? 'bg-indigo-600 text-white'
-                                      : 'bg-white text-indigo-500'
-                                  }`}
-                                >
-                                  EN
-                                </button>
-                                <button
-                                  onClick={(e) => { e.stopPropagation(); setDirection('hr-en') }}
-                                  className={`flex-1 text-[10px] font-semibold py-0.5 transition-colors ${
-                                    direction === 'hr-en'
-                                      ? 'bg-indigo-600 text-white'
-                                      : 'bg-white text-indigo-500'
-                                  }`}
-                                >
-                                  HR
-                                </button>
-                              </div>
-                            </div>
-                          )}
-                          {lesson.fillInBlankCount > 0 && (
-                            <button
-                              onClick={() => startFillInBlank([lesson.slug])}
-                              className="flex flex-col items-center px-3 py-1.5 bg-emerald-600 text-white rounded-xl active:scale-95 transition-transform"
-                            >
-                              <span className="text-xs font-bold">✏️ {lesson.fillInBlankCount}</span>
-                              <span className="text-[10px] opacity-80">rečenice</span>
-                            </button>
-                          )}
-                        </div>
+                      <div>
+                        <p className="font-bold text-slate-800 leading-tight">
+                          {gradeUnitGroups.length} unit{gradeUnitGroups.length === 1 ? '' : 'a'}
+                        </p>
+                        <p className="text-xs text-slate-500">{totalWords} riječi</p>
                       </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )
-          })}
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      {gradeSlugsTranslation.length > 0 && (
+                        <span
+                          role="button"
+                          onClick={(e) => { e.stopPropagation(); startSession(gradeSlugsTranslation) }}
+                          className="text-xs font-semibold px-2.5 py-1.5 bg-indigo-600 text-white rounded-full active:scale-95 transition-transform"
+                        >
+                          🔤
+                        </span>
+                      )}
+                      {gradeSlugsFillin.length > 0 && (
+                        <span
+                          role="button"
+                          onClick={(e) => { e.stopPropagation(); startFillInBlank(gradeSlugsFillin) }}
+                          className="text-xs font-semibold px-2.5 py-1.5 bg-emerald-600 text-white rounded-full active:scale-95 transition-transform"
+                        >
+                          ✏️
+                        </span>
+                      )}
+                      <span className={`text-slate-400 text-lg transition-transform duration-200 ${isGradeOpen ? 'rotate-180' : ''}`}>
+                        ▾
+                      </span>
+                    </div>
+                  </button>
+
+                  {isGradeOpen && (
+                    <div className="border-t border-slate-200 bg-white/50 p-2 flex flex-col gap-2">
+                      {gradeUnitGroups.map((group) => renderUnitGroup(group))}
+                    </div>
+                  )}
+                </div>
+              )
+            })
+          )}
         </div>
       </main>
     </div>
