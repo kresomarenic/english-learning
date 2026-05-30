@@ -1,0 +1,145 @@
+{
+  "grade": 4,
+  "unit": 6,
+  "title": "Let's Check!",
+  "titleHr": "Provjeri znanje!",
+  "words": [],
+  "fillInBlanks": [
+    {
+      "sentence": "My teeth hurt. I've got a toothache.",
+      "blanks": [
+        { "word": "toothache", "emoji": "🦷", "distractors": ["headache", "stomachache", "earache"] }
+      ]
+    },
+    {
+      "sentence": "My nose is runny. I've got a cold.",
+      "blanks": [
+        { "word": "runny", "emoji": "🤧", "distractors": ["sore", "broken", "high"] },
+        { "word": "cold", "emoji": "🥶", "distractors": ["headache", "toothache", "stomachache"] }
+      ]
+    },
+    {
+      "sentence": "I can't speak. I've got a sore throat.",
+      "blanks": [
+        { "word": "sore", "emoji": "😣", "distractors": ["runny", "broken", "high"] },
+        { "word": "throat", "emoji": "🗣️", "distractors": ["nose", "head", "stomach"] }
+      ]
+    },
+    {
+      "sentence": "I've got a cast on my broken arm.",
+      "blanks": [
+        { "word": "cast", "emoji": "🦴", "distractors": ["pill", "spray", "syrup"] },
+        { "word": "broken", "emoji": "💔", "distractors": ["sore", "runny", "high"] }
+      ]
+    },
+    {
+      "sentence": "Achoo! I'm sneezing. I think I've got a cold.",
+      "blanks": [
+        { "word": "cold", "emoji": "🤧", "distractors": ["headache", "toothache", "stomachache"] }
+      ]
+    },
+    {
+      "sentence": "I've got a stomachache. It's because of that bad sandwich.",
+      "blanks": [
+        { "word": "stomachache", "emoji": "🤢", "distractors": ["headache", "toothache", "earache"] }
+      ]
+    },
+    {
+      "sentence": "I've got a high temperature, and I feel cold all over.",
+      "blanks": [
+        { "word": "temperature", "emoji": "🌡️", "distractors": ["headache", "throat", "stomach"] }
+      ]
+    },
+    {
+      "sentence": "Ouch! My arm hurts. I think it's broken.",
+      "blanks": [
+        { "word": "broken", "emoji": "💔", "distractors": ["sore", "runny", "itchy"] }
+      ]
+    },
+    {
+      "sentence": "I've got a headache. I need to have some rest.",
+      "blanks": [
+        { "word": "headache", "emoji": "🤕", "distractors": ["toothache", "stomachache", "earache"] },
+        { "word": "rest", "emoji": "😴", "distractors": ["sport", "snack", "screen"] }
+      ]
+    },
+    {
+      "sentence": "I need to take some syrup for my sore throat.",
+      "blanks": [
+        { "word": "syrup", "emoji": "🧴", "distractors": ["spray", "pills", "cast"] },
+        { "word": "sore", "emoji": "😣", "distractors": ["runny", "broken", "high"] }
+      ]
+    },
+    {
+      "sentence": "I help people who are ill. I'm a doctor.",
+      "blanks": [
+        { "word": "doctor", "emoji": "👨‍⚕️", "distractors": ["dentist", "nurse", "pharmacist"] }
+      ]
+    },
+    {
+      "sentence": "I help people who have got toothaches. I'm a dentist.",
+      "blanks": [
+        { "word": "dentist", "emoji": "🦷", "distractors": ["doctor", "nurse", "pharmacist"] }
+      ]
+    },
+    {
+      "sentence": "I help the doctor. I'm a nurse.",
+      "blanks": [
+        { "word": "nurse", "emoji": "👩‍⚕️", "distractors": ["doctor", "dentist", "pharmacist"] }
+      ]
+    },
+    {
+      "sentence": "I give patients the right medicine. I'm a pharmacist.",
+      "blanks": [
+        { "word": "pharmacist", "emoji": "💊", "distractors": ["doctor", "dentist", "nurse"] }
+      ]
+    },
+    {
+      "sentence": "I need to see a doctor. I'm not feeling well.",
+      "blanks": [
+        { "word": "doctor", "emoji": "👨‍⚕️", "distractors": ["nurse", "dentist", "pharmacist"] },
+        { "word": "well", "emoji": "🤒", "distractors": ["bad", "sick", "ill"] }
+      ]
+    },
+    {
+      "sentence": "Don't sit in front of the computer screen all day.",
+      "blanks": [
+        { "word": "computer", "emoji": "💻", "distractors": ["doctor", "stomach", "screen"] },
+        { "word": "screen", "emoji": "📺", "distractors": ["snack", "sport", "skin"] }
+      ]
+    },
+    {
+      "sentence": "Eat a lot of fruit and vegetables.",
+      "blanks": [
+        { "word": "fruit", "emoji": "🍎", "distractors": ["sweets", "snacks", "drinks"] },
+        { "word": "vegetables", "emoji": "🥦", "distractors": ["meats", "cakes", "biscuits"] }
+      ]
+    },
+    {
+      "sentence": "Brush your teeth twice a day.",
+      "blanks": [
+        { "word": "Brush", "emoji": "🪥", "distractors": ["Eat", "Wash", "Drink"] },
+        { "word": "twice", "emoji": "2️⃣", "distractors": ["once", "three times", "four times"] }
+      ]
+    },
+    {
+      "sentence": "Drink plenty of water every day.",
+      "blanks": [
+        { "word": "Drink", "emoji": "💧", "distractors": ["Eat", "Bring", "Wash"] },
+        { "word": "water", "emoji": "💧", "distractors": ["sweets", "tea", "juice"] }
+      ]
+    },
+    {
+      "sentence": "Take a deep breath.",
+      "blanks": [
+        { "word": "deep", "emoji": "😮‍💨", "distractors": ["high", "long", "short"] }
+      ]
+    },
+    {
+      "sentence": "Get some rest, and you'll feel better.",
+      "blanks": [
+        { "word": "rest", "emoji": "😴", "distractors": ["sport", "snack", "screen"] }
+      ]
+    }
+  ]
+}

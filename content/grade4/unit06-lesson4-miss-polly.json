@@ -1,0 +1,164 @@
+{
+  "grade": 4,
+  "unit": 6,
+  "title": "Miss Polly",
+  "titleHr": "Gospođica Polly",
+  "words": [
+    { "en": "bandages", "hr": ["zavoji"] },
+    { "en": "doctor's bag", "hr": ["liječnička torba"] },
+    { "en": "injection", "hr": ["injekcija"] },
+    { "en": "mask", "hr": ["maska"] },
+    { "en": "pill", "hr": ["tableta", "pilula"] },
+    { "en": "thermometer", "hr": ["termometar", "toplomjer"] },
+    { "en": "animal shelter", "hr": ["sklonište za životinje"] },
+    { "en": "neighbour", "hr": ["susjed"] },
+    { "en": "visit", "hr": ["posjetiti"] },
+    { "en": "volunteer", "hr": ["volonter"] },
+    { "en": "dolly", "hr": ["lutkica"] },
+    { "en": "sick", "hr": ["bolestan"] },
+    { "en": "shake", "hr": ["tresti"] },
+    { "en": "village", "hr": ["selo"] },
+    { "en": "donate", "hr": ["donirati"] },
+    { "en": "help", "hr": ["pomoći", "pomoć"] },
+    { "en": "Put her to bed.", "hr": ["Stavi je u krevet."] },
+    { "en": "I'll be back in the morning.", "hr": ["Vratit ću se ujutro."] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "Miss Polly has a dolly who is sick.",
+      "blanks": [
+        { "word": "dolly", "emoji": "🧸", "distractors": ["doll", "baby", "doggy"] },
+        { "word": "sick", "emoji": "🤒", "distractors": ["well", "happy", "tired"] }
+      ]
+    },
+    {
+      "sentence": "She calls for the doctor to come quick.",
+      "blanks": [
+        { "word": "doctor", "emoji": "👨‍⚕️", "distractors": ["dentist", "nurse", "pharmacist"] },
+        { "word": "quick", "emoji": "⚡", "distractors": ["slow", "late", "soft"] }
+      ]
+    },
+    {
+      "sentence": "The doctor comes with his bag and his hat.",
+      "blanks": [
+        { "word": "bag", "emoji": "💼", "distractors": ["car", "phone", "book"] },
+        { "word": "hat", "emoji": "🎩", "distractors": ["coat", "shoe", "glove"] }
+      ]
+    },
+    {
+      "sentence": "He knocks at the door with a rat-a-tat-tat.",
+      "blanks": [
+        { "word": "knocks", "emoji": "🚪", "distractors": ["opens", "closes", "looks"] },
+        { "word": "door", "emoji": "🚪", "distractors": ["window", "wall", "floor"] }
+      ]
+    },
+    {
+      "sentence": "He looks at the dolly and shakes his head.",
+      "blanks": [
+        { "word": "looks", "emoji": "👀", "distractors": ["listens", "smells", "tastes"] },
+        { "word": "shakes", "emoji": "😯", "distractors": ["nods", "bends", "turns"] }
+      ]
+    },
+    {
+      "sentence": "Miss Polly, put her straight to bed.",
+      "blanks": [
+        { "word": "bed", "emoji": "🛏️", "distractors": ["table", "floor", "chair"] }
+      ]
+    },
+    {
+      "sentence": "He writes out a paper for a pill.",
+      "blanks": [
+        { "word": "writes", "emoji": "✍️", "distractors": ["reads", "draws", "paints"] },
+        { "word": "pill", "emoji": "💊", "distractors": ["spray", "syrup", "cast"] }
+      ]
+    },
+    {
+      "sentence": "I'll be back in the morning.",
+      "blanks": [
+        { "word": "morning", "emoji": "🌅", "distractors": ["evening", "afternoon", "night"] }
+      ]
+    },
+    {
+      "sentence": "Sarah Morris is a young doctor from England.",
+      "blanks": [
+        { "word": "doctor", "emoji": "👩‍⚕️", "distractors": ["nurse", "dentist", "pharmacist"] },
+        { "word": "England", "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "distractors": ["Africa", "America", "Italy"] }
+      ]
+    },
+    {
+      "sentence": "She is a volunteer for Doctors Without Borders.",
+      "blanks": [
+        { "word": "volunteer", "emoji": "🤝", "distractors": ["patient", "doctor", "neighbour"] }
+      ]
+    },
+    {
+      "sentence": "She visits several villages every day.",
+      "blanks": [
+        { "word": "visits", "emoji": "🚙", "distractors": ["lives", "stays", "works"] },
+        { "word": "villages", "emoji": "🏘️", "distractors": ["cities", "schools", "houses"] }
+      ]
+    },
+    {
+      "sentence": "She helps people who are ill.",
+      "blanks": [
+        { "word": "helps", "emoji": "🤗", "distractors": ["hurts", "asks", "makes"] },
+        { "word": "ill", "emoji": "🤒", "distractors": ["well", "healthy", "happy"] }
+      ]
+    },
+    {
+      "sentence": "In her doctor's bag she has bandages, injections and pills.",
+      "blanks": [
+        { "word": "bandages", "emoji": "🩹", "distractors": ["masks", "casts", "thermometers"] },
+        { "word": "injections", "emoji": "💉", "distractors": ["pills", "sprays", "syrups"] }
+      ]
+    },
+    {
+      "sentence": "She takes the patient to a hospital in the nearest town.",
+      "blanks": [
+        { "word": "hospital", "emoji": "🏥", "distractors": ["pharmacy", "school", "shop"] },
+        { "word": "town", "emoji": "🏙️", "distractors": ["village", "park", "river"] }
+      ]
+    },
+    {
+      "sentence": "I can help my neighbours in need.",
+      "blanks": [
+        { "word": "help", "emoji": "🙌", "distractors": ["call", "ask", "visit"] },
+        { "word": "neighbours", "emoji": "🏘️", "distractors": ["doctors", "patients", "teachers"] }
+      ]
+    },
+    {
+      "sentence": "I can help in an animal shelter.",
+      "blanks": [
+        { "word": "animal", "emoji": "🐶", "distractors": ["doctor", "human", "school"] },
+        { "word": "shelter", "emoji": "🏠", "distractors": ["shop", "house", "garden"] }
+      ]
+    },
+    {
+      "sentence": "I can donate toys and clothes.",
+      "blanks": [
+        { "word": "donate", "emoji": "🎁", "distractors": ["buy", "sell", "throw"] },
+        { "word": "toys", "emoji": "🧸", "distractors": ["pills", "bones", "bags"] }
+      ]
+    },
+    {
+      "sentence": "Volunteering is great because you help people in need.",
+      "blanks": [
+        { "word": "Volunteering", "emoji": "🤝", "distractors": ["Sleeping", "Running", "Cooking"] },
+        { "word": "help", "emoji": "🙌", "distractors": ["hurt", "ask", "visit"] }
+      ]
+    },
+    {
+      "sentence": "The nurse takes Greg's temperature with a thermometer.",
+      "blanks": [
+        { "word": "nurse", "emoji": "👩‍⚕️", "distractors": ["doctor", "dentist", "pharmacist"] },
+        { "word": "thermometer", "emoji": "🌡️", "distractors": ["stethoscope", "syrup", "spray"] }
+      ]
+    },
+    {
+      "sentence": "The doctor wears a mask.",
+      "blanks": [
+        { "word": "mask", "emoji": "😷", "distractors": ["cast", "pill", "spray"] }
+      ]
+    }
+  ]
+}

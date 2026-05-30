@@ -1,0 +1,177 @@
+{
+  "grade": 4,
+  "unit": 6,
+  "title": "How Are You Feeling?",
+  "titleHr": "Kako se osjećaš?",
+  "words": [
+    { "en": "adult", "hr": ["odrasla osoba"] },
+    { "en": "arm", "hr": ["ruka"] },
+    { "en": "bone", "hr": ["kost"] },
+    { "en": "brain", "hr": ["mozak"] },
+    { "en": "careful", "hr": ["pažljiv", "oprezan"] },
+    { "en": "dentist", "hr": ["zubar"] },
+    { "en": "ear", "hr": ["uho"] },
+    { "en": "feet", "hr": ["stopala"] },
+    { "en": "foot", "hr": ["stopalo"] },
+    { "en": "head", "hr": ["glava"] },
+    { "en": "heart", "hr": ["srce"] },
+    { "en": "human body", "hr": ["ljudsko tijelo"] },
+    { "en": "hurt", "hr": ["boljeti"] },
+    { "en": "lungs", "hr": ["pluća"] },
+    { "en": "nose", "hr": ["nos"] },
+    { "en": "organ", "hr": ["organ"] },
+    { "en": "skin", "hr": ["koža"] },
+    { "en": "stethoscope", "hr": ["stetoskop"] },
+    { "en": "stomach", "hr": ["želudac", "trbuh"] },
+    { "en": "teeth", "hr": ["zubi"] },
+    { "en": "thermometer", "hr": ["toplomjer"] },
+    { "en": "throat", "hr": ["grlo"] },
+    { "en": "tooth", "hr": ["zub"] },
+    { "en": "a runny nose", "hr": ["curi nos", "šmrkav nos"] },
+    { "en": "a sore throat", "hr": ["upaljeno grlo", "grlobolja"] },
+    { "en": "a headache", "hr": ["glavobolja"] },
+    { "en": "a stomachache", "hr": ["bol u trbuhu", "trbobolja"] },
+    { "en": "a toothache", "hr": ["zubobolja"] },
+    { "en": "a broken arm", "hr": ["slomljena ruka"] },
+    { "en": "a broken leg", "hr": ["slomljena noga"] },
+    { "en": "a cold", "hr": ["prehlada"] },
+    { "en": "a high temperature", "hr": ["visoka temperatura"] },
+    { "en": "Get some rest.", "hr": ["Odmori se."] },
+    { "en": "Take a deep breath.", "hr": ["Duboko udahni."] },
+    { "en": "What's wrong?", "hr": ["Što nije u redu?"] },
+    { "en": "My mum is right.", "hr": ["Moja je mama u pravu."] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "I've got a runny nose. I think I've got a cold.",
+      "blanks": [
+        { "word": "runny", "emoji": "🤧", "distractors": ["sore", "broken", "high"] },
+        { "word": "cold", "emoji": "🥶", "distractors": ["headache", "toothache", "stomachache"] }
+      ]
+    },
+    {
+      "sentence": "I've got a sore throat. It really hurts.",
+      "blanks": [
+        { "word": "sore", "emoji": "😣", "distractors": ["runny", "broken", "high"] },
+        { "word": "throat", "emoji": "🗣️", "distractors": ["nose", "stomach", "head"] }
+      ]
+    },
+    {
+      "sentence": "I've got a headache. My head hurts.",
+      "blanks": [
+        { "word": "headache", "emoji": "🤕", "distractors": ["toothache", "stomachache", "earache"] },
+        { "word": "hurts", "emoji": "😖", "distractors": ["have", "has", "hurt"] }
+      ]
+    },
+    {
+      "sentence": "I've got a stomachache. My stomach hurts.",
+      "blanks": [
+        { "word": "stomachache", "emoji": "🤢", "distractors": ["headache", "toothache", "earache"] },
+        { "word": "stomach", "emoji": "🫃", "distractors": ["head", "throat", "arm"] }
+      ]
+    },
+    {
+      "sentence": "I've got a broken leg. My leg hurts.",
+      "blanks": [
+        { "word": "broken", "emoji": "🦴", "distractors": ["runny", "sore", "high"] },
+        { "word": "leg", "emoji": "🦵", "distractors": ["arm", "head", "foot"] }
+      ]
+    },
+    {
+      "sentence": "I've got a toothache. My teeth hurt.",
+      "blanks": [
+        { "word": "toothache", "emoji": "🦷", "distractors": ["headache", "stomachache", "earache"] },
+        { "word": "teeth", "emoji": "😬", "distractors": ["tooth", "throats", "ears"] }
+      ]
+    },
+    {
+      "sentence": "I've got a high temperature and a runny nose.",
+      "blanks": [
+        { "word": "high", "emoji": "🌡️", "distractors": ["low", "broken", "sore"] },
+        { "word": "temperature", "emoji": "🤒", "distractors": ["headache", "cold", "throat"] }
+      ]
+    },
+    {
+      "sentence": "My arm hurts really badly. I think it's broken.",
+      "blanks": [
+        { "word": "arm", "emoji": "💪", "distractors": ["leg", "head", "foot"] },
+        { "word": "broken", "emoji": "🦴", "distractors": ["sore", "runny", "high"] }
+      ]
+    },
+    {
+      "sentence": "Be careful when climbing trees!",
+      "blanks": [
+        { "word": "careful", "emoji": "⚠️", "distractors": ["careless", "carefull", "carfull"] }
+      ]
+    },
+    {
+      "sentence": "The doctor listens to my heart with a stethoscope.",
+      "blanks": [
+        { "word": "heart", "emoji": "❤️", "distractors": ["brain", "lungs", "stomach"] },
+        { "word": "stethoscope", "emoji": "🩺", "distractors": ["thermometer", "prescription", "syrup"] }
+      ]
+    },
+    {
+      "sentence": "The nurse takes my temperature with a thermometer.",
+      "blanks": [
+        { "word": "temperature", "emoji": "🌡️", "distractors": ["name", "heart", "throat"] },
+        { "word": "thermometer", "emoji": "🌡️", "distractors": ["stethoscope", "syrup", "spray"] }
+      ]
+    },
+    {
+      "sentence": "When you breathe, air goes into your lungs.",
+      "blanks": [
+        { "word": "lungs", "emoji": "🫁", "distractors": ["stomach", "heart", "brain"] }
+      ]
+    },
+    {
+      "sentence": "When you think, you use your brain.",
+      "blanks": [
+        { "word": "brain", "emoji": "🧠", "distractors": ["heart", "lungs", "stomach"] }
+      ]
+    },
+    {
+      "sentence": "When you eat, your food goes into your stomach.",
+      "blanks": [
+        { "word": "stomach", "emoji": "🫃", "distractors": ["lungs", "brain", "heart"] }
+      ]
+    },
+    {
+      "sentence": "Your heart beats about seventy times a minute.",
+      "blanks": [
+        { "word": "heart", "emoji": "💓", "distractors": ["brain", "lungs", "stomach"] }
+      ]
+    },
+    {
+      "sentence": "Most adults have thirty-two teeth.",
+      "blanks": [
+        { "word": "adults", "emoji": "🧑", "distractors": ["babies", "children", "kids"] },
+        { "word": "teeth", "emoji": "😬", "distractors": ["bones", "fingers", "toes"] }
+      ]
+    },
+    {
+      "sentence": "Babies have three hundred bones when they are born.",
+      "blanks": [
+        { "word": "bones", "emoji": "🦴", "distractors": ["teeth", "organs", "muscles"] }
+      ]
+    },
+    {
+      "sentence": "Don't go out when you're feeling ill.",
+      "blanks": [
+        { "word": "ill", "emoji": "🤒", "distractors": ["well", "healthy", "fine"] }
+      ]
+    },
+    {
+      "sentence": "Take a deep breath.",
+      "blanks": [
+        { "word": "deep", "emoji": "😮‍💨", "distractors": ["high", "short", "small"] }
+      ]
+    },
+    {
+      "sentence": "Get some rest.",
+      "blanks": [
+        { "word": "rest", "emoji": "😴", "distractors": ["sleep", "eat", "drink"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "grade": 4,
+  "unit": 6,
+  "title": "At the Doctor's",
+  "titleHr": "Kod liječnika",
+  "words": [
+    { "en": "cast", "hr": ["gips"] },
+    { "en": "check-up", "hr": ["pregled"] },
+    { "en": "cold", "hr": ["prehlada"] },
+    { "en": "itchy", "hr": ["koji svrbi"] },
+    { "en": "medicine", "hr": ["lijek"] },
+    { "en": "nurse", "hr": ["medicinska sestra ili brat"] },
+    { "en": "patient", "hr": ["pacijent"] },
+    { "en": "pills", "hr": ["tablete"] },
+    { "en": "pharmacist", "hr": ["ljekarnik"] },
+    { "en": "pharmacy", "hr": ["ljekarna"] },
+    { "en": "prescription", "hr": ["liječnički recept"] },
+    { "en": "snack", "hr": ["užina", "međuobrok"] },
+    { "en": "sore", "hr": ["bolan"] },
+    { "en": "spray", "hr": ["sprej"] },
+    { "en": "surgeon", "hr": ["kirurg"] },
+    { "en": "surgery", "hr": ["operacija", "kirurški zahvat"] },
+    { "en": "syrup", "hr": ["sirup"] },
+    { "en": "doctor", "hr": ["liječnik", "doktor"] },
+    { "en": "dentist", "hr": ["zubar"] },
+    { "en": "hospital", "hr": ["bolnica"] },
+    { "en": "What's the matter?", "hr": ["Što je bilo?", "Što nije u redu?"] },
+    { "en": "I'm here for my check-up.", "hr": ["Tu sam na pregledu."] },
+    { "en": "Take care of your arm.", "hr": ["Pazi na svoju ruku."] },
+    { "en": "Don't be scared.", "hr": ["Nemoj se bojati."] },
+    { "en": "How do you feel?", "hr": ["Kako se osjećaš?"] },
+    { "en": "Take the syrup three times a day.", "hr": ["Uzimaj sirup tri puta dnevno."] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "I've got a terrible toothache!",
+      "blanks": [
+        { "word": "toothache", "emoji": "🦷", "distractors": ["headache", "stomachache", "earache"] }
+      ]
+    },
+    {
+      "sentence": "Brush your teeth twice a day.",
+      "blanks": [
+        { "word": "Brush", "emoji": "🪥", "distractors": ["Eat", "Drink", "Wash"] },
+        { "word": "twice", "emoji": "2️⃣", "distractors": ["once", "three times", "four times"] }
+      ]
+    },
+    {
+      "sentence": "Don't eat too many sweets.",
+      "blanks": [
+        { "word": "sweets", "emoji": "🍬", "distractors": ["fruits", "soups", "salads"] }
+      ]
+    },
+    {
+      "sentence": "Come and see me every year for a check-up.",
+      "blanks": [
+        { "word": "check-up", "emoji": "🩺", "distractors": ["prescription", "medicine", "syrup"] }
+      ]
+    },
+    {
+      "sentence": "The cast needs to come off after two weeks.",
+      "blanks": [
+        { "word": "cast", "emoji": "🦴", "distractors": ["spray", "syrup", "pills"] }
+      ]
+    },
+    {
+      "sentence": "My arm doesn't hurt any more; it's just a bit itchy.",
+      "blanks": [
+        { "word": "itchy", "emoji": "😖", "distractors": ["broken", "sore", "runny"] }
+      ]
+    },
+    {
+      "sentence": "Don't climb any more trees until you feel stronger.",
+      "blanks": [
+        { "word": "climb", "emoji": "🌳", "distractors": ["run", "jump", "walk"] }
+      ]
+    },
+    {
+      "sentence": "I need to collect my prescription, please.",
+      "blanks": [
+        { "word": "prescription", "emoji": "📝", "distractors": ["medicine", "syrup", "cast"] }
+      ]
+    },
+    {
+      "sentence": "My doctor says that I need some medicine for my cold.",
+      "blanks": [
+        { "word": "medicine", "emoji": "💊", "distractors": ["cast", "check-up", "snack"] },
+        { "word": "cold", "emoji": "🥶", "distractors": ["heart", "arm", "leg"] }
+      ]
+    },
+    {
+      "sentence": "You're getting some syrup for your temperature.",
+      "blanks": [
+        { "word": "syrup", "emoji": "🧴", "distractors": ["spray", "pills", "cast"] },
+        { "word": "temperature", "emoji": "🌡️", "distractors": ["throat", "stomach", "arm"] }
+      ]
+    },
+    {
+      "sentence": "Use the spray when your nose is runny.",
+      "blanks": [
+        { "word": "spray", "emoji": "💨", "distractors": ["syrup", "pills", "cast"] },
+        { "word": "runny", "emoji": "🤧", "distractors": ["sore", "broken", "itchy"] }
+      ]
+    },
+    {
+      "sentence": "Take the pills when your throat is sore.",
+      "blanks": [
+        { "word": "pills", "emoji": "💊", "distractors": ["syrup", "spray", "cast"] },
+        { "word": "sore", "emoji": "😣", "distractors": ["runny", "broken", "itchy"] }
+      ]
+    },
+    {
+      "sentence": "Take these pills three times a day.",
+      "blanks": [
+        { "word": "pills", "emoji": "💊", "distractors": ["syrup", "spray", "casts"] },
+        { "word": "three", "emoji": "3️⃣", "distractors": ["one", "two", "four"] }
+      ]
+    },
+    {
+      "sentence": "The nurse helps the doctor and takes care of patients.",
+      "blanks": [
+        { "word": "nurse", "emoji": "👩‍⚕️", "distractors": ["dentist", "pharmacist", "surgeon"] },
+        { "word": "patients", "emoji": "🤒", "distractors": ["pills", "casts", "snacks"] }
+      ]
+    },
+    {
+      "sentence": "The pharmacist gives patients the right medicine.",
+      "blanks": [
+        { "word": "pharmacist", "emoji": "💊", "distractors": ["dentist", "doctor", "nurse"] },
+        { "word": "medicine", "emoji": "💊", "distractors": ["cast", "syrup", "snack"] }
+      ]
+    },
+    {
+      "sentence": "The dentist helps people who have a toothache.",
+      "blanks": [
+        { "word": "dentist", "emoji": "🦷", "distractors": ["doctor", "nurse", "pharmacist"] }
+      ]
+    },
+    {
+      "sentence": "The doctor helps people who are ill.",
+      "blanks": [
+        { "word": "doctor", "emoji": "👨‍⚕️", "distractors": ["dentist", "nurse", "pharmacist"] },
+        { "word": "ill", "emoji": "🤒", "distractors": ["well", "healthy", "fine"] }
+      ]
+    },
+    {
+      "sentence": "Don't drink anything after the syrup.",
+      "blanks": [
+        { "word": "drink", "emoji": "🚫", "distractors": ["eat", "brush", "use"] },
+        { "word": "syrup", "emoji": "🧴", "distractors": ["spray", "pills", "cast"] }
+      ]
+    },
+    {
+      "sentence": "Take care of your arm.",
+      "blanks": [
+        { "word": "care", "emoji": "🤗", "distractors": ["fix", "look", "help"] }
+      ]
+    },
+    {
+      "sentence": "Don't be scared; it won't hurt.",
+      "blanks": [
+        { "word": "scared", "emoji": "😨", "distractors": ["happy", "sad", "tired"] },
+        { "word": "hurt", "emoji": "🤕", "distractors": ["help", "heal", "ache"] }
+      ]
+    }
+  ]
+}

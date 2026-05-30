@@ -1,0 +1,154 @@
+{
+  "grade": 4,
+  "unit": 7,
+  "title": "A Day at the Beach",
+  "titleHr": "Dan na plaži",
+  "words": [
+    { "en": "enjoy", "hr": ["uživati"] },
+    { "en": "fast", "hr": ["brzo"] },
+    { "en": "forget", "hr": ["zaboraviti"] },
+    { "en": "helmet", "hr": ["kaciga"] },
+    { "en": "power", "hr": ["snaga", "moć"] },
+    { "en": "sail", "hr": ["jedriti"] },
+    { "en": "slow", "hr": ["sporo"] },
+    { "en": "sunscreen", "hr": ["krema za sunčanje"] },
+    { "en": "take a shower", "hr": ["tuširati se"] },
+    { "en": "beach", "hr": ["plaža"] },
+    { "en": "trainers", "hr": ["tenisice"] },
+    { "en": "bike", "hr": ["bicikl"] },
+    { "en": "breakfast", "hr": ["doručak"] },
+    { "en": "ice cream", "hr": ["sladoled"] },
+    { "en": "shower", "hr": ["tuš"] },
+    { "en": "morning", "hr": ["jutro"] },
+    { "en": "sun", "hr": ["sunce"] },
+    { "en": "sea", "hr": ["more"] },
+    { "en": "dive", "hr": ["roniti", "skočiti u vodu"] },
+    { "en": "surf", "hr": ["surfati"] },
+    { "en": "swim", "hr": ["plivati"] },
+    { "en": "summer", "hr": ["ljeto"] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "Wear a hat!",
+      "blanks": [
+        { "word": "hat", "emoji": "👒", "distractors": ["scarf", "boots", "coat"] }
+      ]
+    },
+    {
+      "sentence": "Drink plenty of water!",
+      "blanks": [
+        { "word": "water", "emoji": "💧", "distractors": ["tea", "milk", "juice"] }
+      ]
+    },
+    {
+      "sentence": "Don't forget the sunscreen!",
+      "blanks": [
+        { "word": "forget", "emoji": "🤔", "distractors": ["remember", "bring", "take"] },
+        { "word": "sunscreen", "emoji": "🧴", "distractors": ["umbrella", "sunglasses", "helmet"] }
+      ]
+    },
+    {
+      "sentence": "Take your sunglasses!",
+      "blanks": [
+        { "word": "sunglasses", "emoji": "🕶️", "distractors": ["helmet", "hat", "scarf"] }
+      ]
+    },
+    {
+      "sentence": "Wash your face, take a shower.",
+      "blanks": [
+        { "word": "Wash", "emoji": "🧼", "distractors": ["Dry", "Eat", "Drink"] },
+        { "word": "shower", "emoji": "🚿", "distractors": ["bath", "swim", "sleep"] }
+      ]
+    },
+    {
+      "sentence": "Eat your breakfast, get the power.",
+      "blanks": [
+        { "word": "breakfast", "emoji": "🥣", "distractors": ["lunch", "dinner", "snack"] },
+        { "word": "power", "emoji": "💪", "distractors": ["water", "sleep", "shower"] }
+      ]
+    },
+    {
+      "sentence": "Put on your trainers, put on your hat.",
+      "blanks": [
+        { "word": "trainers", "emoji": "👟", "distractors": ["sandals", "boots", "socks"] },
+        { "word": "hat", "emoji": "🧢", "distractors": ["helmet", "mask", "scarf"] }
+      ]
+    },
+    {
+      "sentence": "Go for a run in the morning sun.",
+      "blanks": [
+        { "word": "run", "emoji": "🏃", "distractors": ["walk", "swim", "ride"] },
+        { "word": "morning", "emoji": "🌅", "distractors": ["evening", "afternoon", "night"] }
+      ]
+    },
+    {
+      "sentence": "Put on your helmet, jump on your bike.",
+      "blanks": [
+        { "word": "helmet", "emoji": "⛑️", "distractors": ["hat", "mask", "scarf"] },
+        { "word": "bike", "emoji": "🚲", "distractors": ["horse", "car", "bus"] }
+      ]
+    },
+    {
+      "sentence": "Pedal fast, pedal slow, off to the beach we go!",
+      "blanks": [
+        { "word": "fast", "emoji": "⚡", "distractors": ["slow", "high", "low"] },
+        { "word": "slow", "emoji": "🐢", "distractors": ["fast", "low", "high"] },
+        { "word": "beach", "emoji": "🏖️", "distractors": ["park", "mountain", "forest"] }
+      ]
+    },
+    {
+      "sentence": "Dive and swim, surf and sail.",
+      "blanks": [
+        { "word": "swim", "emoji": "🏊", "distractors": ["run", "fly", "walk"] },
+        { "word": "sail", "emoji": "⛵", "distractors": ["dive", "ride", "drive"] }
+      ]
+    },
+    {
+      "sentence": "Enjoy the sun, enjoy the sea.",
+      "blanks": [
+        { "word": "Enjoy", "emoji": "😊", "distractors": ["Forget", "Eat", "Drink"] },
+        { "word": "sea", "emoji": "🌊", "distractors": ["pool", "lake", "river"] }
+      ]
+    },
+    {
+      "sentence": "Have an ice cream, sing a song.",
+      "blanks": [
+        { "word": "ice cream", "emoji": "🍦", "distractors": ["sandwich", "cake", "biscuit"] },
+        { "word": "sing", "emoji": "🎵", "distractors": ["dance", "play", "run"] }
+      ]
+    },
+    {
+      "sentence": "The day at the beach is very long!",
+      "blanks": [
+        { "word": "beach", "emoji": "🏖️", "distractors": ["park", "school", "city"] },
+        { "word": "long", "emoji": "📏", "distractors": ["short", "small", "high"] }
+      ]
+    },
+    {
+      "sentence": "Take a shower after the beach.",
+      "blanks": [
+        { "word": "shower", "emoji": "🚿", "distractors": ["nap", "snack", "walk"] }
+      ]
+    },
+    {
+      "sentence": "Don't dive into the pool.",
+      "blanks": [
+        { "word": "dive", "emoji": "🤿", "distractors": ["swim", "run", "sail"] },
+        { "word": "pool", "emoji": "🏊", "distractors": ["sea", "river", "lake"] }
+      ]
+    },
+    {
+      "sentence": "Don't use your mobile phone at the pool.",
+      "blanks": [
+        { "word": "mobile", "emoji": "📱", "distractors": ["computer", "TV", "radio"] }
+      ]
+    },
+    {
+      "sentence": "Summer is hot and sunny.",
+      "blanks": [
+        { "word": "Summer", "emoji": "☀️", "distractors": ["Winter", "Autumn", "Spring"] },
+        { "word": "sunny", "emoji": "🌞", "distractors": ["cold", "rainy", "snowy"] }
+      ]
+    }
+  ]
+}

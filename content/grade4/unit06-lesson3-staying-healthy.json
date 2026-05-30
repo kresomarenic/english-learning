@@ -1,0 +1,168 @@
+{
+  "grade": 4,
+  "unit": 6,
+  "title": "Staying Healthy",
+  "titleHr": "Ostati zdrav",
+  "words": [
+    { "en": "advice", "hr": ["savjet"] },
+    { "en": "energy", "hr": ["energija"] },
+    { "en": "fit", "hr": ["fit", "u formi"] },
+    { "en": "healthy", "hr": ["zdrav"] },
+    { "en": "important", "hr": ["važan"] },
+    { "en": "instead", "hr": ["umjesto"] },
+    { "en": "last", "hr": ["zadnje"] },
+    { "en": "question", "hr": ["pitanje"] },
+    { "en": "screen", "hr": ["zaslon", "ekran"] },
+    { "en": "skip", "hr": ["preskočiti"] },
+    { "en": "strong", "hr": ["snažan"] },
+    { "en": "sweet", "hr": ["sladak"] },
+    { "en": "vitamins", "hr": ["vitamini"] },
+    { "en": "work", "hr": ["posao", "raditi"] },
+    { "en": "First.", "hr": ["Prvi.", "Prvo."] },
+    { "en": "Second.", "hr": ["Drugi.", "Drugo."] },
+    { "en": "Third.", "hr": ["Treći.", "Treće."] },
+    { "en": "Fourth.", "hr": ["Četvrti.", "Četvrto."] },
+    { "en": "Fifth.", "hr": ["Peti.", "Peto."] },
+    { "en": "I'm happy to be with you today.", "hr": ["Drago mi je da sam danas s vama."] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "It's important not to skip breakfast.",
+      "blanks": [
+        { "word": "important", "emoji": "❗", "distractors": ["careful", "healthy", "strong"] },
+        { "word": "skip", "emoji": "🚫", "distractors": ["eat", "drink", "make"] }
+      ]
+    },
+    {
+      "sentence": "Our bodies need vitamins.",
+      "blanks": [
+        { "word": "vitamins", "emoji": "🍎", "distractors": ["sweets", "snacks", "drinks"] }
+      ]
+    },
+    {
+      "sentence": "Fruit and vegetables are full of vitamins.",
+      "blanks": [
+        { "word": "vitamins", "emoji": "🥦", "distractors": ["sugar", "salt", "water"] }
+      ]
+    },
+    {
+      "sentence": "Don't drink sweet drinks; drink water instead.",
+      "blanks": [
+        { "word": "sweet", "emoji": "🥤", "distractors": ["sour", "salty", "hot"] },
+        { "word": "water", "emoji": "💧", "distractors": ["milk", "juice", "tea"] }
+      ]
+    },
+    {
+      "sentence": "Sport is very good for you.",
+      "blanks": [
+        { "word": "Sport", "emoji": "⚽", "distractors": ["Sleep", "Food", "Screen"] },
+        { "word": "good", "emoji": "👍", "distractors": ["bad", "sweet", "sad"] }
+      ]
+    },
+    {
+      "sentence": "Activity keeps your heart healthy and your bones strong.",
+      "blanks": [
+        { "word": "healthy", "emoji": "❤️", "distractors": ["sweet", "sore", "broken"] },
+        { "word": "strong", "emoji": "💪", "distractors": ["weak", "soft", "small"] }
+      ]
+    },
+    {
+      "sentence": "Sleep is very important. Your brain needs to rest.",
+      "blanks": [
+        { "word": "Sleep", "emoji": "😴", "distractors": ["Food", "Water", "Sport"] },
+        { "word": "brain", "emoji": "🧠", "distractors": ["heart", "stomach", "lungs"] }
+      ]
+    },
+    {
+      "sentence": "Don't sit too long in front of your computer screen.",
+      "blanks": [
+        { "word": "screen", "emoji": "💻", "distractors": ["snack", "sport", "skin"] }
+      ]
+    },
+    {
+      "sentence": "Get moving! Activity keeps your heart healthy.",
+      "blanks": [
+        { "word": "moving", "emoji": "🏃", "distractors": ["sitting", "sleeping", "eating"] }
+      ]
+    },
+    {
+      "sentence": "Start the day with a healthy breakfast.",
+      "blanks": [
+        { "word": "healthy", "emoji": "🥗", "distractors": ["sweet", "fast", "late"] },
+        { "word": "breakfast", "emoji": "🥣", "distractors": ["lunch", "dinner", "snack"] }
+      ]
+    },
+    {
+      "sentence": "Your body needs energy for the day.",
+      "blanks": [
+        { "word": "energy", "emoji": "⚡", "distractors": ["vitamins", "sleep", "water"] }
+      ]
+    },
+    {
+      "sentence": "Brush your teeth twice a day. It keeps the dentist away.",
+      "blanks": [
+        { "word": "Brush", "emoji": "🪥", "distractors": ["Eat", "Drink", "Wash"] },
+        { "word": "dentist", "emoji": "🦷", "distractors": ["doctor", "nurse", "pharmacist"] }
+      ]
+    },
+    {
+      "sentence": "Be active every day.",
+      "blanks": [
+        { "word": "active", "emoji": "🏃", "distractors": ["lazy", "sleepy", "tired"] }
+      ]
+    },
+    {
+      "sentence": "Your body needs five glasses of water a day.",
+      "blanks": [
+        { "word": "five", "emoji": "5️⃣", "distractors": ["two", "three", "four"] },
+        { "word": "water", "emoji": "💧", "distractors": ["milk", "juice", "tea"] }
+      ]
+    },
+    {
+      "sentence": "I'm hungry! Eat a sandwich!",
+      "blanks": [
+        { "word": "hungry", "emoji": "😋", "distractors": ["thirsty", "sleepy", "tired"] },
+        { "word": "Eat", "emoji": "🥪", "distractors": ["Drink", "Run", "Sleep"] }
+      ]
+    },
+    {
+      "sentence": "I'm thirsty! Drink a glass of water!",
+      "blanks": [
+        { "word": "thirsty", "emoji": "🥤", "distractors": ["hungry", "sleepy", "tired"] },
+        { "word": "Drink", "emoji": "💧", "distractors": ["Eat", "Run", "Sleep"] }
+      ]
+    },
+    {
+      "sentence": "I'm sleepy! Go to bed!",
+      "blanks": [
+        { "word": "sleepy", "emoji": "😴", "distractors": ["hungry", "thirsty", "happy"] }
+      ]
+    },
+    {
+      "sentence": "How do you usually go to school?",
+      "blanks": [
+        { "word": "school", "emoji": "🏫", "distractors": ["bed", "work", "lunch"] }
+      ]
+    },
+    {
+      "sentence": "Eight hours every night is good for you.",
+      "blanks": [
+        { "word": "Eight", "emoji": "🛌", "distractors": ["Four", "Six", "Twelve"] },
+        { "word": "night", "emoji": "🌙", "distractors": ["day", "morning", "evening"] }
+      ]
+    },
+    {
+      "sentence": "The first question is about breakfast.",
+      "blanks": [
+        { "word": "first", "emoji": "1️⃣", "distractors": ["second", "third", "last"] }
+      ]
+    },
+    {
+      "sentence": "The fifth and last question is for our listeners.",
+      "blanks": [
+        { "word": "fifth", "emoji": "5️⃣", "distractors": ["first", "second", "third"] },
+        { "word": "last", "emoji": "🏁", "distractors": ["first", "next", "new"] }
+      ]
+    }
+  ]
+}

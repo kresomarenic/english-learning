@@ -1,0 +1,167 @@
+{
+  "grade": 4,
+  "unit": 8,
+  "title": "The Little Red Hen",
+  "titleHr": "Crvena kokica",
+  "words": [
+    { "en": "grains", "hr": ["zrna"] },
+    { "en": "mill", "hr": ["mlin"] },
+    { "en": "oven", "hr": ["pećnica"] },
+    { "en": "wheat", "hr": ["pšenica"] },
+    { "en": "flour", "hr": ["brašno"] },
+    { "en": "bread", "hr": ["kruh"] },
+    { "en": "hen", "hr": ["kokoš"] },
+    { "en": "dog", "hr": ["pas"] },
+    { "en": "cat", "hr": ["mačka"] },
+    { "en": "mouse", "hr": ["miš"] },
+    { "en": "plant", "hr": ["posaditi"] },
+    { "en": "cut", "hr": ["rezati", "kositi"] },
+    { "en": "bake", "hr": ["peći"] },
+    { "en": "lazy", "hr": ["lijen"] },
+    { "en": "hard-working", "hr": ["vrijedan", "marljiv"] },
+    { "en": "Easter", "hr": ["Uskrs"] },
+    { "en": "Not I!", "hr": ["Ne ja!"] },
+    { "en": "Then I will do it myself.", "hr": ["Onda ću to napraviti sama."] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "This is the Little Red Hen.",
+      "blanks": [
+        { "word": "Hen", "emoji": "🐔", "distractors": ["Dog", "Cat", "Mouse"] }
+      ]
+    },
+    {
+      "sentence": "She lives with a dog, a cat and a mouse.",
+      "blanks": [
+        { "word": "dog", "emoji": "🐶", "distractors": ["hen", "owl", "squirrel"] },
+        { "word": "mouse", "emoji": "🐭", "distractors": ["bird", "rabbit", "fox"] }
+      ]
+    },
+    {
+      "sentence": "One day she finds some grains of wheat.",
+      "blanks": [
+        { "word": "grains", "emoji": "🌾", "distractors": ["flour", "bread", "eggs"] },
+        { "word": "wheat", "emoji": "🌾", "distractors": ["nuts", "berries", "apples"] }
+      ]
+    },
+    {
+      "sentence": "Who will plant this wheat?",
+      "blanks": [
+        { "word": "plant", "emoji": "🌱", "distractors": ["bake", "cut", "eat"] },
+        { "word": "wheat", "emoji": "🌾", "distractors": ["flour", "bread", "oven"] }
+      ]
+    },
+    {
+      "sentence": "Not I, says the dog.",
+      "blanks": [
+        { "word": "Not", "emoji": "🙅", "distractors": ["Yes", "Sure", "Okay"] },
+        { "word": "dog", "emoji": "🐶", "distractors": ["hen", "cat", "mouse"] }
+      ]
+    },
+    {
+      "sentence": "Not I, says the cat.",
+      "blanks": [
+        { "word": "cat", "emoji": "🐱", "distractors": ["dog", "hen", "mouse"] }
+      ]
+    },
+    {
+      "sentence": "Not I, says the mouse.",
+      "blanks": [
+        { "word": "mouse", "emoji": "🐭", "distractors": ["dog", "cat", "hen"] }
+      ]
+    },
+    {
+      "sentence": "Then I will do it myself, says the Little Red Hen.",
+      "blanks": [
+        { "word": "myself", "emoji": "💪", "distractors": ["yourself", "himself", "herself"] }
+      ]
+    },
+    {
+      "sentence": "The wheat grows taller and taller.",
+      "blanks": [
+        { "word": "wheat", "emoji": "🌾", "distractors": ["flour", "bread", "oven"] },
+        { "word": "taller", "emoji": "📏", "distractors": ["shorter", "smaller", "bigger"] }
+      ]
+    },
+    {
+      "sentence": "It is time to cut the wheat.",
+      "blanks": [
+        { "word": "cut", "emoji": "✂️", "distractors": ["plant", "bake", "wash"] }
+      ]
+    },
+    {
+      "sentence": "Now it is time to take the wheat to the mill.",
+      "blanks": [
+        { "word": "mill", "emoji": "🏭", "distractors": ["oven", "house", "shop"] }
+      ]
+    },
+    {
+      "sentence": "The Little Red Hen takes the flour back to her house.",
+      "blanks": [
+        { "word": "flour", "emoji": "🌾", "distractors": ["wheat", "bread", "grains"] },
+        { "word": "house", "emoji": "🏠", "distractors": ["mill", "oven", "shop"] }
+      ]
+    },
+    {
+      "sentence": "Who will make this flour into bread?",
+      "blanks": [
+        { "word": "flour", "emoji": "🌾", "distractors": ["wheat", "grains", "oven"] },
+        { "word": "bread", "emoji": "🍞", "distractors": ["cake", "pudding", "pie"] }
+      ]
+    },
+    {
+      "sentence": "The Little Red Hen takes the bread out of the oven.",
+      "blanks": [
+        { "word": "bread", "emoji": "🍞", "distractors": ["flour", "wheat", "cake"] },
+        { "word": "oven", "emoji": "🔥", "distractors": ["mill", "fridge", "table"] }
+      ]
+    },
+    {
+      "sentence": "Who will eat this bread?",
+      "blanks": [
+        { "word": "eat", "emoji": "😋", "distractors": ["bake", "plant", "cut"] },
+        { "word": "bread", "emoji": "🍞", "distractors": ["flour", "wheat", "grain"] }
+      ]
+    },
+    {
+      "sentence": "I will, says the dog. I will, says the cat. I will, says the mouse.",
+      "blanks": [
+        { "word": "dog", "emoji": "🐶", "distractors": ["hen", "owl", "fox"] },
+        { "word": "mouse", "emoji": "🐭", "distractors": ["bird", "fox", "rabbit"] }
+      ]
+    },
+    {
+      "sentence": "You didn't help me plant the wheat.",
+      "blanks": [
+        { "word": "help", "emoji": "🙌", "distractors": ["bake", "plant", "eat"] },
+        { "word": "wheat", "emoji": "🌾", "distractors": ["flour", "bread", "grain"] }
+      ]
+    },
+    {
+      "sentence": "But it is Easter today, and you can eat it.",
+      "blanks": [
+        { "word": "Easter", "emoji": "🐰", "distractors": ["Christmas", "Sunday", "Birthday"] },
+        { "word": "eat", "emoji": "😋", "distractors": ["bake", "plant", "cut"] }
+      ]
+    },
+    {
+      "sentence": "The dog, the cat and the mouse feel sorry.",
+      "blanks": [
+        { "word": "sorry", "emoji": "😔", "distractors": ["happy", "lazy", "tired"] }
+      ]
+    },
+    {
+      "sentence": "They promise always to help the Little Red Hen.",
+      "blanks": [
+        { "word": "promise", "emoji": "🤝", "distractors": ["forget", "refuse", "ask"] },
+        { "word": "help", "emoji": "🙌", "distractors": ["eat", "ask", "plant"] }
+      ]
+    },
+    {
+      "sentence": "The Little Red Hen is hard-working.",
+      "blanks": [
+        { "word": "hard-working", "emoji": "💪", "distractors": ["lazy", "sleepy", "tidy"] }
+      ]
+    }
+  ]
+}

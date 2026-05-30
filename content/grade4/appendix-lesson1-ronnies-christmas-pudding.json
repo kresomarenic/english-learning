@@ -1,0 +1,164 @@
+{
+  "grade": 4,
+  "unit": 8,
+  "title": "Ronnie's Christmas Pudding",
+  "titleHr": "Ronniejev božićni puding",
+  "words": [
+    { "en": "Christmas pudding", "hr": ["božićni puding"] },
+    { "en": "clean", "hr": ["čistiti", "čisto"] },
+    { "en": "decorate", "hr": ["ukrasiti"] },
+    { "en": "desperate", "hr": ["očajan"] },
+    { "en": "flour", "hr": ["brašno"] },
+    { "en": "hedgehog", "hr": ["jež"] },
+    { "en": "hen", "hr": ["kokoš"] },
+    { "en": "holly", "hr": ["božikovina"] },
+    { "en": "nuts", "hr": ["orašasti plodovi"] },
+    { "en": "potted Christmas tree", "hr": ["božićno drvce zasađeno u lončaniću"] },
+    { "en": "present", "hr": ["poklon"] },
+    { "en": "pullover", "hr": ["pulover"] },
+    { "en": "squirrel", "hr": ["vjeverica"] },
+    { "en": "suddenly", "hr": ["odjednom"] },
+    { "en": "tidy", "hr": ["uredan"] },
+    { "en": "wrap up", "hr": ["zamotati"] },
+    { "en": "berries", "hr": ["bobice"] },
+    { "en": "owl", "hr": ["sova"] },
+    { "en": "eggs", "hr": ["jaja"] },
+    { "en": "apples", "hr": ["jabuke"] },
+    { "en": "carrots", "hr": ["mrkve"] },
+    { "en": "Merry Christmas!", "hr": ["Sretan Božić!"] }
+  ],
+  "fillInBlanks": [
+    {
+      "sentence": "It's Christmas time. Ronnie is at home.",
+      "blanks": [
+        { "word": "Christmas", "emoji": "🎄", "distractors": ["Easter", "Summer", "Winter"] }
+      ]
+    },
+    {
+      "sentence": "He is cleaning his house.",
+      "blanks": [
+        { "word": "cleaning", "emoji": "🧹", "distractors": ["decorating", "wrapping", "eating"] },
+        { "word": "house", "emoji": "🏠", "distractors": ["garden", "tree", "car"] }
+      ]
+    },
+    {
+      "sentence": "He is decorating his potted Christmas tree.",
+      "blanks": [
+        { "word": "decorating", "emoji": "✨", "distractors": ["cleaning", "eating", "wrapping"] },
+        { "word": "tree", "emoji": "🎄", "distractors": ["house", "table", "bag"] }
+      ]
+    },
+    {
+      "sentence": "He is putting on his Christmas pullover.",
+      "blanks": [
+        { "word": "pullover", "emoji": "🧥", "distractors": ["hat", "scarf", "boots"] }
+      ]
+    },
+    {
+      "sentence": "He is excited and happy.",
+      "blanks": [
+        { "word": "excited", "emoji": "🤩", "distractors": ["sad", "angry", "tired"] },
+        { "word": "happy", "emoji": "😊", "distractors": ["sad", "scared", "sick"] }
+      ]
+    },
+    {
+      "sentence": "Oh, no! I have got no presents for my friends!",
+      "blanks": [
+        { "word": "presents", "emoji": "🎁", "distractors": ["bags", "flowers", "pudding"] },
+        { "word": "friends", "emoji": "👫", "distractors": ["family", "neighbours", "doctors"] }
+      ]
+    },
+    {
+      "sentence": "Ronnie is desperate.",
+      "blanks": [
+        { "word": "desperate", "emoji": "😰", "distractors": ["happy", "tidy", "calm"] }
+      ]
+    },
+    {
+      "sentence": "Have you got a Christmas present for my friends?",
+      "blanks": [
+        { "word": "present", "emoji": "🎁", "distractors": ["pudding", "pullover", "card"] }
+      ]
+    },
+    {
+      "sentence": "I'm sorry; I've only got some eggs.",
+      "blanks": [
+        { "word": "eggs", "emoji": "🥚", "distractors": ["nuts", "apples", "berries"] }
+      ]
+    },
+    {
+      "sentence": "Ronnie sees a squirrel eating nuts.",
+      "blanks": [
+        { "word": "squirrel", "emoji": "🐿️", "distractors": ["hedgehog", "hen", "owl"] },
+        { "word": "nuts", "emoji": "🥜", "distractors": ["apples", "berries", "eggs"] }
+      ]
+    },
+    {
+      "sentence": "He sees a hedgehog eating apples.",
+      "blanks": [
+        { "word": "hedgehog", "emoji": "🦔", "distractors": ["squirrel", "hen", "owl"] },
+        { "word": "apples", "emoji": "🍎", "distractors": ["nuts", "berries", "eggs"] }
+      ]
+    },
+    {
+      "sentence": "He sees a bird eating berries.",
+      "blanks": [
+        { "word": "bird", "emoji": "🐦", "distractors": ["hen", "owl", "hedgehog"] },
+        { "word": "berries", "emoji": "🫐", "distractors": ["apples", "nuts", "eggs"] }
+      ]
+    },
+    {
+      "sentence": "I've only got some holly.",
+      "blanks": [
+        { "word": "holly", "emoji": "🍀", "distractors": ["nuts", "berries", "apples"] }
+      ]
+    },
+    {
+      "sentence": "Let's make a Christmas pudding for your friends!",
+      "blanks": [
+        { "word": "pudding", "emoji": "🍮", "distractors": ["present", "pullover", "tree"] },
+        { "word": "friends", "emoji": "👫", "distractors": ["family", "neighbours", "doctors"] }
+      ]
+    },
+    {
+      "sentence": "We have got some eggs, some nuts, some apples and some berries.",
+      "blanks": [
+        { "word": "eggs", "emoji": "🥚", "distractors": ["pudding", "flour", "holly"] },
+        { "word": "nuts", "emoji": "🥜", "distractors": ["apples", "berries", "eggs"] }
+      ]
+    },
+    {
+      "sentence": "The mouse joins in carrying some flour.",
+      "blanks": [
+        { "word": "mouse", "emoji": "🐭", "distractors": ["hen", "owl", "squirrel"] },
+        { "word": "flour", "emoji": "🌾", "distractors": ["nuts", "eggs", "apples"] }
+      ]
+    },
+    {
+      "sentence": "And some carrots, of course!",
+      "blanks": [
+        { "word": "carrots", "emoji": "🥕", "distractors": ["apples", "nuts", "berries"] }
+      ]
+    },
+    {
+      "sentence": "Ronnie opens the door. Merry Christmas, my friends!",
+      "blanks": [
+        { "word": "door", "emoji": "🚪", "distractors": ["window", "tree", "house"] },
+        { "word": "Merry", "emoji": "🎄", "distractors": ["Happy", "Sad", "Tidy"] }
+      ]
+    },
+    {
+      "sentence": "We wish you a Merry Christmas and a happy new year.",
+      "blanks": [
+        { "word": "Christmas", "emoji": "🎄", "distractors": ["Easter", "Birthday", "Sunday"] },
+        { "word": "year", "emoji": "🎉", "distractors": ["day", "week", "month"] }
+      ]
+    },
+    {
+      "sentence": "It is important to make somebody happy for Christmas.",
+      "blanks": [
+        { "word": "happy", "emoji": "😊", "distractors": ["sad", "tidy", "tired"] }
+      ]
+    }
+  ]
+}
